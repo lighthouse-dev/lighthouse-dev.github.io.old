@@ -4,7 +4,7 @@ module.exports = {
   siteTitle: "lighthouse.log", // <title>
   shortSiteTitle: "lighthouse.log", // <title> ending for posts and pages
   siteDescription: "jslee blog",
-  siteUrl: "https://gatsby-starter-personal-blog.greglobinski.com",
+  siteUrl: "https://lighthouse-dev.github.io",
   pathPrefix: "",
   siteImage: "preview.jpg",
   siteLanguage: "en",
