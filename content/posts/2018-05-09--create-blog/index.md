@@ -1,6 +1,7 @@
 ---
-title: ブログ移転のお知らせ
-subTitle: ブログ移転しました
+title: ブログ移転しました
+subTitle: ""
 category: "DEFAULT"
 cover: gatsby.jpg
 ---
+
