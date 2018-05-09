@@ -5,20 +5,24 @@
       "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
     ],
     "path---": [
-      "path----7496e6474142cc5171e2.js",
-      "path----7496e6474142cc5171e2.js.map"
+      "path----1259ebe13fdeb2513466.js",
+      "path----1259ebe13fdeb2513466.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-7b0a83e808af57dc2ffc.js",
       "component---src-pages-contact-js-7b0a83e808af57dc2ffc.js.map"
+    ],
+    "path---ajax-sync": [
+      "path---ajax-sync-051add44029138d7e9fd.js",
+      "path---ajax-sync-051add44029138d7e9fd.js.map"
     ],
     "component---node-modules-gatsby-plugin-offline-app-shell-js": [
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-cc152b9fccff92ce807c.js",
-      "component---src-layouts-index-js-cc152b9fccff92ce807c.js.map"
+      "component---src-layouts-index-js-4a49aa5ea3ef1717fc12.js",
+      "component---src-layouts-index-js-4a49aa5ea3ef1717fc12.js.map"
     ],
     "path---index": [
       "path---index-03d6ba4c9cc03a8c2d9a.js",
@@ -39,8 +43,8 @@
       "path---success-55b341ff3ac1288fb496.js.map"
     ],
     "path---postgresql-setting": [
-      "path---postgresql-setting-f5d0dcc47a274a696699.js",
-      "path---postgresql-setting-f5d0dcc47a274a696699.js.map"
+      "path---postgresql-setting-38f4f4f6d9f6816039b6.js",
+      "path---postgresql-setting-38f4f4f6d9f6816039b6.js.map"
     ],
     "path---create-blog": [
       "path---create-blog-087f505b5bcac0dfae3b.js",
@@ -59,9 +63,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-701ea1167ce5628c82bf.js",
+      "app-fd1e6ebeb02b129ac61e.js",
       "build-js-styles.css",
-      "app-701ea1167ce5628c82bf.js.map",
+      "app-fd1e6ebeb02b129ac61e.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
