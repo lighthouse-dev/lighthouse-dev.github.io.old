@@ -5,8 +5,8 @@
       "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
     ],
     "path---": [
-      "path----1259ebe13fdeb2513466.js",
-      "path----1259ebe13fdeb2513466.js.map"
+      "path----d15f355cc693b336c032.js",
+      "path----d15f355cc693b336c032.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-7b0a83e808af57dc2ffc.js",
@@ -21,8 +21,8 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-4a49aa5ea3ef1717fc12.js",
-      "component---src-layouts-index-js-4a49aa5ea3ef1717fc12.js.map"
+      "component---src-layouts-index-js-0ebc5c8b3bc4e5efcad7.js",
+      "component---src-layouts-index-js-0ebc5c8b3bc4e5efcad7.js.map"
     ],
     "path---index": [
       "path---index-03d6ba4c9cc03a8c2d9a.js",
@@ -50,6 +50,10 @@
       "path---create-blog-087f505b5bcac0dfae3b.js",
       "path---create-blog-087f505b5bcac0dfae3b.js.map"
     ],
+    "path---phpstorm-remote-setting": [
+      "path---phpstorm-remote-setting-6efc7ea8614b983eb22e.js",
+      "path---phpstorm-remote-setting-6efc7ea8614b983eb22e.js.map"
+    ],
     "path---contact": [
       "path---contact-a0e39f21c11f6a62c5ab.js",
       "path---contact-a0e39f21c11f6a62c5ab.js.map"
@@ -63,9 +67,9 @@
       "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
     ],
     "app": [
-      "app-fd1e6ebeb02b129ac61e.js",
+      "app-e65bccaab98fde26aa48.js",
       "build-js-styles.css",
-      "app-fd1e6ebeb02b129ac61e.js.map",
+      "app-e65bccaab98fde26aa48.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [

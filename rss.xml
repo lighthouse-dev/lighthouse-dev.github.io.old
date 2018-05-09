@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 09 May 2018 16:09:59 GMT</lastBuildDate><item><title><![CDATA[ブログ移転しました]]></title><link>https://lighthouse-dev.github.io/create-blog/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/create-blog/</guid><content:encoded></content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 09 May 2018 16:31:11 GMT</lastBuildDate><item><title><![CDATA[ブログ移転しました]]></title><link>https://lighthouse-dev.github.io/create-blog/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/create-blog/</guid><content:encoded></content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
@@ -29,7 +29,171 @@
     &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[PhpStorm + Xdebugでリモートデスクトップ]]></title><description><![CDATA[Xdebug? デバック及びプロファイリング機能を提供するPHP拡張モデュール PECLを用いてインストール可能 1. Xdebugをインストール（CentOS） php-devel、php-pearをインストール gcc、gcc-c++、autoconf、automake…]]></description><link>https://lighthouse-dev.github.io/phpstorm-remote-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-remote-setting/</guid><content:encoded>&lt;h2&gt;Xdebug?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;デバック及びプロファイリング機能を提供するPHP拡張モデュール&lt;/li&gt;
+&lt;li&gt;PECLを用いてインストール可能&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;1. Xdebugをインストール（CentOS）&lt;/h2&gt;
+&lt;h3&gt;php-devel、php-pearをインストール&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;yum install php-devel
+yum install php-pear&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;gcc、gcc-c++、autoconf、automakeをインストール&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;yum install gcc gcc-c++ autoconf automake&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;Xdebugをインストール&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;pecl install Xdebug
+
+// ※エラーになる場合
+// yum --enablerepo=remi-phpバージョン install php-devel php-pear
+yum --enablerepo=remi-php56 install php-devel php-pear&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;/etc/php.iniを修正&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;vi /etc/php.ini&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;↓以下を追加&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;xdebug&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;  
+zend_extension=&lt;span class=&quot;token string&quot;&gt;&quot;/usr/lib64/php/modules/xdebug.so&quot;&lt;/span&gt;  
+xdebug.default_enable = &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;  
+xdebug.remote_enable = &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;  
+xdebug.remote_port = &lt;span class=&quot;token number&quot;&gt;9000&lt;/span&gt;  
+xdebug.remote_handler = dbgp  
+xdebug.remote_autostart = &lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;  
+xdebug.profiler_output_dir = &lt;span class=&quot;token string&quot;&gt;&quot;/tmp&quot;&lt;/span&gt;  
+xdebug.max_nesting_level = &lt;span class=&quot;token number&quot;&gt;1000&lt;/span&gt;  
+xdebug.idekey = &lt;span class=&quot;token string&quot;&gt;&quot;PHPSTORM&quot;&lt;/span&gt; //PhpSTORMで設定したideKey  
+xdebug.remote_host=xxx.xxx.xxx.xxx  
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;Apacheをリスタート&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;service httpd restart&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;2. PhpStormでの設定&lt;/h2&gt;
+&lt;h3&gt;リモートホストの設定&lt;/h3&gt;
+&lt;h4&gt;1.Remote Hostを表示&lt;/h4&gt;
+&lt;p&gt;[ Tools &gt; Deployment &gt; Browse Remote Host ]をクリックする&lt;/p&gt;
+&lt;h4&gt;2. サーバーを登録&lt;/h4&gt;
+&lt;p&gt;[ Tools &gt; Deployment &gt; Configuration… ]　を開く&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-89d2d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 80.37109375000001%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAQCAYAAAAWGF8bAAAACXBIWXMAARlAAAEZQAGA43XUAAACy0lEQVQ4y42U205TQRSG+xb6BkQFDPS4z7P3nu5zu3vEoKG0ioqGO5/AiKKABWoi3opGA1K4MhKDr6C+0e+aXQs0xcSLL9NZe+afWetf09Tpk+dY7W1ibXsHL9ZfY7O7ha2dHrZ7b9Cl2Ea3i6fPVrH2aj2Ji1h3Z5TtXg8vNzbw89dvpB432phIq7gymcPVa2kopg1WdCHrBvKKCiUZNczmJczmCpeSKciYuDGFz/sHSC0uLyMrKTDtIpjFUarUUG82EZZi+FEZXhDBoEM0Qv8HjPZm8jL6R8dI3V16kAiqzIJsmNCKDtzQg+X7UGwO9S+yaUFiJiTTRN5gA+j2OULEJ7NZHByTYIcExZUVEjR0Cx0WoWPH6Fhl3OMx2maElhEQIRZoXNAD3NF8wkvmLVrfprXNNMPpx8OBYLagJKe4mk0CJTh+CJtxhEEJpSiG5wbgVhHcdhKK3IVN8zAoIy7XUKk2wBUT33f3xgXnzQCK45ApDE4YwYkiWK4PneqkWVRLSv8MmovMeFSCKuv49u7DuOBtFsAKQjKCg3shwrgKj8yxHA+MOzDoZgaZN0QjQZe+67KBk8sE55gPI6Rb0uk2Oe1U6pAoRYUEVUpdInNymp6YIUjMYQxT0zP4uvt+XPAhowJHNUR6Ea3qLay0ltCuzyO2fVR4gNjy0HBpjR8nMZ/2RCbVdLqAH2/3Rl3WdRNN3cNiUEcnaibMUU3runtGTXPGaBgeghkVJ5/654LDPpRtalbHTRB9KNLKqBqylKbgYrpDCpTd9XQG+0dHo4IKCRapTuKFiNYxyQSbaid+c3I6aSeaJ4aQ6wM4LHqqYn/yUkZuSK0ixoGbAxdNWmyTmHCZe34y1ymuk1AyEmK9RHsHgvfPn564oUAID5E0YwRZcOG7WC9a52Y6h8M+pbz0aAVZWRsR/B+EmPjDiCpVGF6MadnFl/4x/gCbo2GNKVJdOAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;phpstorm setting 1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-48538.png&quot;
+        srcset=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-bed0f.png 200w,
+/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-5fd34.png 400w,
+/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-48538.png 800w,
+/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-89d2d.png 1024w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;[test SFTP connection]&lt;/code&gt; をクリックし、成功することを確認&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-89d2d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.1171875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAARlAAAEZQAGA43XUAAABK0lEQVQoz4WRWU7DQAyGcwgeuAFCPIEKZJvJZE+z0I1SFdTjVG2RipK0SNz2r2OxlYrk4ZMt2/piZ7TteonlR4Xtbo/NW4my3qHevxN7zsu6xnK1xmrziopmKqpz/MtnXbu4tXBleDi77OGc0G0JoVy4UQxdSBi2oJpATzdxc28Q+j8YuL7ToQnlwSKBdH3GC2OESYp8OEKSFZT34fgBbJoT1O9CsxwXDaZUHKM0Z5qm44csMqnexC4sQjPlsTAbTTGYzpGNn5BPZgjzIVScQUYpnA6EHx1v2HwlpjMbwjTjTZvcixPe1gnaOTn5tzAmYZLncGlQej4U/cc2meK54FTYLx74MVSfTk3HPzEZ8OPwpi18C7+kxfgRs5cFJnPieQHbi2CqkPC538UB3s5QWV9JGEYAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;phpstorm setting 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-48538.png&quot;
+        srcset=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-bed0f.png 200w,
+/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-5fd34.png 400w,
+/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-48538.png 800w,
+/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-89d2d.png 1024w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h3&gt;PHPリモートデバッグの設定&lt;/h3&gt;
+&lt;p&gt;[ Run &gt; Edit Configurations… ]　を開く&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-89d2d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 57.421875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAARlAAAEZQAGA43XUAAABu0lEQVQoz21Sy3LUQAz0FxFCNom9a894XrbHXpt9mlCELao4cYTizIELPwAHvraRtM4mZHPo0kijabWkST5fGvS2QVoUyFWJLC8wu82w0HQuFGbpHBezG1xcXeP19a3g1ZuZ+FeUd0k+5zD4nBTrHfb3B/SrDap2idIFuKrBknxXRyjjEJcDhvUWluKlr+AprilPWX+GRPVb7D8csNmNMKFGUdoTaYgtDBFUsZOCXIAJTVVTbiUoJ8tvtQ9IusZh/25E268kmBOhJevqRhQxMZ+ZaE4jeY6FNo8gP2mJdbcf4ZsWmiQX1CJbTmDynKzEuEWyxQQlufasQNLHiC0RchITcMvKOmRTdU7iO1Z4RJCRcJtc+KlKIXS9x/j+DrEbZFbcIldOc01bfkSaK8HT2EsjSHyw6NZrZERyQ19lbo5LERX+qILb1VOM1YoqUfYC4TYM+Ph2xK7ucdeuMLgoibwYXgpbXtaDr50/PWbFp+UoLUh+DD/x7dNffD/8wdf73/jS/CK1G2opJ5QTzttUpLbu+uNyaO6pXSI1kba8oIu5Q5UZhLQU8MP/vsMzCCERBZq5mn5GRmSZqfEP6BCHQn2o5JcAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;phpstorm setting 3&quot;
+        title=&quot;&quot;
+        src=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-48538.png&quot;
+        srcset=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-bed0f.png 200w,
+/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-5fd34.png 400w,
+/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-48538.png 800w,
+/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-89d2d.png 1024w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;PHP Remote Debugをクリック&lt;/li&gt;
+&lt;li&gt;名前、サーバーIPアドレス、Ide Key(※php.iniで設定したKey)
+などを設定する&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。&lt;/p&gt;
 &lt;p&gt;※ そもそもAjaxとはAsynchronous Javascript And XMLの略です。&lt;/p&gt;
 &lt;p&gt;なので、データ通信や処理をしている間に、同時に他の動作や処理をすることができるため、&lt;/p&gt;
