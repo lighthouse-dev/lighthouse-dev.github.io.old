@@ -1,16 +1,28 @@
 {
   "assetsByChunkName": {
+    "path---linux-epel-release": [
+      "path---linux-epel-release-22d40af884fcf0a05d80.js",
+      "path---linux-epel-release-22d40af884fcf0a05d80.js.map"
+    ],
+    "path---linux-remi-release": [
+      "path---linux-remi-release-6207cd4e99e12d6cf8f8.js",
+      "path---linux-remi-release-6207cd4e99e12d6cf8f8.js.map"
+    ],
     "component---src-pages-index-js": [
       "component---src-pages-index-js-aa9570313651ef926b5a.js",
       "component---src-pages-index-js-aa9570313651ef926b5a.js.map"
     ],
     "path---": [
-      "path----85c5ac30bfb8f2d59aa5.js",
-      "path----85c5ac30bfb8f2d59aa5.js.map"
+      "path----3934d0d9d41abe135526.js",
+      "path----3934d0d9d41abe135526.js.map"
     ],
     "component---src-pages-contact-js": [
       "component---src-pages-contact-js-eff0213fd964d08ae5b5.js",
       "component---src-pages-contact-js-eff0213fd964d08ae5b5.js.map"
+    ],
+    "path---linux-install-php-56": [
+      "path---linux-install-php-56-9ec948ba27a987267904.js",
+      "path---linux-install-php-56-9ec948ba27a987267904.js.map"
     ],
     "path---ajax-sync": [
       "path---ajax-sync-051add44029138d7e9fd.js",
@@ -21,8 +33,8 @@
       "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
     ],
     "component---src-layouts-index-js": [
-      "component---src-layouts-index-js-e492751eb0ca70e4ff75.js",
-      "component---src-layouts-index-js-e492751eb0ca70e4ff75.js.map"
+      "component---src-layouts-index-js-54ee3e2e508f7fa35cfd.js",
+      "component---src-layouts-index-js-54ee3e2e508f7fa35cfd.js.map"
     ],
     "path---index": [
       "path---index-03d6ba4c9cc03a8c2d9a.js",
@@ -71,9 +83,9 @@
       "path---sshfs-791f2b7b9f9f64d96006.js.map"
     ],
     "app": [
-      "app-a1816459dc68bced9522.js",
+      "app-58fc9111786e168cfb17.js",
       "build-js-styles.css",
-      "app-a1816459dc68bced9522.js.map",
+      "app-58fc9111786e168cfb17.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
