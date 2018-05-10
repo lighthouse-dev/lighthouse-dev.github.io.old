@@ -3,6 +3,9 @@ title: PhpStorm + Xdebugでリモートデスクトップ
 subTitle: ""
 category: "DEFAULT"
 cover: php-storm.png
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## Xdebug?

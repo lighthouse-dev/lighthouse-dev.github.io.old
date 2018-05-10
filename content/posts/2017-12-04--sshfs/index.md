@@ -3,6 +3,9 @@ title: Macでsshfsをインストール / 使い方
 subTitle: ""
 category: "DEFAULT"
 cover: fuse.png
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 ## 1. SSHFS?

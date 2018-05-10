@@ -3,6 +3,9 @@ title: CakePHP3.xでPostgreSQLの設定
 subTitle: ""
 category: "PostgreSQL"
 cover: postgresql.png
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 # /config/app.phpを修正

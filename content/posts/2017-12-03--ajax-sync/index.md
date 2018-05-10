@@ -3,6 +3,9 @@ title: AJAXを同期(Sync)で通信する
 subTitle: ""
 category: "JavaScript"
 cover: js.png
+sitemap :
+  changefreq : daily
+  priority : 1.0
 ---
 
 # 概要
