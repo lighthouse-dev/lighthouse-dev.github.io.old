@@ -11,7 +11,7 @@ sitemap :
 ## 事前作業
 
 * remi-releaseは、epel-releaseに依存性(dependency)がある。
-* [CentOS6系にepel-releseをインストールする。](https://lighthouse-dev.github.io/linux-epel-release/)
+* [CentOS6系にepel-releseをインストールする。](/linux-epel-release/)
 
 ## 確認
 

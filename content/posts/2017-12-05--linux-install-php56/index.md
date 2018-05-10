@@ -10,7 +10,7 @@ sitemap :
 
 ## 事前作業
 
-* [CentOS6系にremiレポジトリを追加する。](https://lighthouse-dev.github.io/linux-remi-release/)
+* [CentOS6系にremiレポジトリを追加する。](/linux-remi-release/)
 
 ## 確認
 
