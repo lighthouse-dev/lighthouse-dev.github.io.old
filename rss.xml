@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 10 May 2018 15:46:08 GMT</lastBuildDate><item><title><![CDATA[ブログ移転しました]]></title><link>https://lighthouse-dev.github.io/create-blog/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/create-blog/</guid><content:encoded></content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 10 May 2018 16:29:51 GMT</lastBuildDate><item><title><![CDATA[ブログ移転しました]]></title><link>https://lighthouse-dev.github.io/create-blog/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/create-blog/</guid><content:encoded></content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
     &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
@@ -29,7 +29,212 @@
     &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[CentOS6系にepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h2&gt;事前確認&lt;/h2&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
+ Fusic Advent Calendar 2017  21日目の記事です。 を触ってみた話をさせていただきます。 WebRTCとは WebRTC(Web Real-Time Communication…]]></description><link>https://lighthouse-dev.github.io/webrtc-basic/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/webrtc-basic/</guid><content:encoded>&lt;p&gt;こんにちは！
+&lt;a href=&quot;https://qiita.com/advent-calendar/2017/fusic&quot;&gt;Fusic Advent Calendar 2017&lt;/a&gt; 21日目の記事です。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;WebRTC&lt;/code&gt;を触ってみた話をさせていただきます。&lt;/p&gt;
+&lt;h2&gt;WebRTCとは&lt;/h2&gt;
+&lt;p&gt;WebRTC(Web Real-Time Communication)は、ウェブブラウザーの間で特定のプラグインがなくても通信できるAPIです。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium&quot;&gt;W3C&lt;/a&gt;で提示された草案であり、&lt;/p&gt;
+&lt;p&gt;映像、音声、P2Pファイル共有などで活用できます。&lt;/p&gt;
+&lt;h3&gt;WebRTC API&lt;/h3&gt;
+&lt;p&gt;WebRTCで提供するAPIは以下の三つです！&lt;/p&gt;
+&lt;h4&gt;1. MediaStream&lt;/h4&gt;
+&lt;p&gt;ユーザー端末機のビデオ、マイクにアクセスできます。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;getUserMedia&lt;/code&gt;を使ってアクセスし、MedisStreamオブジェクトを&lt;code class=&quot;language-text&quot;&gt;PeerConnection&lt;/code&gt;に渡して転送することになります。&lt;/p&gt;
+&lt;h4&gt;2. PeerConnection&lt;/h4&gt;
+&lt;p&gt;一番重要なAPIであり、ブラウザ間でビデオ、音声などのやりとりするAPIです！&lt;/p&gt;
+&lt;h4&gt;3. DataChannel&lt;/h4&gt;
+&lt;p&gt;ブラウザ間でのテキストやファイルなどをやりとりします。&lt;/p&gt;
+&lt;h2&gt;事前準備&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Webサーバー&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;http://lighthouse-dev.hatenablog.com/entry/2018/03/08/230508&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;WebSocket&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;カメラを触ってみよう&lt;/h2&gt;
+&lt;p&gt;Webサーバーに以下のサンプルコードを作成し、試してみましょう！&lt;/p&gt;
+&lt;h4&gt;サンプルコード&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!doctype html&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;Self Camera&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;title&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;head&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;video&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;id&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;myVideo&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;width&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;400&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;height&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;300&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;autoplay&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;1&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;video&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+
+    &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;script&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;text/javascript&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token script language-javascript&quot;&gt;
+      navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getUserMedia &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getUserMedia &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;webkitGetUserMedia &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;mozGetUserMedia&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;URL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;URL &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;webkitURL&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+      &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; video &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;myVideo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; localStream &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getUserMedia&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;video&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; audio&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
+      &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// for success case&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        video&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;src &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;URL&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createObjectURL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// for error case&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+  &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;最初ブラウザーからアクセスすると、カメラにアクセスしてもいいかどうかの確認ダイアログが表示されるので、&lt;/p&gt;
+&lt;p&gt;OKボタンを押して許可してください。&lt;/p&gt;
+&lt;h2&gt;シグナリングサーバーを動かす&lt;/h2&gt;
+&lt;h4&gt;・WebRTCの通信について&lt;/h4&gt;
+&lt;p&gt;WebRTCでは、映像や音声などリアルタイムに取得されたデータを、ブラウザ間で送受信することができます。
+それを司るのが　RTCPeerConnection です。 RTCPeerConnectionには2つの特徴があります。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Peer-to-Peer(P2P)の通信 → ブラウザとブラウザの間で直接通信する&lt;/li&gt;
+&lt;li&gt;UDP/IPを使用 → TCP/IPのようにパケットの到着は保障しないが、オーバーヘッドが少ない(らしい)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;・P2P通信を行うために&lt;/h4&gt;
+&lt;p&gt;ブラウザ間でP2P通信を行うには、&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;相手のIPアドレスを&lt;/li&gt;
+&lt;li&gt;動的に割り振られるUDPのポート番号&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;を知る必要があります。&lt;/p&gt;
+&lt;p&gt;そのために、WebRTCでは以下の情報をやり取りしています。&lt;/p&gt;
+&lt;h5&gt;SDP (Session Description Protocol)&lt;/h5&gt;
+&lt;ul&gt;
+&lt;li&gt;セッションが含むメディアの種類（音声、映像）、&lt;/li&gt;
+&lt;li&gt;メディアの形式（コーデック）&lt;/li&gt;
+&lt;li&gt;IPアドレス、ポート番号 などなど&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h6&gt;ICE (Interactive Connectivity Establishment)&lt;/h6&gt;
+&lt;ul&gt;
+&lt;li&gt;P2Pによる直接通信&lt;/li&gt;
+&lt;li&gt;NATを通過するためのSTUNサーバーから取得したポートマッピング → 最終的にはP2Pになる&lt;/li&gt;
+&lt;li&gt;Firefallを越えるための、TURNによるリレーサーバーを介した中継通信&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;・シグナリングサーバーを動かしてみよう！&lt;/h4&gt;
+&lt;p&gt;P2Pを始めるまでの情報のやり取りを「シグナリング」と言います。&lt;/p&gt;
+&lt;p&gt;シグナリングサーバーは、クライアントからメッセージを受け取ったら他のクライアントに送信する役割をします。&lt;/p&gt;
+&lt;h5&gt;WebSocketをのインストール&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;npm install ws&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h5&gt;シングルサーバーサンプルコード&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; WebSocketServer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;require&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;ws&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;Server&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; port &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;9000&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;//ポート番号は必要に応じて変更してください。&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; wsServer &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;new&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;WebSocketServer&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; port&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; port &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;websocket server start. port=&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;+&lt;/span&gt; port&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ws&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;-- websocket connected --&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    ws&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;on&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;message&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+        wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;clients&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;each&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;client&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isSame&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ws&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; client&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;- skip sender -&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+            &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+                client&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;send&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;message&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;isSame&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ws1&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ws2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token comment&quot;&gt;// -- compare object --&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;ws1 &lt;span class=&quot;token operator&quot;&gt;===&lt;/span&gt; ws2&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h5&gt;シングルサーバーを起動&lt;/h5&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;node signaling.js&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;シグナリングサーバーの動作はシンプルで、クライアントからメッセージを受け取ったら他のクライアントに送信するだけです。&lt;/p&gt;
+&lt;h2&gt;実際に動かしてみよう！（結果）&lt;/h2&gt;
+&lt;p&gt;ブラウザーからアクセスし、スクリプトを読み込むと&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-89d2d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 34.1796875%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAARlAAAEZQAGA43XUAAABE0lEQVQoz4WQXU/CQBBF/f8P/hNjjGIwEYygRaEQFGnoBwVLK4bElJZuBWk5dheiL4KT3MzszeTMzR7leU6eZci+2WwK5WqWygpflu/7uKMR7fot69VKeXL3rzpaJAkiTUmEYB5FRPFCzdKX/XO5JI5jwjAkXcTq+EGg2e8zcV2G5oBatUKr0cAyDF6HDl7hv3ketu0QBAHrf2AKOC6f4dUqjG+uMEqnmOVznOtL9Z7cVbEvTpjp2ha0+5aDCb3HOla3w8R4YWoNmA2topsYDxqDjo7X1BDN2m79F8g+4Pt9nXlXJ+3pJE8tJfGsI3pSbURH48Md0/XXTMOvn3R7EzqzjHDJwQpiOC5FNOztYpbvB34DBSYTtcfzUwUAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;webrtc image 1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-48538.png&quot;
+        srcset=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-bed0f.png 200w,
+/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-5fd34.png 400w,
+/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-48538.png 800w,
+/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-89d2d.png 1024w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-89d2d.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 55.56640625%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAALCAYAAAB/Ca1DAAAACXBIWXMAARlAAAEZQAGA43XUAAAB1klEQVQoz42SW08TURRGJ4pJE8FEKdOZM/cLZWgpguWihsiP8kfBiwIJMTGRJx95JUQTL5RGSarS6Vx6m04/95yCkWoTHlb2OQ+zZu99PoHJBTBJJApQFQm2qcK1NVhUVSbjwfR9rFWf4MOnr6hdNFD73sCvsI2wlyJOgKg/5PUaQWESMnSNYWHeQGnBwiJR8iy6m5jLP8KzzQ00miHaKRB0E2LwR/SPUFNkZBRdk4uKrgGvaPJaXnSgyCKekvCHH6KT3hSMy7jQMnXoKsO8o3NhJrsmEzIpPyZMuWhih45twjQ0EtK4nn0lG4mXSi4kcXZih/9DMHQVjmWAyRIsg3Fp1lml7MKlnxTEPLa3X9xemHXoFV3MTM8gl8vRPiXIhVk634MgCJi6ewdbW89vL9xcr2JjbRXr1RUa0aNzFbu7OzjY38PhwT72Xr/Cu6MjtNr9iQ9xQ5g9SJa7Mo3qWApWH1fQvLyknCU4vfiJsNNDOqCY/JW7ceJkRNgbQnAd8yp3Nj2MhhUSfjuv4f3pZ7zceYvjj18QBy0EJIwmdBX1R9BGKDaGzhef5U6ce4jlyhLq9TriKEInChC0fDR9H3G3jw597LcHRMJpxqMadodoEW9OzvAbtg9xi9RtUd8AAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;webrtc image 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-48538.png&quot;
+        srcset=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-bed0f.png 200w,
+/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-5fd34.png 400w,
+/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-48538.png 800w,
+/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-89d2d.png 1024w&quot;
+        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;こんな感じです！&lt;/p&gt;
+&lt;h2&gt;最後に&lt;/h2&gt;
+&lt;p&gt;何よりも&lt;a href=&quot;https://fusic.co.jp/doings/184&quot;&gt;Fusic開発合宿&lt;/a&gt;で普段から自分が作りたかったものや&lt;/p&gt;
+&lt;p&gt;新しい技術を勉強できて、とても楽しめたと思います！&lt;/p&gt;
+&lt;p&gt;まだまだいけてないところや課題もたくさんあるんですが、引き続き勉強しつつ発展させていきたいと思います！！&lt;/p&gt;
+&lt;h2&gt;参考&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https://html5experts.jp/series/webrtc2016/&quot;&gt;WebRTC入門2016&lt;/a&gt; 大変参考になりました！！&lt;/li&gt;
+&lt;li&gt;あと、&lt;a href=&quot;https://webrtc.ecl.ntt.com/&quot;&gt;SkyWay&lt;/a&gt;というサービスもありますので、参考までに・・&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOS6系にepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h2&gt;事前確認&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist
 
@@ -164,6 +369,31 @@ remi-release.noarch                     6.8-1.el6.remi                     @/rem
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
 * remi-safe: mirror.innosol.asia
 remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[1. SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 2.インストール 3.遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h2&gt;1. SSHFS?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH Filesystem： SSHFS&lt;/li&gt;
+&lt;li&gt;SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2.インストール&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;brew cask install osxfuse
+brew install sshfs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;3.遠隔サーバーのディレクトリをマウント&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sshs ユーザー名@サーバーアドレス:ディレクトリパス　マウントするパス&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;【例】 xxx.xxx.xxx.xxxサーバーの /home/test ディレクトリを /home/testMount/ にマウントする。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;sshfs root@xxx.xxx.xxx.xxx:/home/test/ /home/testMount/&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;4.マウントを解除&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;umount -f 解除するディレクトリパス&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;【例】 /home/testMount/ をマウント解除する。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;umount -f /home/testMount/&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[PhpStorm + Xdebugでリモートデスクトップ]]></title><description><![CDATA[Xdebug? デバック及びプロファイリング機能を提供するPHP拡張モデュール PECLを用いてインストール可能 1. Xdebugをインストール（CentOS） php-devel、php-pearをインストール gcc、gcc-c++、autoconf、automake…]]></description><link>https://lighthouse-dev.github.io/phpstorm-remote-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-remote-setting/</guid><content:encoded>&lt;h2&gt;Xdebug?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;デバック及びプロファイリング機能を提供するPHP拡張モデュール&lt;/li&gt;
@@ -328,32 +558,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;li&gt;名前、サーバーIPアドレス、Ide Key(※php.iniで設定したKey)
 などを設定する&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[1. SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 2.インストール 3.遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h2&gt;1. SSHFS?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;SSH Filesystem： SSHFS&lt;/li&gt;
-&lt;li&gt;SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;2.インストール&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;brew cask install osxfuse
-brew install sshfs&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;3.遠隔サーバーのディレクトリをマウント&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;sshs ユーザー名@サーバーアドレス:ディレクトリパス　マウントするパス&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;【例】 xxx.xxx.xxx.xxxサーバーの /home/test ディレクトリを /home/testMount/ にマウントする。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;sshfs root@xxx.xxx.xxx.xxx:/home/test/ /home/testMount/&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;4.マウントを解除&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;umount -f 解除するディレクトリパス&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;【例】 /home/testMount/ をマウント解除する。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;umount -f /home/testMount/&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。&lt;/p&gt;
 &lt;p&gt;※ そもそもAjaxとはAsynchronous Javascript And XMLの略です。&lt;/p&gt;
 &lt;p&gt;なので、データ通信や処理をしている間に、同時に他の動作や処理をすることができるため、&lt;/p&gt;
