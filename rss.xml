@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 12 May 2018 09:40:05 GMT</lastBuildDate><item><title><![CDATA[TypeScript入門]]></title><description><![CDATA[…]]></description><link>https://lighthouse-dev.github.io/135438/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/135438/</guid><content:encoded>&lt;p&gt;こんにちは。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 12 May 2018 11:35:07 GMT</lastBuildDate><item><title><![CDATA[TypeScript入門]]></title><description><![CDATA[…]]></description><link>https://lighthouse-dev.github.io/135438/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/135438/</guid><content:encoded>&lt;p&gt;こんにちは。&lt;/p&gt;
 &lt;p&gt;福岡は昨日から急に寒くなりました・・&lt;/p&gt;
 &lt;p&gt;早く暖かくなって欲しいです 🌸&lt;/p&gt;
 &lt;br&gt;
@@ -310,38 +310,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;少々長くなりましたが、ざっくりこんな感じです！&lt;/p&gt;
 &lt;p&gt;また追加したい内容があったら、追記していきます👍&lt;/p&gt;
 &lt;br&gt;
-&lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;persistent&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;host&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;username&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;password&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;database&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;encoding&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;timezone&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;cacheMetadata&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;log&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている&lt;/p&gt;
-&lt;p&gt;そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する&lt;/p&gt;
-&lt;br&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;上記の&lt;code class=&quot;language-text&quot;&gt;app.php&lt;/code&gt;の中に、‘default’と同じように ‘test’ 側も&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;Cake\Database\Driver\Postgres&amp;#39;&lt;/code&gt; に変える必要がある。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;test&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/038206/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/038206/</guid><content:encoded>&lt;h2&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h2&gt;
+&lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/038206/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/038206/</guid><content:encoded>&lt;h2&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h2&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -421,7 +390,38 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;ul&gt;
 &lt;li&gt;Mac : control + option + “I”&lt;/li&gt;
 &lt;li&gt;Windows : Control + Alt + “I”&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;persistent&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;host&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;username&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;password&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;database&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;encoding&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;timezone&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;cacheMetadata&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;log&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている&lt;/p&gt;
+&lt;p&gt;そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上記の&lt;code class=&quot;language-text&quot;&gt;app.php&lt;/code&gt;の中に、‘default’と同じように ‘test’ 側も&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;Cake\Database\Driver\Postgres&amp;#39;&lt;/code&gt; に変える必要がある。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;test&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
  Fusic Advent Calendar 2017  21日目の記事です。 を触ってみた話をさせていただきます。 WebRTCとは WebRTC(Web Real-Time Communication…]]></description><link>https://lighthouse-dev.github.io/webrtc-basic/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/webrtc-basic/</guid><content:encoded>&lt;p&gt;こんにちは！
 &lt;a href=&quot;https://qiita.com/advent-calendar/2017/fusic&quot;&gt;Fusic Advent Calendar 2017&lt;/a&gt; 21日目の記事です。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;WebRTC&lt;/code&gt;を触ってみた話をさせていただきます。&lt;/p&gt;
@@ -626,7 +626,44 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://html5experts.jp/series/webrtc2016/&quot;&gt;WebRTC入門2016&lt;/a&gt; 大変参考になりました！！&lt;/li&gt;
 &lt;li&gt;あと、&lt;a href=&quot;https://webrtc.ecl.ntt.com/&quot;&gt;SkyWay&lt;/a&gt;というサービスもありますので、参考までに・・&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOS6系にepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h2&gt;事前確認&lt;/h2&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOS6系にremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOS6系にepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h2&gt;事前作業&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOS6系にepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;確認&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+$ rpm -qa | grep epel-release
+epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;remi-releaseをインストール&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+
+$ ... (省略)
+Installed:
+remi-release.noarch 0:6.8-1.el6.remi
+
+Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;確認&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
+
+... (省略)
+Installed Packages
+remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
+* remi-safe: mirror.innosol.asia
+remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[CentOS6系にepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h2&gt;事前確認&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist
 
@@ -724,43 +761,6 @@ php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
 PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[CentOS6系にremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOS6系にepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h2&gt;事前作業&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOS6系にepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;確認&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-$ rpm -qa | grep epel-release
-epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;remi-releaseをインストール&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-
-$ ... (省略)
-Installed:
-remi-release.noarch 0:6.8-1.el6.remi
-
-Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;確認&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
-
-... (省略)
-Installed Packages
-remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
-* remi-safe: mirror.innosol.asia
-remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[1. SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 2.インストール 3.遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h2&gt;1. SSHFS?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;SSH Filesystem： SSHFS&lt;/li&gt;
