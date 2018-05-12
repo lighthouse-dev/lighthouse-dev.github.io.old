@@ -1,7 +1,7 @@
 ---
 title: PhpStorm + Xdebugでリモートデスクトップ
 subTitle: ""
-category: "DEFAULT"
+category: "Tool"
 cover: php-storm.png
 sitemap :
   changefreq : daily
