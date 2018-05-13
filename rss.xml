@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 13 May 2018 13:01:49 GMT</lastBuildDate><item><title><![CDATA[TypeScript入門]]></title><description><![CDATA[…]]></description><link>https://lighthouse-dev.github.io/135438/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/135438/</guid><content:encoded>&lt;p&gt;こんにちは。&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 13 May 2018 15:28:47 GMT</lastBuildDate><item><title><![CDATA[TypeScript入門]]></title><description><![CDATA[…]]></description><link>https://lighthouse-dev.github.io/135438/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/135438/</guid><content:encoded>&lt;p&gt;こんにちは。&lt;/p&gt;
 &lt;p&gt;福岡は昨日から急に寒くなりました・・&lt;/p&gt;
 &lt;p&gt;早く暖かくなって欲しいです 🌸&lt;/p&gt;
 &lt;br&gt;
@@ -326,7 +326,230 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 （ちゃんと手順が書いてあるし、画像もあったので分かりやすい）&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;結論&lt;/h1&gt;
-&lt;p&gt;MacBook (2015 以降) や MacBook Pro (2016 以降) のキーが反応しなくなった場合や、押したときにほかのキーと感触が違うキーがある場合は、まずは、↑の手順にそって、キーボードをきれいに掃除しましょうー！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/038206/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/038206/</guid><content:encoded>&lt;h2&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h2&gt;
+&lt;p&gt;MacBook (2015 以降) や MacBook Pro (2016 以降) のキーが反応しなくなった場合や、押したときにほかのキーと感触が違うキーがある場合は、まずは、↑の手順にそって、キーボードをきれいに掃除しましょうー！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTPサーバー Response Codeのまとめ]]></title><description><![CDATA[HTTPステータスコードについてのまとめです！ 各コードは100単位で分かれています。
+例えば、300番台同士、40…]]></description><link>https://lighthouse-dev.github.io/153820/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/153820/</guid><content:encoded>&lt;p&gt;HTTPステータスコードについてのまとめです！&lt;/p&gt;
+&lt;p&gt;各コードは100単位で分かれています。
+例えば、300番台同士、400番台同士が似ているタイプのレスポンスコードになります。&lt;/p&gt;
+&lt;p&gt;このように３桁コードの一番目数字でどんなタイプのレスポンスか分かります！
+この一番目の数字(コード)を「Response Class」と言います。
+それでは、各レスポンスコードについて説明します！&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;Response Class Code&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class意味&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;1&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Informational 
+&lt;br&gt;
+（情報）&lt;/td&gt;
+&lt;td&gt;リクエストは受け取られた。処理は継続される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;2&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Success 
+&lt;br&gt;
+（成功）&lt;/td&gt;
+&lt;td&gt;リクエストは受け取られ、理解され、受理された。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;3&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Redirection 
+&lt;br&gt;
+（リダイレクション）&lt;/td&gt;
+&lt;td&gt;リクエストを完了させるために、追加的な処理が必要。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;4&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Client Error 
+&lt;br&gt;
+（クライアントエラー）&lt;/td&gt;
+&lt;td&gt;クライアントからのリクエストに誤りがあった。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;5&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Server Error 
+&lt;br&gt;
+（サーバーエラー）&lt;/td&gt;
+&lt;td&gt;サーバがリクエストの処理に失敗した。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;4番と、5番はエラーではありますが、違いは「4番台」はクライアントの間違ったリクエストでサーバーで処理ができない状態。
+「5番台」のエラーはクライアントからのリクエストには問題ないが、サーバーで処理中にサーバーの問題によってエラーが発生したという点です。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;2xx Success 成功&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class意味&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;200&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;OK&lt;/td&gt;
+&lt;td&gt;リクエストは成功し、レスポンスとともに要求に応じた情報が返される。
+&lt;br&gt;
+ ブラウザでページが正しく表示された場合は、ほとんどがこのステータスコードを返している。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;204&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;No Content&lt;/td&gt;
+&lt;td&gt;内容なし。リクエストを受理したが、返すべきレスポンスエンティティが存在しない場合に返される。 
+&lt;br&gt;
+ 例: POSTメソッドでフォームの内容を送信したが、ブラウザの画面を更新しない場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;206&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Partial Content&lt;/td&gt;
+&lt;td&gt;部分的内容。部分的GETリクエストを受理したときに、返される。 
+&lt;br&gt;
+ 例: ダウンロードツール等で分割ダウンロードを行った場合や、レジュームを行った場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h1&gt;3xx Redirection リダイレクション&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class意味&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;300&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Multiple Choices&lt;/td&gt;
+&lt;td&gt;複数の選択。リクエストしたリソースが複数存在し、ユーザやユーザーエージェントに選択肢を提示するときに返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;301&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Moved Permanently&lt;/td&gt;
+&lt;td&gt;恒久的に移動した。リクエストしたリソースが恒久的に移動されているときに返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;302&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Found&lt;/td&gt;
+&lt;td&gt;発見した。リクエストしたリソースが一時的に移動されているときに返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;303&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;See Other&lt;/td&gt;
+&lt;td&gt;他を参照せよ。リクエストに対するレスポンスが他のURLに存在するときに返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;304&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Not Modified&lt;/td&gt;
+&lt;td&gt;未更新。リクエストしたリソースは更新されていないことを示す。
+&lt;br&gt;
+ 例として、 If-Modified-Since:ヘッダを使用したリクエストを行い、そのヘッダに示された時間以降に更新がなかった場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;307&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Temporary Redirect&lt;/td&gt;
+&lt;td&gt;一時的リダイレクト。リクエストしたリソースは一時的に移動されているときに返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h1&gt;4xx Client Error クライアントエラー&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class意味&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;400&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Bad Request&lt;/td&gt;
+&lt;td&gt;リクエストが不正である。定義されていないメソッドを使うなど、クライアントのリクエストがおかしい場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;401&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Unauthorized&lt;/td&gt;
+&lt;td&gt;認証が必要である。Basic認証やDigest認証などを行うときに使用される。
+&lt;br&gt;
+たいていのブラウザはこのステータスを受け取ると、認証ダイアログを表示する。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;403&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Forbidden&lt;/td&gt;
+&lt;td&gt;禁止されている。リソースにアクセスすることを拒否された。リクエストはしたが処理できないという意味。
+&lt;br&gt;
+ アクセス権がない場合や、ホストがアクセス禁止処分を受けた場合などに返される。
+&lt;br&gt;
+ 例: 社内（イントラネット）からのみアクセスできるページに社外からアクセスしようとした。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;404&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Not Found&lt;/td&gt;
+&lt;td&gt;未検出。リソースが見つからなかった。
+&lt;br&gt;
+ 単に、アクセス権がない場合などにも使用される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;405&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Method Not Allowed&lt;/td&gt;
+&lt;td&gt;許可されていないメソッド。許可されていないメソッドを使用しようとした。
+&lt;br&gt;
+ 例: POSTメソッドの使用が許されていない場所で、POSTメソッドを使用した場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h1&gt;5xx Server Error サーバエラー&lt;/h1&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class&lt;/th&gt;
+&lt;th align=&quot;center&quot;&gt;Response Class意味&lt;/th&gt;
+&lt;th&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;500&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Internal Server Error&lt;/td&gt;
+&lt;td&gt;サーバ内部エラー。サーバ内部にエラーが発生した場合に返される。
+&lt;br&gt;
+ 例として、CGIとして動作させているプログラムに文法エラーがあったり、設定に誤りがあった場合などに返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;503&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Service Unavailable&lt;/td&gt;
+&lt;td&gt;サービス利用不可。サービスが一時的に過負荷やメンテナンスで使用不可能である。 
+&lt;br&gt;
+ 例として、アクセスが殺到して処理不能に陥った場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;504&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;Gateway Timeout&lt;/td&gt;
+&lt;td&gt;ゲートウェイタイムアウト。ゲートウェイ・プロキシサーバはURIから推測されるサーバからの適切なレスポンスがなくタイムアウトした。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;center&quot;&gt;505&lt;/td&gt;
+&lt;td align=&quot;center&quot;&gt;HTTP Version Not Supported&lt;/td&gt;
+&lt;td&gt;サポートしていないHTTPバージョン。リクエストがサポートされていないHTTPバージョンである場合に返される。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h1&gt;参考リンク&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&quot;&gt;wikipedia HTTPステータスコード&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/038206/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/038206/</guid><content:encoded>&lt;h2&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h2&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -437,7 +660,85 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
     &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
   &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Sambaインストール]]></title><description><![CDATA[事前準備 ローカルからサーバーにSSH接続できる SELinuxを無効化 SELINUXを無効化 そして反映！ iptablesの設定 ローカルだしアクセス制限なくしちゃいます。 自分は下記2つをとりあえずコメントアウト 変更後、再起動！ samba…]]></description><link>https://lighthouse-dev.github.io/100118/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/100118/</guid><content:encoded>&lt;h1&gt;事前準備&lt;/h1&gt;
+&lt;p&gt;ローカルからサーバーにSSH接続できる&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;SELinuxを無効化&lt;/h1&gt;
+&lt;p&gt;SELINUXを無効化&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/selinux/config
+SELINUX=disabled&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;そして反映！&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ setenforce 0
+setenforce: SELinux is disabled&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;iptablesの設定&lt;/h1&gt;
+&lt;p&gt;ローカルだしアクセス制限なくしちゃいます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/sysconfig/iptables&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;自分は下記2つをとりあえずコメントアウト&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;#-A INPUT -j REJECT --reject-with icmp-host-prohibited
+#-A FORWARD -j REJECT --reject-with icmp-host-prohibited&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;変更後、再起動！&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /etc/init.d/iptables restart&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;sambaのインストール・設定&lt;/h1&gt;
+&lt;p&gt;sambaをインストール&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ yum -y install samba&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;sambaを設定&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/samba/smb.conf&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;変更は以下の通り&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-conf&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;[global]
+unix charset = UTF-8 #追記
+dos charset = CP932 #追記
+security = share #userから変更
+load printers = no #yesから変更
+cups options = raw
+guest account = root #追記
+disable spoolss = yes #追記
+
+#以下追加
+[root]
+comment = All
+path = /
+browseable = yes
+writable = yes
+guest ok = yes
+guest only = yes
+create mode = 0777
+directory mode = 0777
+share modes = yes&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;これでsambaの設定終了。
+起動させましょう！&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /etc/init.d/smb start&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;常に実行するように設定&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ chkconfig smb on&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;これでファイルの接続が可能になりました!&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;接続方法&lt;/h1&gt;
+&lt;h3&gt;Windows&lt;/h3&gt;
+&lt;p&gt;スタートからプログラムとファイルの検索に「\サーバーIPアドレス」 &lt;/p&gt;
+&lt;h3&gt;Mac&lt;/h3&gt;
+&lt;p&gt;「Finder」からサーバへ接続機能を使って、ローカルのIP打ち込む&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
  Fusic Advent Calendar 2017  21日目の記事です。 を触ってみた話をさせていただきます。 WebRTCとは WebRTC(Web Real-Time Communication…]]></description><link>https://lighthouse-dev.github.io/webrtc-basic/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/webrtc-basic/</guid><content:encoded>&lt;p&gt;こんにちは！
 &lt;a href=&quot;https://qiita.com/advent-calendar/2017/fusic&quot;&gt;Fusic Advent Calendar 2017&lt;/a&gt; 21日目の記事です。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;WebRTC&lt;/code&gt;を触ってみた話をさせていただきます。&lt;/p&gt;
