@@ -638,7 +638,7 @@ webpackJsonp([1],{
 	      transform: "translate(-50%)",
 	      transition: "all .5s",
 	      ".is-aside.open &": {
-	        left: "60%",
+	        left: "63%",
 	        top: 1.9 - theme.info.fonts.boxTitleSizeL + "em",
 	        textAlign: "left"
 	      }
