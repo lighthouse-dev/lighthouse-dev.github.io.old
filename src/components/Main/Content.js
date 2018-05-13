@@ -88,6 +88,16 @@ const styles = theme => ({
     },
     [`@media (min-width: ${theme.mediaQueryTresholds.L}px)`]: {
       fontSize: `${theme.main.fonts.content.sizeL}em`
+    },
+    "& table th": {
+      background: "#EDEEF2",
+      border: "1px solid #EDEEF2",
+      padding: "5px 10px",
+      borderRadius: "5px"
+    },
+    "& table td": {
+      borderBottom: "1px solid #eaeaea",
+      padding: "10px"
     }
   }
 });

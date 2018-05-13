@@ -19,7 +19,8 @@ export default {
      */
     h1: {
       fontSize: "2em",
-      margin: [["0.67em", 0]]
+      margin: [["0.67em", 0]],
+      fontWeight: 600
     },
 
     /**
@@ -360,7 +361,7 @@ export default {
       position: "relative"
     },
     "h1, h2, h3": {
-      fontWeight: 300
+      // fontWeight: 300
     },
     a: {
       background: "transparent",
