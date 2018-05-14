@@ -111,9 +111,9 @@
       "path---194609-f2c071689be12dce1c9a.js.map"
     ],
     "app": [
-      "app-00f8707beebac5254977.js",
+      "app-d9f5e2eb9719c643b210.js",
       "build-js-styles.css",
-      "app-00f8707beebac5254977.js.map",
+      "app-d9f5e2eb9719c643b210.js.map",
       "build-js-styles.css.map"
     ],
     "component---src-templates-page-template-js": [
@@ -129,8 +129,8 @@
       "path---210042-91c6d3c684c0b675a452.js.map"
     ],
     "path---about": [
-      "path---about-ca902801ea9dc8c8ed40.js",
-      "path---about-ca902801ea9dc8c8ed40.js.map"
+      "path---about-da7054ccbb63ee014a72.js",
+      "path---about-da7054ccbb63ee014a72.js.map"
     ]
   }
 }
