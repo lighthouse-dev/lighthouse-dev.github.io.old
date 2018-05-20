@@ -1,4 +1,115 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Tue, 15 May 2018 03:48:18 GMT</lastBuildDate><item><title><![CDATA[Angular-CLI コマンドまとめ]]></title><description><![CDATA[プロジェクト作成 テンプレート作成 コンポーネント作成 サービス作成 アプリケーション実行 ポートを指定する場合 アプリケーションビルド テスト実行]]></description><link>https://lighthouse-dev.github.io/194609/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/194609/</guid><content:encoded>&lt;h2&gt;プロジェクト作成&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 20 May 2018 16:44:46 GMT</lastBuildDate><item><title><![CDATA[【VSCode】SFTPでファイルを同期する]]></title><description><![CDATA[こんにちは！ 普段から開発エディターで  Visual Studio Code を使ってます。 今回は、 でSFTPファイル同期について紹介します ✈️ SFTP拡張モジュールをインストール sftp - Visual Studio Marketplace…]]></description><link>https://lighthouse-dev.github.io/VSCode-SFTP/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/VSCode-SFTP/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
+&lt;p&gt;普段から開発エディターで &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;を使ってます。&lt;/p&gt;
+&lt;p&gt;今回は、&lt;code class=&quot;language-text&quot;&gt;VSCode&lt;/code&gt;でSFTPファイル同期について紹介します ✈️&lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;SFTP拡張モジュールをインストール&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=liximomo.sftp&quot;&gt;sftp - Visual Studio Marketplace&lt;/a&gt; をインストールし、リロードします&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/img-1-325409a3683fb0fae2969d2ae9b39f89-ae340.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 13px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 88.78504672897196%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAASCAYAAABb0P4QAAAACXBIWXMAARlAAAEZQAGA43XUAAAD7UlEQVQ4y21UTW8bVRT1lkVJYnvG8/1tj2c8Hns8dpzYjuPEOHFT2kLSKE0ctYuWRE2C1PSDCkQbKkElYN0FGySQ2CDRRVnABlb8DBb9J4f7XmLogsXRfTNv3p1zzr33ZRzHQZqmKPllWLKEFUPCQC9gxZQxtBSsEixFhizLUAnKW5D/BxnLsmATFNPCvCri4/EqDvf3MNkYY9Tr4G63iV5Qgu4HcOin9gXcchkBoXyBIAg4eMImMSxHEaqKiGetAJ/3EjxphXhQ8/AoNHCtZGHgOxiVPYwCD+uETsmFZdtgChlYHsMwkPE8D93OIuySj46h4ANPx9DWMLJVjKsBDq5fwdVWgvU4QL9oY9HS0HdN7LgqJEGAIIgQRRE2JY+IVIYtDF2HpBvoWyre922kRRcLjomEmF/b3MLaxgZ6gxW0uz2k7TaqjQYuuxq0ggihUECBYJomGDmesD0/D6ccYIkKcr1MRfKLSFwbQS1BhxItDd/jMV1YxNLKKuJmC2PnrYTEUCC2+Xz+3MPB8jI3vGvImHgqBkqey74cFrHdqmMzreLDJMLA0bFgqlhxDUyKGmRKJF4wnCLDqDIzTUosiwL6oY9P7tzGqB4h1cnTbhujWgXraR2XKb5KdOyV6Uw+xxnlL2I2mz1vG6Z7niSzkmezOXx6dobf//gTX33zLfc1Jh/jRopGp4tumuC35Qi7zRhaidrF9/m5MAx5rFQqyFSoMjf3Juj0epidncXhwQFe//oap6en0FQV9Xqds/eoNUT6wRVXh++6NAg+ikTGpbVB+yw5L4pHD3HJQ0AbzAORZEeVABIZPkeMa3EVw24HBZKTRBUMqyEalRBzJPPduSzvwYVGgkszM+dFeZj4OFob4H47Rl0WkJN1RM0BVLOEGiX45bNTfPf8KX5+8QVevTjDj49O8P3DYzy/9xHu72zipy+f4c0PLxHRtCikKPNg2MVff7/B08M7CC+9g2qvjxt3j9FdG0OnD44mu7i1vYWjmzdwsLONeztbOL29j6vrI9QCH8f7u/j65BDLpEKSFWQeNwM8vjXBk+EiKlSp+eUAhydtRDWaBEmlWENIZsuaTtBQUFSohgmdgTpEoffZggSbpPMqpzQRsSQgNTXodKvk8yQ7JyKXFaAoCr84WPNL3F+RfBa5zyIfO4G/Y3vTdUazbOiOC812iLKMmZxAY6RAlESKFlqtFpIk+fcSmE5ELjftw//WbJ9GjzGw4Do28iKNXkvDy4MQx2NqdNXgN1GNZLPBr1arHHEco0HzzPqPPbMfsjuV9+H0PmSyhIKMfqBgVJExKEswyCN2iIH1IzvAJosxYf3H1ixOwXL8A0/eK6VT5b5zAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;img 1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/img-1-325409a3683fb0fae2969d2ae9b39f89-ae340.png&quot;
+        srcset=&quot;/static/img-1-325409a3683fb0fae2969d2ae9b39f89-ec51a.png 200w,
+/static/img-1-325409a3683fb0fae2969d2ae9b39f89-ae340.png 321w&quot;
+        sizes=&quot;(max-width: 13px) 100vw, 13px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;設定&lt;/h2&gt;
+&lt;h4&gt;1. 「shift + command + P」で&lt;code class=&quot;language-text&quot;&gt;SFTP&lt;/code&gt;を入力&lt;/h4&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/img-2-2fab7eb6e27c9992e68e1a7fdee54c76-ee530.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 19px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 45.26315789473684%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAJCAYAAAAywQxIAAAACXBIWXMAARlAAAEZQAGA43XUAAABQklEQVQoz5XSy07CQBQG4L6FplQqtHOKUMBA6fQyvYgUUMSk8ZqY4IZEN2yMbnTnI/gAvurvUC87uSy+nExyZub8mVH8IMBkcoIgDOG6LjzPK3CPg3P+XbegMJGjNZqhEU9h8BF0J8N+b4gqH6Mi19tStOAa5f4cneMctfAU1V4mDbBrh1Cb0Z9dW2xEoY6AFU6RxgJR4CHupzjKBrDtBjRNhaqVUCprIKMCMqtSZSWFdVOQjB1HEdwoxqNj48VrIzps4WPxgM/XZ7zd38Gq1WCaJkzGVlJYJwGF5xDyUfrZEDeCY8x0tIlhcZXjfT7D0+0FDur14kAmN62ikJPCinIkSQKn64DsJnSyYDCCWtaxo+0VddlMRGsVka34Er7vF9+Fljf9TGLJhl9F3A3IyDEoOIMQAlmWoS6jGYaxNtp/vgAh3Bjn4usjhQAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;img 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/img-2-2fab7eb6e27c9992e68e1a7fdee54c76-ee530.png&quot;
+        srcset=&quot;/static/img-2-2fab7eb6e27c9992e68e1a7fdee54c76-a274e.png 200w,
+/static/img-2-2fab7eb6e27c9992e68e1a7fdee54c76-65ae3.png 400w,
+/static/img-2-2fab7eb6e27c9992e68e1a7fdee54c76-ee530.png 475w&quot;
+        sizes=&quot;(max-width: 19px) 100vw, 19px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h4&gt;2. &lt;code class=&quot;language-text&quot;&gt;SFTP:Config&lt;/code&gt;をクリックし、設定ファイルを開く&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;protocol&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;sftp&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token property&quot;&gt;&quot;host&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;example.com&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;    // ホスト名
+    &lt;span class=&quot;token property&quot;&gt;&quot;username&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;test-user&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;  // アクセスユーザー名
+    &lt;span class=&quot;token property&quot;&gt;&quot;remotePath&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/var/www/html/test_directory/&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;  // リモートするパス（絶対パス）
+    &lt;span class=&quot;token property&quot;&gt;&quot;privateKeyPath&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;/Users/jslee/example/hoge.pem&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; // 鍵ファイルを指定
+    &lt;span class=&quot;token property&quot;&gt;&quot;uploadOnSave&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; // ファイルを保存する時に、リモートサーバーにアップロード
+    &lt;span class=&quot;token property&quot;&gt;&quot;downloadOnOpen&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt; // ファイルを開く時に、リモートサーバーからダウンロード
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;基本的な設定は以上になりますが、&lt;/p&gt;
+&lt;p&gt;これ以外の設定は、&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=liximomo.sftp&quot;&gt;sftp - Visual Studio Marketplace&lt;/a&gt; 👈ここを参考にしてください。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[はてなブログで画像のサイズの変更方法 - Markdown]]></title><description><![CDATA[はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！ が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍 変更方法 最後（plain）の後ろに をつけるだけです！ 例えば、500pxに変更したい　→   をつける 変更前（デフォルト） 変更後（20…]]></description><link>https://lighthouse-dev.github.io/hatena-image-resize/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/hatena-image-resize/</guid><content:encoded>&lt;p&gt;はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！&lt;/p&gt;
+&lt;p&gt;が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍&lt;/p&gt;
+&lt;h2&gt;変更方法&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w350]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;最後（plain）の後ろに&lt;code class=&quot;language-text&quot;&gt;:w350&lt;/code&gt;をつけるだけです！&lt;/p&gt;
+&lt;p&gt;例えば、500pxに変更したい　→ &lt;code class=&quot;language-text&quot;&gt;:w500&lt;/code&gt; をつける&lt;/p&gt;
+&lt;br&gt;
+&lt;h3&gt;変更前（デフォルト）&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain]&lt;/code&gt;&lt;/p&gt;
+&lt;h3&gt;変更後（200に指定）&lt;/h3&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w200]&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid() エラー対応]]></title><description><![CDATA[PHPで以下のエラーが発生した時の対応をメモ。 PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid() 解決方法 をインストールすることで簡単に解決。…]]></description><link>https://lighthouse-dev.github.io/php-error-posix-getpwuid/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-error-posix-getpwuid/</guid><content:encoded>&lt;p&gt;PHPで以下のエラーが発生した時の対応をメモ。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid()&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2&gt;解決方法&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;php-posix&lt;/code&gt;をインストールすることで簡単に解決。&lt;/p&gt;
+&lt;h3&gt;1. php-posixをインストール&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo yum install --enablerepo=remi-php71 php-posix&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;2. Apach再起動&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service httpd restart&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Angular-CLI コマンドまとめ]]></title><description><![CDATA[プロジェクト作成 テンプレート作成 コンポーネント作成 サービス作成 アプリケーション実行 ポートを指定する場合 アプリケーションビルド テスト実行]]></description><link>https://lighthouse-dev.github.io/194609/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/194609/</guid><content:encoded>&lt;h2&gt;プロジェクト作成&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng new &amp;lt;プロジェクト名&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -50,7 +161,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/img-1-2871dc90602739623786f5862ba90fa1-9ad0f.png&quot;
+    href=&quot;/static/img-1-2871dc90602739623786f5862ba90fa1-e3e60.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -58,7 +169,7 @@
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 566px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 22px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -69,11 +180,11 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;img 1&quot;
         title=&quot;&quot;
-        src=&quot;/static/img-1-2871dc90602739623786f5862ba90fa1-9ad0f.png&quot;
-        srcset=&quot;/static/img-1-2871dc90602739623786f5862ba90fa1-19071.png 200w,
-/static/img-1-2871dc90602739623786f5862ba90fa1-59691.png 400w,
-/static/img-1-2871dc90602739623786f5862ba90fa1-9ad0f.png 566w&quot;
-        sizes=&quot;(max-width: 566px) 100vw, 566px&quot;
+        src=&quot;/static/img-1-2871dc90602739623786f5862ba90fa1-e3e60.png&quot;
+        srcset=&quot;/static/img-1-2871dc90602739623786f5862ba90fa1-d4eff.png 200w,
+/static/img-1-2871dc90602739623786f5862ba90fa1-69e08.png 400w,
+/static/img-1-2871dc90602739623786f5862ba90fa1-e3e60.png 566w&quot;
+        sizes=&quot;(max-width: 22px) 100vw, 22px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -87,7 +198,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-d0ae1.png&quot;
+    href=&quot;/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-549d8.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -95,7 +206,7 @@
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 668px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 26px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -106,11 +217,11 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;img 2&quot;
         title=&quot;&quot;
-        src=&quot;/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-d0ae1.png&quot;
-        srcset=&quot;/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-bd850.png 200w,
-/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-55f58.png 400w,
-/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-d0ae1.png 668w&quot;
-        sizes=&quot;(max-width: 668px) 100vw, 668px&quot;
+        src=&quot;/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-549d8.png&quot;
+        srcset=&quot;/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-93604.png 200w,
+/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-283d7.png 400w,
+/static/img-2-a56a05df7f0a13490a4ac4370c6b6e58-549d8.png 668w&quot;
+        sizes=&quot;(max-width: 26px) 100vw, 26px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -128,7 +239,7 @@
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-bd3b0.png&quot;
+    href=&quot;/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-49118.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -136,7 +247,7 @@
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 39px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -147,12 +258,12 @@
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;img 3&quot;
         title=&quot;&quot;
-        src=&quot;/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-48538.png&quot;
-        srcset=&quot;/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-bed0f.png 200w,
-/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-5fd34.png 400w,
-/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-48538.png 800w,
-/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-bd3b0.png 988w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        src=&quot;/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-d1db4.png&quot;
+        srcset=&quot;/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-a4c40.png 200w,
+/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-20f25.png 400w,
+/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-d1db4.png 800w,
+/static/img-3-3aa0e0e79a5409828657d92fa2b0e951-49118.png 988w&quot;
+        sizes=&quot;(max-width: 39px) 100vw, 39px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -175,13 +286,13 @@
 &lt;/ul&gt;
 &lt;p&gt;👇以下の図みたいな感じ。&lt;/p&gt;
 
-  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-9eb9b.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
+  &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-720fe.jpg&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
-  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 540px; margin-left: auto; margin-right: auto;&quot;&gt;
+  &lt;span class=&quot;gatsby-resp-image-wrapper&quot; style=&quot;position: relative; display: block; ; max-width: 21px; margin-left: auto; margin-right: auto;&quot;&gt;
     &lt;span class=&quot;gatsby-resp-image-background-image&quot; style=&quot;padding-bottom: 76.85185185185185%; position: relative; bottom: 0; left: 0; background-image: url(&amp;apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAPABQDASIAAhEBAxEB/8QAFwABAQEBAAAAAAAAAAAAAAAAAAQCBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAGyK/C9MJ//xAAaEAEAAgMBAAAAAAAAAAAAAAABAgMABBES/9oACAEBAAEFAtq5hIsthg9Nqlk1HuAcP//EABcRAAMBAAAAAAAAAAAAAAAAAAEQEUH/2gAIAQMBAT8BE1f/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/AT//xAAcEAACAgIDAAAAAAAAAAAAAAAAAQIREjFRYYH/2gAIAQEABj8CUI+mV31YnyKcdoxoo//EABoQAQADAQEBAAAAAAAAAAAAAAEAETEhQVH/2gAIAQEAAT8heGrLRsZAxqrXCNwXOveh9ltxfVqEYwKn/9oADAMBAAIAAwAAABBMD//EABYRAQEBAAAAAAAAAAAAAAAAAAEQMf/aAAgBAwEBPxAsXU//xAAWEQEBAQAAAAAAAAAAAAAAAAABEEH/2gAIAQIBAT8QVyf/xAAcEAEAAgIDAQAAAAAAAAAAAAABABEhMUFRcYH/2gAIAQEAAT8QWI+gDgDqb/BJR90+TWyB4lwFwNO1QzYyg1QgML53dk0joeBP/9k=&amp;apos;); background-size: cover; display: block;&quot;&gt;
-      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;typescript 1&quot; title=&quot;&quot; src=&quot;/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-9eb9b.jpg&quot; srcset=&quot;/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-131ba.jpg 200w,
-/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-62ad2.jpg 400w,
-/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-9eb9b.jpg 540w&quot; sizes=&quot;(max-width: 540px) 100vw, 540px&quot;&gt;
+      &lt;img class=&quot;gatsby-resp-image-image&quot; style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot; alt=&quot;typescript 1&quot; title=&quot;&quot; src=&quot;/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-720fe.jpg&quot; srcset=&quot;/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-a4d2e.jpg 200w,
+/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-9d9de.jpg 400w,
+/static/typescript-1-f637512530247d04bab0fbc1cb4e83c6-720fe.jpg 540w&quot; sizes=&quot;(max-width: 21px) 100vw, 21px&quot;&gt;
     &lt;/span&gt;
   &lt;/span&gt;
   
@@ -503,7 +614,337 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng --help&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;これで Augular CLIのインストールが完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新型 Macbook pro キーボードの一部が反応しない時の対応]]></title><description><![CDATA[現象 いきなりキーボード「f」ボタンが中に少し入ったまま、でてこない。 入力できなくはないが、たまに入力されないこともあり、不便。 やったこと 1. Apple Storeにお問い合わせ Apple Store…]]></description><link>https://lighthouse-dev.github.io/180358/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/180358/</guid><content:encoded>&lt;h1&gt;現象&lt;/h1&gt;
+&lt;p&gt;これで Augular CLIのインストールが完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHPデバッグ方法]]></title><description><![CDATA[PHP デバッグ方法のメモ。 他のデバッグ方法も今後追記していく予定です。 エラーログをコードに仕込んで出力 任意のファイルに出力  関数の第1引数 -> 出力したい変数/文字列を入れる。  の第2引数 ->  を渡すと配列が展開されてログに出力される。 関数の第…]]></description><link>https://lighthouse-dev.github.io/php-debug/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-debug/</guid><content:encoded>&lt;p&gt;PHP デバッグ方法のメモ。&lt;/p&gt;
+&lt;p&gt;他のデバッグ方法も今後追記していく予定です。&lt;/p&gt;
+&lt;h2&gt;エラーログをコードに仕込んで出力&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h3&gt;任意のファイルに出力&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;/tmp/debug.log&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;errer_log&lt;/code&gt; 関数の第1引数 -&gt; 出力したい変数/文字列を入れる。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;print_r&lt;/code&gt; の第2引数 -&gt; &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;を渡すと配列が展開されてログに出力される。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt;関数の第2引数 -&gt; &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; は、任意のファイルに出力ということ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt; 関数の第3引数 -&gt; 任意のファイルの出力パス&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[PHPでLINEのMessaging APIを使ってメッセージを送る]]></title><description><![CDATA[PHPでMessaging APIを動かすサンプルを紹介したいと思います。 ※ LINE@MANAGERの設定については、あとで追記します！ Messaging APIの説明 ユーザー、グループ、またはトークルームからのイベントに対して応答メッセージを送信するAPI…]]></description><link>https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</guid><content:encoded>&lt;p&gt;PHPでMessaging APIを動かすサンプルを紹介したいと思います。&lt;/p&gt;
+&lt;p&gt;※ LINE@MANAGERの設定については、あとで追記します！&lt;/p&gt;
+&lt;h2&gt;Messaging APIの説明&lt;/h2&gt;
+&lt;p&gt;ユーザー、グループ、またはトークルームからのイベントに対して応答メッセージを送信するAPIです！&lt;/p&gt;
+&lt;p&gt;イベントが発生するとwebhookを使って通知され、応答できるイベントには応答トークンが発行されるそうです。&lt;/p&gt;
+&lt;h4&gt;注意点&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;応答トークンは一定の期間が経過すると無効になるため、メッセージを受信したらすぐに応答を返す必要があります。&lt;/li&gt;
+&lt;li&gt;応答トークンは1回のみ使用できます。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2&gt;メッセージオブジェクト&lt;/h2&gt;
+&lt;p&gt;以下は、送信するメッセージの内容を表すJSONオブジェクトです。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;テキスト&lt;/li&gt;
+&lt;li&gt;画像&lt;/li&gt;
+&lt;li&gt;動画&lt;/li&gt;
+&lt;li&gt;音声&lt;/li&gt;
+&lt;li&gt;位置情報&lt;/li&gt;
+&lt;li&gt;スタンプ&lt;/li&gt;
+&lt;li&gt;イメージマップ&lt;/li&gt;
+&lt;li&gt;テンプレート&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;この中で「テンプレートメッセージ」を見てみましょう！&lt;/p&gt;
+&lt;h3&gt;テンプレートメッセージ&lt;/h3&gt;
+&lt;p&gt;テンプレートメッセージは、あらかじめレイアウトが定義されたテンプレートをカスタマイズして構築するメッセージです。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;事前定義されたレイアウトが用意されており、よりリッチなユーザー体験の提供に役立ちます。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;らしいです。また、以下のタイプのテンプレートを利用できます。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;ボタン&lt;/li&gt;
+&lt;li&gt;確認&lt;/li&gt;
+&lt;li&gt;カルーセル&lt;/li&gt;
+&lt;li&gt;画像カルーセル&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;さっそく触ってみましょう！&lt;/p&gt;
+&lt;h4&gt;画像カルーセルテンプレート&lt;/h4&gt;
+&lt;p&gt;複数の画像を表示するテンプレートです。画像は横にスクロールして順番に表示できます。&lt;/p&gt;
+&lt;p&gt;以下のような感じです！&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/img-1-c2f0f4be933ef6576f9a211d1df4065b-dbd63.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 273px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 178.38827838827837%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAkCAYAAACJ8xqgAAAACXBIWXMAABYlAAAWJQFJUiTwAAAFBklEQVRIx+WV/W9TVRjH7z/iS2IiIBBhOARkIll0MBfccEQ0AUOmGGJMiEaRGdkUjEyyRQSDMYa48LLujfcOopExDI5tMKBr721vb7u+bX1b31+2buu+PufcdtxCSUzgN5t8c07v8zyf8z3nPO0Vbt2zYEQahWwfg1lxw2LzcOXnouzEwG0jLl65jqE7Eqyjah4Tqxk2yOi/ZeR5d0asEIxmB0yyax6ilcXGRhctaMPgsAiDaMvlubhkmt8zKWCmRKsbBjImKA4PFIfqxmzz0vigfOTETzkBGn0FOWwu272wkWs7LW63uyH03vSi53oAkmyH2TxAuqnRACSpn6vweV79sFiMGFJ8uKRMQE8SWs9HcPzcFAZvD0I2tUEa6SR1wEyjeK8NFtNZWIxnIBl0/BmLqaL4iA6KSY92JYomaxot1hSEv4c8+OOGH7JlUIUZz8JMkka64FCuI5WIIBkLYdTaB9NdBjpD8TM8T6QcBtQRkMGOKEkINocLoy46D/Og6syoFoiGTrhHB5BORJGIBDFq+wt25SJk8Rzldas5OSBz2EzAnxiQ3aakFAJ5AW3VeFeHa2d/x7ljzaR6dP26DwN9xyFLKvSRQH5jGqBooET5IjqO7sXeyjVorC7Dwa0V+LKqDFfaf4DNeolyujVbjnDgkWJAiV9ANwfur6tBw+ZytOyuQ+O2TThQWw7d4S+oRfR0YV0FDluUNA6TCoDsFtmFsNXtih6tP+7BrvWlaG/+Fge2V6Nu1VJ0/vI1nWcPz5E4sIcDD9Et/2YNaYEDtKqOb5fdpiKfR9vPe1G3egkOfbwNp5rq0fzZDowMt9Gi3bk8HRy2q6jffxAffbqHetkMwcJ+Zqzj5dvUJpfhtP1JLXIFY+5rOLbvE+ze+CpONDXgqu44jn7+Ae3iAhRLD6ySnm78PDyufjQ0fIN9X9XD4/EQkP8BuBAMReHzjWN8fAzBYIBGD1xOB1LJJLVOArFwGOlUEtnZGWSzs6QZAFmk05NUG6H8cS4ONFmcCEeTMBgM6Ovrw/DwMIaGbuHGjX+QyWRQ7DOXGyenphGJJiCKInp7e+87DExEuZt4PI4EOYpEInwempggx8F5hcmp3+/nbubmyOFkBtFYEtPTNEajeaATE+EYL3C73fwsxsbG4PV6EQgEMEFQNmfPmONsNovZ2VnuUAUm4MvFCxyyjbDEvFihWpydfzY3p242P6bTU4jFk/xcWfwBIAoK8vOCs8s9z8dSBIwnUvOx+8DQfeCcptjljcAxHobHH8VkZuahxdKTjwJqHGo1RRCmzPQM3/p/BgZzDrMFW6IzpTMMhpNITWaKblkLzGaLOCzWb+FYmhzOFo0zYCwHZB8h/7ZTHOPcZTAUKxBrJ9a4oUi8SCwOpydAf9A+/t3rn/9zUKHMaTGZqE+ZHo45IVldvJb92vh7WftSf1yxF7/wuBDtDpmEJ+FMq/8jUOTt8OQkuL0hPAl5chJOdfbgRPslnO66jJPtej4/1aHHSab2nDo0YnGqOT2vyzy/9fQFtLZdgLC4tBJVtTvx9MJ1WFL6Jl5cvQkrX6vl48KSCixasRHPL3sDi0o20HwDFr9UieeWluOZRevw7Avr8dSCMixfuxXv7fwOW3Y0Qli25i1sqKnDguUVKHmlGqXr3kZ51ftYU/4OWKxkbQ2WEXw5xVaUbcbL67dgycoqnq8u9jpWlW/Htl3f490P9+NfZ560uikWOuQAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;img 1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/img-1-c2f0f4be933ef6576f9a211d1df4065b-dbd63.png&quot;
+        srcset=&quot;/static/img-1-c2f0f4be933ef6576f9a211d1df4065b-c922f.png 200w,
+/static/img-1-c2f0f4be933ef6576f9a211d1df4065b-77cd0.png 400w,
+/static/img-1-c2f0f4be933ef6576f9a211d1df4065b-dbd63.png 546w&quot;
+        sizes=&quot;(max-width: 273px) 100vw, 273px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;h4&gt;サンプルコード&lt;/h4&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;token variable&quot;&gt;$replyToken&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Webhookで受信する応答トークン&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+&lt;span class=&quot;token variable&quot;&gt;$accessToken&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;アクセストークン&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$messageData&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;template&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;altText&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;this is a image carousel template&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;template&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;image_carousel&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;columns&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;imageUrl&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;https://example.com/bot/images/item1.jpg&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;action&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;postback&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;label&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;Buy&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;data&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;action=buy&amp;amp;itemid=111&quot;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;imageUrl&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;https://example.com/bot/images/item2.jpg&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;action&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;message&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;label&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;Yes&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                    &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;text&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;yes&quot;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;imageUrl&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;https://example.com/bot/images/item3.jpg&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;action&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+                  &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;type&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;uri&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                  &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;label&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;View detail&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+                  &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;uri&quot;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;http://example.com/page/222&quot;&lt;/span&gt;
+                &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+            &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+        &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+    &lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$response&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;replyToken&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$replyToken&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;messages&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$messageData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$response&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;curl_init&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;https://api.line.me/v2/bot/message/reply&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CURLOPT_POST&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CURLOPT_CUSTOMREQUEST&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;POST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CURLOPT_RETURNTRANSFER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CURLOPT_POSTFIELDS&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;json_encode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$response&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;curl_setopt&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token constant&quot;&gt;CURLOPT_HTTPHEADER&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Content-Type: application/json; charser=UTF-8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Authorization: Bearer &apos;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$accessToken&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$result&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;curl_exec&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$result&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;curl_close&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$ch&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;上のサンプルコードを実行すると、以下のような感じでメッセージ届く！！&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/img-2-59f8dd808c57582c1751fc7ed4a79dd0-e7f55.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 320px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 128.125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAaCAYAAAC3g3x9AAAACXBIWXMAABYlAAAWJQFJUiTwAAACWklEQVRIx61VC4/aMAzO//9lA92YhHgJkDgQ2h2PPpImTZNSPNulXJ+33bZIn9w69lfbiV0xe5WwPCgIIzMA/SmCB6p38W0dw8tWQhDq/wIRxgnESkOSGFB/CLKNYw2qx08YY8DaFNL0a1DKgDFdvdAaN/CBiNtIB/XmQVg+1/eY8On4kNXXtNbPvQ/ytEVY+fYR1iI7n89wOBywVnGNdJiwkoOEp9MJdrsdRFGENba/JayeG4RtqZR6pv9lwr875a6vSBLNxa+j72TbIMK2H0FYmwGtoigYtPI857plWTaIJEnBe8/2t9sN7vc7gyOcTqd8onQIi8UCgiBgQzLoW6TP8zu8v59gNpvB8XiEzWbDEGlqYblcMtl2u4X5fN4gHIL3BYRhxAHs93tYrVawXq9BOOc59yRJQErZiOKzlTkqS8a+5EeSlsjzMn+qXyXLWt4ZQxFa67F2RcfvSVgHUI2w0H171T4TPsjqEPmteKTYTNViKU6BLAPtKYHNPEbULQtHWD8AWh515EDS+ZwjadvUCStdGWEPocaTp+hiHJghDlEi/SdCjxc7w5QJxjoufofQ+mcjNGpYGTfr4+Aa449LajiHklPvXBuMsO9qYadYbOoM4bBHS2kxKof3jOAxXUovtaW+klKlbE+RGmPxXTMEETh3w4mLEm+/RqMM3xNt2Ukq+vmkg9BoR4MiDBVE+MMTNJknkx9wxXYbjca4KWE0HvOAoCFQDokuSO+cg8vlgq165U7Z7V5BXK8B9i8NhBBevk94NFFP0iT5IOxOm4qQ+p5Afj/f3uAX4R7f5eN+YrIAAAAASUVORK5CYII=&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;img 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/img-2-59f8dd808c57582c1751fc7ed4a79dd0-e7f55.png&quot;
+        srcset=&quot;/static/img-2-59f8dd808c57582c1751fc7ed4a79dd0-d0365.png 200w,
+/static/img-2-59f8dd808c57582c1751fc7ed4a79dd0-30418.png 400w,
+/static/img-2-59f8dd808c57582c1751fc7ed4a79dd0-e7f55.png 640w&quot;
+        sizes=&quot;(max-width: 320px) 100vw, 320px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LinuxでNode.jsインストール]]></title><description><![CDATA[対象OS CentOS CentOS 5 (32-bit、64-bit) CentOS 6 (32-bit、64-bit) CentOS 7 (64-bit) Fedora Fedora 21 (Twenty One) (32-bit、64-bit) Fedora 2…]]></description><link>https://lighthouse-dev.github.io/linux-nodejs-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-nodejs-install/</guid><content:encoded>&lt;h2&gt;対象OS&lt;/h2&gt;
+&lt;h3&gt;CentOS&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;CentOS 5 (32-bit、64-bit)&lt;/li&gt;
+&lt;li&gt;CentOS 6 (32-bit、64-bit)&lt;/li&gt;
+&lt;li&gt;CentOS 7 (64-bit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Fedora&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Fedora 21 (Twenty One) (32-bit、64-bit)&lt;/li&gt;
+&lt;li&gt;Fedora 20 (Heisenbug) (32-bit、64-bit)&lt;/li&gt;
+&lt;li&gt;Fedora 19 (Schrödinger’s Cat) (32-bit、64-bit)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;Etc&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Oracle Linux&lt;/li&gt;
+&lt;li&gt;Amazon Linux&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h2&gt;インストール手順&lt;/h2&gt;
+&lt;p&gt;Node.js v8（LTS）をインストールする場合は、以下のコマンドを実行&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Node.js v9 をインストールする場合は、以下のコマンドを実行&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;curl --silent --location https://rpm.nodesource.com/setup_9.x | sudo bash -&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;その次、以下を実行&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo yum -y install nodejs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[console.logをphpで使う（PHP Debug）]]></title><description><![CDATA[概要 は、ブラウザの開発ツールで などでよく使ってますよね。 これをサーバー側でも使うことができます。 （多分）ほとんどの言語がこのやり方で、使えます。 今回は、PHP…]]></description><link>https://lighthouse-dev.github.io/php-console-log/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-console-log/</guid><content:encoded>&lt;h2&gt;概要&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;console.log()&lt;/code&gt;は、ブラウザの開発ツールで&lt;code class=&quot;language-text&quot;&gt;JSのデバッグ&lt;/code&gt;などでよく使ってますよね。&lt;/p&gt;
+&lt;p&gt;これをサーバー側でも使うことができます。&lt;/p&gt;
+&lt;p&gt;（多分）ほとんどの言語がこのやり方で、使えます。&lt;/p&gt;
+&lt;p&gt;今回は、PHPで作ってみました！&lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;使い方&lt;/h2&gt;
+&lt;p&gt;とは言っても、大した事はしてませんし、
+ただデーターをスクリプト言語に入れただけなんです。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;console_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;&amp;lt;script&gt;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;console.log(&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;json_encode&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;)&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+  &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;&amp;lt;/script&gt;&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+
+&lt;span class=&quot;token variable&quot;&gt;$myvar&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;array&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token function&quot;&gt;console_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$myvar&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// [1,2,3]&lt;/span&gt;
+&lt;span class=&quot;token delimiter important&quot;&gt;?&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;これで終わりです！&lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;まとめ&lt;/h2&gt;
+&lt;p&gt;すごくシンプルで、思ったより使えるかも。&lt;/p&gt;
+&lt;h3&gt;参考&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http://php.net/manual/ja/debugger.php&quot;&gt;PHP: PHP のデバッグ - Manual&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[MySQL rootパスワードを忘れた時の対応]]></title><description><![CDATA[MySQL rootパスワード忘れた時の対応 1.mysqld 停止 2.mysqld_safe 実行 認証省略オプション + 安全モードでデモン実行 /usr/bin/mysqld safe —skip-grant &
+/usr/bin/mysqld safe —skip…]]></description><link>https://lighthouse-dev.github.io/mysql-password-reset/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/mysql-password-reset/</guid><content:encoded>&lt;p&gt;MySQL rootパスワード忘れた時の対応&lt;/p&gt;
+&lt;h2&gt;1.mysqld 停止&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ service mysqld stop&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h2&gt;2.mysqld_safe 実行&lt;/h2&gt;
+&lt;p&gt;認証省略オプション + 安全モードでデモン実行&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;/usr/bin/mysqld&lt;em&gt;safe —skip-grant &amp;#x26;
+/usr/bin/mysqld&lt;/em&gt;safe —skip-grant-tables &amp;#x26;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /usr/bin/mysqld_safe --skip-grant-tables &amp;amp;
+
+[1] 32055
+Starting mysqld daemon with databases from /var/lib/mysql&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;これでパスワード無しで mysqlに接続できるようになった！&lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;3.新しいパスワードを設定&lt;/h2&gt;
+&lt;p&gt;mysql コンソールに接続する。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /usr/bin/mysql -u root mysql&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;以下のSQLコマンドを入力し、設定したいパスワードに変更する。&lt;/p&gt;
+&lt;h3&gt;バージョン5.7 以下&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; mysql&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;SET&lt;/span&gt; password&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;PASSWORD&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;パスワード&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;root&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+FLUSH &lt;span class=&quot;token keyword&quot;&gt;PRIVILEGES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+quit
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;バージョン5.7 以上&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; mysql&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;SET&lt;/span&gt; authentication_string&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;PASSWORD&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;パスワード&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;root&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
+FLUSH &lt;span class=&quot;token keyword&quot;&gt;PRIVILEGES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+quit
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;実行例&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /usr/bin/mysql -uroot mysql
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.0.77 Source distribution
+
+Type &amp;#39;help;&amp;#39; or &amp;#39;\h&amp;#39; for help. Type &amp;#39;\c&amp;#39; to clear the buffer.
+
+mysql&amp;gt; update user set password=password(&amp;#39;P@ssw0rd&amp;#39;) where user=&amp;#39;root&amp;#39;;
+Query OK, 3 rows affected (0.00 sec)
+Rows matched: 3  Changed: 3  Warnings: 0
+
+mysql&amp;gt; flush privileges;
+Query OK, 0 rows affected (0.00 sec)
+
+mysql&amp;gt; quit
+Bye&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h2&gt;4.mysqld 再起動&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ service mysqld restart
+
+STOPPING server from pid file /var/run/mysqld/mysqld.pid
+120229 13:08:54  mysqld ended
+
+Stopping MySQL:                                            [  OK  ]
+Starting MySQL:                                            [  OK  ]
+[1]+  Done                    /usr/bin/mysqld_safe --skip-grant&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;バックグラウンドで実行中だった認証省略安全モードの mysqld プロセスが停止され、通常モードの　mysqldで再起動された！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新型 Macbook pro キーボードの一部が反応しない時の対応]]></title><description><![CDATA[現象 いきなりキーボード「f」ボタンが中に少し入ったまま、でてこない。 入力できなくはないが、たまに入力されないこともあり、不便。 やったこと 1. Apple Storeにお問い合わせ Apple Store…]]></description><link>https://lighthouse-dev.github.io/180358/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/180358/</guid><content:encoded>&lt;h1&gt;現象&lt;/h1&gt;
 &lt;p&gt;いきなりキーボード「f」ボタンが中に少し入ったまま、でてこない。&lt;/p&gt;
 &lt;p&gt;入力できなくはないが、たまに入力されないこともあり、不便。&lt;/p&gt;
 &lt;br&gt;
@@ -519,7 +960,34 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 （ちゃんと手順が書いてあるし、画像もあったので分かりやすい）&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;結論&lt;/h1&gt;
-&lt;p&gt;MacBook (2015 以降) や MacBook Pro (2016 以降) のキーが反応しなくなった場合や、押したときにほかのキーと感触が違うキーがある場合は、まずは、↑の手順にそって、キーボードをきれいに掃除しましょうー！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[HTTPサーバー Response Codeのまとめ]]></title><description><![CDATA[HTTPステータスコードについてのまとめです！ 各コードは100単位で分かれています。
+&lt;p&gt;MacBook (2015 以降) や MacBook Pro (2016 以降) のキーが反応しなくなった場合や、押したときにほかのキーと感触が違うキーがある場合は、まずは、↑の手順にそって、キーボードをきれいに掃除しましょうー！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SSH接続をタイムアウトしないようにする ]]></title><description><![CDATA[sshで接続するリモートサーバーに設定すると、クライアントに同じように適用される。 設定 sshd_configを開く sshd_configを修正 以下のようにを修正 ClientAliveInterval…]]></description><link>https://lighthouse-dev.github.io/ssh-timeout-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ssh-timeout-setting/</guid><content:encoded>&lt;p&gt;sshで接続するリモートサーバーに設定すると、クライアントに同じように適用される。&lt;/p&gt;
+&lt;h2&gt;設定&lt;/h2&gt;
+&lt;h3&gt;sshd_configを開く&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;vim /etc/ssh/sshd_config&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h3&gt;sshd_configを修正&lt;/h3&gt;
+&lt;p&gt;以下のようにを修正&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ClientAliveInterval 60
+ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h4&gt;ClientAliveInterval&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;データの受信がない場合、指定した一定時間ごとにデータを転送するようにクライアントにリクエストする。&lt;/li&gt;
+&lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;に設定した場合、データを転送しない。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4&gt;ClientAliveCountMax&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;無制限でリクエストするのは、問題があるので&lt;code class=&quot;language-text&quot;&gt;ClientAliveCountMax&lt;/code&gt;で最大リクエスト数を指定する。&lt;/li&gt;
+&lt;li&gt;つまり、上の設定の場合は、最大5分（60秒 * 5回）までタイムアウトされない。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h3&gt;ssh 再起動&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service sshd restart&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[HTTPサーバー Response Codeのまとめ]]></title><description><![CDATA[HTTPステータスコードについてのまとめです！ 各コードは100単位で分かれています。
 例えば、300番台同士、40…]]></description><link>https://lighthouse-dev.github.io/153820/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/153820/</guid><content:encoded>&lt;p&gt;HTTPステータスコードについてのまとめです！&lt;/p&gt;
 &lt;p&gt;各コードは100単位で分かれています。
 例えば、300番台同士、400番台同士が似ているタイプのレスポンスコードになります。&lt;/p&gt;
@@ -742,118 +1210,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/table&gt;
 &lt;br&gt;
 &lt;h1&gt;参考リンク&lt;/h1&gt;
-&lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&quot;&gt;wikipedia HTTPステータスコード&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/038206/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/038206/</guid><content:encoded>&lt;h2&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h2&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/image-1-3002660a8aab5f0b99dc6097e901ec30-89d2d.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 66.2109375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAARlAAAEZQAGA43XUAAACSUlEQVQ4y42T2U7bUBCG/UZVFwgpcRKc2GfxvsV2bBISoVa9qHpXVXRRW5awChJQX/fvnEOouKJcfJoZn+PxLL+Nq+sVrpe3WN39wc3qDlc3KyxXt1je3tHzFU7PL3CyOMMxcXZ+qeOnMPy4RJhUYG6KIY9g7kg40oPwAgyZQNvs4e2adud/dGFk5R5ygrkZhF8QOcaTGepmF0GUQFJiTh/g7jOge4YXVSjGcyjryAwuVTqJMrCBxIttGy9Nhldd/kyYanmMZvoeYdpABiUkVVjVu6inc6TFmJ7FsJjEjiNgETtPYQsYwk9RNHOqcgo/zGl2MbwwRhBG1K4PhwvYjBNsDf8XqzP2CBUbyeQYnz5eYDQ/Rb+5hF0fwfYydFmIHi2p4/gwWaBjU+F4OlZ+25LY7HO0HmEk2RR79T5VU8IJajC/gqAZcjfGl6/fcXB4hB+Hp/j87RcOvv3E4mSJw98LnB0tEGUVtvo2zKFAZ6CghDIsMKrVUkpql5YhY2SjEkwICNqcR617QUjbD5F4HmbNPvKixigc0eKGsFW7gqSmUC27YYl68o4WMKUFFFqPKSW0ucTrzS28WaP8jc0WzNYGOlttbLfa6PUt0q7Uen3ACJIx8mqmk3Ev1wm568MnDQ5shr41RH9ga9ujirqWTdz7Fp0PHL5GaIy8nGEy+0AJ1N+Sa2EnOY2hGutKwyQlMkRpru29TzZOEcQJvUeKIF/6gVaFoQablw1dHNHFgg5iXaGkmSnc4MFGmgdfWZUsKyqdmHsRHJLgXxOV+9P60QNjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;image 1&quot;
-        title=&quot;&quot;
-        src=&quot;/static/image-1-3002660a8aab5f0b99dc6097e901ec30-48538.png&quot;
-        srcset=&quot;/static/image-1-3002660a8aab5f0b99dc6097e901ec30-bed0f.png 200w,
-/static/image-1-3002660a8aab5f0b99dc6097e901ec30-5fd34.png 400w,
-/static/image-1-3002660a8aab5f0b99dc6097e901ec30-48538.png 800w,
-/static/image-1-3002660a8aab5f0b99dc6097e901ec30-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;br&gt;
-&lt;h2&gt;自動アップロード&lt;/h2&gt;
-&lt;p&gt;[Tools] &gt; [Deployment] &gt; [Options]&lt;/p&gt;
-&lt;p&gt;
-  &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-89d2d.png&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-  
-  &lt;span
-    class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
-  &gt;
-    &lt;span
-      class=&quot;gatsby-resp-image-background-image&quot;
-      style=&quot;padding-bottom: 70.80078125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAARlAAAEZQAGA43XUAAAB/ElEQVQ4y52T6Y7TQBCE/ViAOFbE8TnjGd+Ok5AECVjEc7BZ+MHm2DxvbfXYiSIhFsGPT12e2OXqTtvbb++wPfzE8XTC/viI3eGI4+MJu/3B6YfdHnf3P/B9e48Hnv3i9XN4YZrB2BJZXiJKFfwwRqoNbiZTvHrzDi9ev2W9cbyk/hueLSr0yw9oZnM0XY/5cgU5C+L0v/AMk/ULMeydadcvnGHClCqzLq22+UjBTgpok7uOpCoznKtRe1oMmcolpJkgZ4o3pbxBiGkaqexCmOqLlt/k5Qm1VG+VW2zaFuumJg114/S5ylmjFKokQas1dequG+ouiREGEd4HsZv9hNr7WtdYdB1WNF0KTYtZUaLKMjTGorUWdWYcs7JEl+eOlnqtU6gwwiRKMB3x5KEV57eiqRiuqbuiQEMjy1SJP0UaBE4LiloFIXQYIiMhk/lixjoaGsyZas7WhP6KjikkgVDxxSVT6zhGFicwaQqTDEbOMBoNv1mFT2WOL+S2LvC5sLitcnzMFGaBjz6YEh8btreMQyyiYIB6k4SIzy2Hwxy9hKthuCYZMWXttFT5p4NEYTImONdrrmd3mWHJdluujKMfGHayhy0rfj36t4eew5PdkUWWBR8Wt7wYyRrITf7Yzp+YXOHponYLGbE9MfkXYtLyo1h3M6xNw7mXeAIVCyUl9QsSJAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
-    &gt;
-      &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
-        alt=&quot;image 2&quot;
-        title=&quot;&quot;
-        src=&quot;/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-48538.png&quot;
-        srcset=&quot;/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-bed0f.png 200w,
-/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-5fd34.png 400w,
-/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-48538.png 800w,
-/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
-      /&gt;
-    &lt;/span&gt;
-  &lt;/span&gt;
-  
-  &lt;/a&gt;
-    &lt;/p&gt;
-&lt;br&gt;
-&lt;h2&gt;自動インデント&lt;/h2&gt;
-&lt;h4&gt;メニュー&lt;/h4&gt;
-&lt;p&gt;[Code] &gt; [Auto-Indent Lines]&lt;/p&gt;
-&lt;h4&gt;ショートカット&lt;/h4&gt;
-&lt;ul&gt;
-&lt;li&gt;Mac : control + option + “I”&lt;/li&gt;
-&lt;li&gt;Windows : Control + Alt + “I”&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;persistent&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;host&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;username&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;password&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;database&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;encoding&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;timezone&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;cacheMetadata&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;log&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている&lt;/p&gt;
-&lt;p&gt;そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する&lt;/p&gt;
-&lt;br&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;上記の&lt;code class=&quot;language-text&quot;&gt;app.php&lt;/code&gt;の中に、‘default’と同じように ‘test’ 側も&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;Cake\Database\Driver\Postgres&amp;#39;&lt;/code&gt; に変える必要がある。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;test&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Sambaインストール]]></title><description><![CDATA[事前準備 ローカルからサーバーにSSH接続できる SELinuxを無効化 SELINUXを無効化 そして反映！ iptablesの設定 ローカルだしアクセス制限なくしちゃいます。 自分は下記2つをとりあえずコメントアウト 変更後、再起動！ samba…]]></description><link>https://lighthouse-dev.github.io/100118/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/100118/</guid><content:encoded>&lt;h1&gt;事前準備&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&quot;&gt;wikipedia HTTPステータスコード&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Sambaインストール]]></title><description><![CDATA[事前準備 ローカルからサーバーにSSH接続できる SELinuxを無効化 SELINUXを無効化 そして反映！ iptablesの設定 ローカルだしアクセス制限なくしちゃいます。 自分は下記2つをとりあえずコメントアウト 変更後、再起動！ samba…]]></description><link>https://lighthouse-dev.github.io/100118/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/100118/</guid><content:encoded>&lt;h1&gt;事前準備&lt;/h1&gt;
 &lt;p&gt;ローカルからサーバーにSSH接続できる&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;SELinuxを無効化&lt;/h1&gt;
@@ -931,7 +1288,118 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
 &lt;h3&gt;Windows&lt;/h3&gt;
 &lt;p&gt;スタートからプログラムとファイルの検索に「\サーバーIPアドレス」 &lt;/p&gt;
 &lt;h3&gt;Mac&lt;/h3&gt;
-&lt;p&gt;「Finder」からサーバへ接続機能を使って、ローカルのIP打ち込む&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
+&lt;p&gt;「Finder」からサーバへ接続機能を使って、ローカルのIP打ち込む&lt;/p&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/038206/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/038206/</guid><content:encoded>&lt;h2&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h2&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/image-1-3002660a8aab5f0b99dc6097e901ec30-9ffda.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 66.2109375%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAARlAAAEZQAGA43XUAAACSUlEQVQ4y42T2U7bUBCG/UZVFwgpcRKc2GfxvsV2bBISoVa9qHpXVXRRW5awChJQX/fvnEOouKJcfJoZn+PxLL+Nq+sVrpe3WN39wc3qDlc3KyxXt1je3tHzFU7PL3CyOMMxcXZ+qeOnMPy4RJhUYG6KIY9g7kg40oPwAgyZQNvs4e2adud/dGFk5R5ygrkZhF8QOcaTGepmF0GUQFJiTh/g7jOge4YXVSjGcyjryAwuVTqJMrCBxIttGy9Nhldd/kyYanmMZvoeYdpABiUkVVjVu6inc6TFmJ7FsJjEjiNgETtPYQsYwk9RNHOqcgo/zGl2MbwwRhBG1K4PhwvYjBNsDf8XqzP2CBUbyeQYnz5eYDQ/Rb+5hF0fwfYydFmIHi2p4/gwWaBjU+F4OlZ+25LY7HO0HmEk2RR79T5VU8IJajC/gqAZcjfGl6/fcXB4hB+Hp/j87RcOvv3E4mSJw98LnB0tEGUVtvo2zKFAZ6CghDIsMKrVUkpql5YhY2SjEkwICNqcR617QUjbD5F4HmbNPvKixigc0eKGsFW7gqSmUC27YYl68o4WMKUFFFqPKSW0ucTrzS28WaP8jc0WzNYGOlttbLfa6PUt0q7Uen3ACJIx8mqmk3Ev1wm568MnDQ5shr41RH9ga9ujirqWTdz7Fp0PHL5GaIy8nGEy+0AJ1N+Sa2EnOY2hGutKwyQlMkRpru29TzZOEcQJvUeKIF/6gVaFoQablw1dHNHFgg5iXaGkmSnc4MFGmgdfWZUsKyqdmHsRHJLgXxOV+9P60QNjAAAAAElFTkSuQmCC&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;image 1&quot;
+        title=&quot;&quot;
+        src=&quot;/static/image-1-3002660a8aab5f0b99dc6097e901ec30-56f34.png&quot;
+        srcset=&quot;/static/image-1-3002660a8aab5f0b99dc6097e901ec30-b4f2f.png 200w,
+/static/image-1-3002660a8aab5f0b99dc6097e901ec30-1f033.png 400w,
+/static/image-1-3002660a8aab5f0b99dc6097e901ec30-56f34.png 800w,
+/static/image-1-3002660a8aab5f0b99dc6097e901ec30-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;自動アップロード&lt;/h2&gt;
+&lt;p&gt;[Tools] &gt; [Deployment] &gt; [Options]&lt;/p&gt;
+&lt;p&gt;
+  &lt;a
+    class=&quot;gatsby-resp-image-link&quot;
+    href=&quot;/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-9ffda.png&quot;
+    style=&quot;display: block&quot;
+    target=&quot;_blank&quot;
+    rel=&quot;noopener&quot;
+  &gt;
+  
+  &lt;span
+    class=&quot;gatsby-resp-image-wrapper&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
+  &gt;
+    &lt;span
+      class=&quot;gatsby-resp-image-background-image&quot;
+      style=&quot;padding-bottom: 70.80078125%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAOCAYAAAAvxDzwAAAACXBIWXMAARlAAAEZQAGA43XUAAAB/ElEQVQ4y52T6Y7TQBCE/ViAOFbE8TnjGd+Ok5AECVjEc7BZ+MHm2DxvbfXYiSIhFsGPT12e2OXqTtvbb++wPfzE8XTC/viI3eGI4+MJu/3B6YfdHnf3P/B9e48Hnv3i9XN4YZrB2BJZXiJKFfwwRqoNbiZTvHrzDi9ev2W9cbyk/hueLSr0yw9oZnM0XY/5cgU5C+L0v/AMk/ULMeydadcvnGHClCqzLq22+UjBTgpok7uOpCoznKtRe1oMmcolpJkgZ4o3pbxBiGkaqexCmOqLlt/k5Qm1VG+VW2zaFuumJg114/S5ylmjFKokQas1dequG+ouiREGEd4HsZv9hNr7WtdYdB1WNF0KTYtZUaLKMjTGorUWdWYcs7JEl+eOlnqtU6gwwiRKMB3x5KEV57eiqRiuqbuiQEMjy1SJP0UaBE4LiloFIXQYIiMhk/lixjoaGsyZas7WhP6KjikkgVDxxSVT6zhGFicwaQqTDEbOMBoNv1mFT2WOL+S2LvC5sLitcnzMFGaBjz6YEh8btreMQyyiYIB6k4SIzy2Hwxy9hKthuCYZMWXttFT5p4NEYTImONdrrmd3mWHJdluujKMfGHayhy0rfj36t4eew5PdkUWWBR8Wt7wYyRrITf7Yzp+YXOHponYLGbE9MfkXYtLyo1h3M6xNw7mXeAIVCyUl9QsSJAAAAABJRU5ErkJggg==&apos;); background-size: cover; display: block;&quot;
+    &gt;
+      &lt;img
+        class=&quot;gatsby-resp-image-image&quot;
+        style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
+        alt=&quot;image 2&quot;
+        title=&quot;&quot;
+        src=&quot;/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-56f34.png&quot;
+        srcset=&quot;/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-b4f2f.png 200w,
+/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-1f033.png 400w,
+/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-56f34.png 800w,
+/static/image-2-95c933a14afbc3b4dbc5f11d2d5da6a6-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
+      /&gt;
+    &lt;/span&gt;
+  &lt;/span&gt;
+  
+  &lt;/a&gt;
+    &lt;/p&gt;
+&lt;br&gt;
+&lt;h2&gt;自動インデント&lt;/h2&gt;
+&lt;h4&gt;メニュー&lt;/h4&gt;
+&lt;p&gt;[Code] &gt; [Auto-Indent Lines]&lt;/p&gt;
+&lt;h4&gt;ショートカット&lt;/h4&gt;
+&lt;ul&gt;
+&lt;li&gt;Mac : control + option + “I”&lt;/li&gt;
+&lt;li&gt;Windows : Control + Alt + “I”&lt;/li&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;persistent&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;host&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;username&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;password&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;database&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;encoding&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;timezone&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;cacheMetadata&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;log&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている&lt;/p&gt;
+&lt;p&gt;そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する&lt;/p&gt;
+&lt;br&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上記の&lt;code class=&quot;language-text&quot;&gt;app.php&lt;/code&gt;の中に、‘default’と同じように ‘test’ 側も&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;Cake\Database\Driver\Postgres&amp;#39;&lt;/code&gt; に変える必要がある。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;test&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
  Fusic Advent Calendar 2017  21日目の記事です。 を触ってみた話をさせていただきます。 WebRTCとは WebRTC(Web Real-Time Communication…]]></description><link>https://lighthouse-dev.github.io/webrtc-basic/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/webrtc-basic/</guid><content:encoded>&lt;p&gt;こんにちは！
 &lt;a href=&quot;https://qiita.com/advent-calendar/2017/fusic&quot;&gt;Fusic Advent Calendar 2017&lt;/a&gt; 21日目の記事です。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;WebRTC&lt;/code&gt;を触ってみた話をさせていただきます。&lt;/p&gt;
@@ -1062,7 +1530,7 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-89d2d.png&quot;
+    href=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-9ffda.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1070,7 +1538,7 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1081,12 +1549,12 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;webrtc image 1&quot;
         title=&quot;&quot;
-        src=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-48538.png&quot;
-        srcset=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-bed0f.png 200w,
-/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-5fd34.png 400w,
-/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-48538.png 800w,
-/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        src=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-56f34.png&quot;
+        srcset=&quot;/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-b4f2f.png 200w,
+/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-1f033.png 400w,
+/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-56f34.png 800w,
+/static/webrtc-image-1-f89fb3319cc5b634871bd3dd41dfb3e6-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -1096,7 +1564,7 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-89d2d.png&quot;
+    href=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-9ffda.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1104,7 +1572,7 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1115,12 +1583,12 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;webrtc image 2&quot;
         title=&quot;&quot;
-        src=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-48538.png&quot;
-        srcset=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-bed0f.png 200w,
-/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-5fd34.png 400w,
-/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-48538.png 800w,
-/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        src=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-56f34.png&quot;
+        srcset=&quot;/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-b4f2f.png 200w,
+/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-1f033.png 400w,
+/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-56f34.png 800w,
+/static/webrtc-image-2-cd4f04ca6c842528d7b693dbc2f2ca6e-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -1271,31 +1739,6 @@ php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
 PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[1. SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 2.インストール 3.遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h2&gt;1. SSHFS?&lt;/h2&gt;
-&lt;ul&gt;
-&lt;li&gt;SSH Filesystem： SSHFS&lt;/li&gt;
-&lt;li&gt;SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h2&gt;2.インストール&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;brew cask install osxfuse
-brew install sshfs&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;3.遠隔サーバーのディレクトリをマウント&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;sshs ユーザー名@サーバーアドレス:ディレクトリパス　マウントするパス&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;【例】 xxx.xxx.xxx.xxxサーバーの /home/test ディレクトリを /home/testMount/ にマウントする。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;sshfs root@xxx.xxx.xxx.xxx:/home/test/ /home/testMount/&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h2&gt;4.マウントを解除&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;umount -f 解除するディレクトリパス&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;【例】 /home/testMount/ をマウント解除する。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;umount -f /home/testMount/&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[PhpStorm + Xdebugでリモートデスクトップ]]></title><description><![CDATA[Xdebug? デバック及びプロファイリング機能を提供するPHP拡張モデュール PECLを用いてインストール可能 1. Xdebugをインストール（CentOS） php-devel、php-pearをインストール gcc、gcc-c++、autoconf、automake…]]></description><link>https://lighthouse-dev.github.io/phpstorm-remote-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-remote-setting/</guid><content:encoded>&lt;h2&gt;Xdebug?&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;デバック及びプロファイリング機能を提供するPHP拡張モデュール&lt;/li&gt;
@@ -1351,7 +1794,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-89d2d.png&quot;
+    href=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-9ffda.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1359,7 +1802,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1370,12 +1813,12 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;phpstorm setting 1&quot;
         title=&quot;&quot;
-        src=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-48538.png&quot;
-        srcset=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-bed0f.png 200w,
-/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-5fd34.png 400w,
-/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-48538.png 800w,
-/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        src=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-56f34.png&quot;
+        srcset=&quot;/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-b4f2f.png 200w,
+/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-1f033.png 400w,
+/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-56f34.png 800w,
+/static/phpstorm-setting-1-d71f3c0ed33d5027e8427ca197bd5e4a-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -1388,7 +1831,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-89d2d.png&quot;
+    href=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-9ffda.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1396,7 +1839,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1407,12 +1850,12 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;phpstorm setting 2&quot;
         title=&quot;&quot;
-        src=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-48538.png&quot;
-        srcset=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-bed0f.png 200w,
-/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-5fd34.png 400w,
-/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-48538.png 800w,
-/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        src=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-56f34.png&quot;
+        srcset=&quot;/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-b4f2f.png 200w,
+/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-1f033.png 400w,
+/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-56f34.png 800w,
+/static/phpstorm-setting-2-fdf7f868c83a494c40e746839f373f84-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -1424,7 +1867,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-89d2d.png&quot;
+    href=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-9ffda.png&quot;
     style=&quot;display: block&quot;
     target=&quot;_blank&quot;
     rel=&quot;noopener&quot;
@@ -1432,7 +1875,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
   
   &lt;span
     class=&quot;gatsby-resp-image-wrapper&quot;
-    style=&quot;position: relative; display: block; ; max-width: 800px; margin-left: auto; margin-right: auto;&quot;
+    style=&quot;position: relative; display: block; ; max-width: 40px; margin-left: auto; margin-right: auto;&quot;
   &gt;
     &lt;span
       class=&quot;gatsby-resp-image-background-image&quot;
@@ -1443,12 +1886,12 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
         style=&quot;width: 100%; height: 100%; margin: 0; vertical-align: middle; position: absolute; top: 0; left: 0; box-shadow: inset 0px 0px 0px 400px transparent;&quot;
         alt=&quot;phpstorm setting 3&quot;
         title=&quot;&quot;
-        src=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-48538.png&quot;
-        srcset=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-bed0f.png 200w,
-/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-5fd34.png 400w,
-/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-48538.png 800w,
-/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-89d2d.png 1024w&quot;
-        sizes=&quot;(max-width: 800px) 100vw, 800px&quot;
+        src=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-56f34.png&quot;
+        srcset=&quot;/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-b4f2f.png 200w,
+/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-1f033.png 400w,
+/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-56f34.png 800w,
+/static/phpstorm-setting-3-f4fdeb8f7e9b1c3270dac898015d3295-9ffda.png 1024w&quot;
+        sizes=&quot;(max-width: 40px) 100vw, 40px&quot;
       /&gt;
     &lt;/span&gt;
   &lt;/span&gt;
@@ -1460,7 +1903,32 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;li&gt;名前、サーバーIPアドレス、Ide Key(※php.iniで設定したKey)
 などを設定する&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
+&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[1. SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 2.インストール 3.遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h2&gt;1. SSHFS?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;SSH Filesystem： SSHFS&lt;/li&gt;
+&lt;li&gt;SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2&gt;2.インストール&lt;/h2&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;brew cask install osxfuse
+brew install sshfs&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;3.遠隔サーバーのディレクトリをマウント&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;sshs ユーザー名@サーバーアドレス:ディレクトリパス　マウントするパス&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;【例】 xxx.xxx.xxx.xxxサーバーの /home/test ディレクトリを /home/testMount/ にマウントする。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;sshfs root@xxx.xxx.xxx.xxx:/home/test/ /home/testMount/&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h2&gt;4.マウントを解除&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;umount -f 解除するディレクトリパス&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;【例】 /home/testMount/ をマウント解除する。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;umount -f /home/testMount/&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。&lt;/p&gt;
 &lt;p&gt;※ そもそもAjaxとはAsynchronous Javascript And XMLの略です。&lt;/p&gt;
 &lt;p&gt;なので、データ通信や処理をしている間に、同時に他の動作や処理をすることができるため、&lt;/p&gt;
