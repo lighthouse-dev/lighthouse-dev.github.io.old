@@ -1,7 +1,7 @@
 ---
 title: Macでsshfsをインストール / 使い方
 subTitle: ""
-category: "DEFAULT"
+category: "Mac"
 cover: fuse.png
 sitemap :
   changefreq : daily
