@@ -13,7 +13,7 @@ sitemap :
 
 `WebRTC`を触ってみた話をさせていただきます。
 
-## WebRTCとは
+# WebRTCとは
 WebRTC(Web Real-Time Communication)は、ウェブブラウザーの間で特定のプラグインがなくても通信できるAPIです。
 
 [W3C](https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium)で提示された草案であり、
