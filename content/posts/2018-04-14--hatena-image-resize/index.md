@@ -1,5 +1,5 @@
 ---
-title: "はてなブログで画像のサイズの変更方法 - Markdown"
+title: "はてなブログで画像のサイズを変更方法 - Markdown"
 subTitle: ""
 category: "Default"
 cover: hatena-logo.png
