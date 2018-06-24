@@ -774,13 +774,15 @@ webpackJsonp([1],{
 
 	var styles = function styles(theme) {
 	  return {
+	    // 사이드메뉴 자기소개 영역
 	    text: {
 	      display: "block",
-	      fontWeight: 300,
+	      fontWeight: 400,
 	      lineHeight: 1.5,
 	      fontSize: ".95em",
 	      textAlign: "left",
-	      marginBottom: ".8em",
+	      marginTop: "1rem",
+	      marginBottom: "1rem",
 	      "& p:first-child": {
 	        marginTop: 0
 	      },
