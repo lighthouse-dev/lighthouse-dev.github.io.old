@@ -23,7 +23,6 @@
 <url> <loc>https://lighthouse-dev.github.io/VSCode-SFTP/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/php-error-posix-getpwuid/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/typescript-basic/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://lighthouse-dev.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/success/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/webrtc-basic/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -31,6 +30,7 @@
 <url> <loc>https://lighthouse-dev.github.io/php-isset-empty/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/vagrant-share-folder/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/naming-rule/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lighthouse-dev.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
