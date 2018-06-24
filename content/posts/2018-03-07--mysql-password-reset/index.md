@@ -10,7 +10,7 @@ sitemap :
 
 MySQL rootパスワード忘れた時の対応
 
-## 1.mysqld 停止
+# 1.mysqld 停止
 
 ```cmd
 $ service mysqld stop
@@ -18,7 +18,7 @@ $ service mysqld stop
 
 <br>
 
-## 2.mysqld_safe 実行
+# 2.mysqld_safe 実行
 
 認証省略オプション + 安全モードでデモン実行
 
@@ -36,7 +36,7 @@ Starting mysqld daemon with databases from /var/lib/mysql
 
 <br>
 
-## 3.新しいパスワードを設定
+# 3.新しいパスワードを設定
 
 mysql コンソールに接続する。
 
@@ -88,7 +88,7 @@ Bye
 
 <br>
 
-## 4.mysqld 再起動
+# 4.mysqld 再起動
 
 ```cmd
 $ service mysqld restart

@@ -12,7 +12,9 @@ PHP デバッグ方法のメモ。
 
 他のデバッグ方法も今後追記していく予定です。
 
-## エラーログをコードに仕込んで出力
+<br>
+
+# エラーログをコードに仕込んで出力
 
 ```php
 error_log(print_r($outputData,true));
@@ -20,7 +22,7 @@ error_log(print_r($outputData,true));
 
 <br>
 
-### 任意のファイルに出力
+## 任意のファイルに出力
 
 ```php
 error_log(print_r($outputData,true),"3","/tmp/debug.log");

@@ -8,19 +8,23 @@ sitemap :
   priority : 1.0
 ---
 
-## 1. SSHFS?
+# SSHFS?
 
 * SSH Filesystem： SSHFS
 * SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。
 
-## 2.インストール
+<br>
+
+# インストール
 
 ```command
 brew cask install osxfuse
 brew install sshfs
 ```
 
-## 3.遠隔サーバーのディレクトリをマウント
+<br>
+
+# 遠隔サーバーのディレクトリをマウント
 
 > sshs ユーザー名@サーバーアドレス:ディレクトリパス　マウントするパス
 
@@ -30,7 +34,9 @@ brew install sshfs
 sshfs root@xxx.xxx.xxx.xxx:/home/test/ /home/testMount/
 ```
 
-## 4.マウントを解除
+<br>
+
+# マウントを解除
 
 > umount -f 解除するディレクトリパス
 

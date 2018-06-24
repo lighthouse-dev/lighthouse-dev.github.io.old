@@ -8,7 +8,7 @@ sitemap :
   priority : 1.0
 ---
 
-## プロジェクト作成
+# プロジェクト作成
 
 ```cmd
 ng new <プロジェクト名>
@@ -16,15 +16,15 @@ ng new <プロジェクト名>
 
 <br>
 
-## テンプレート作成
+# テンプレート作成
 
-#### コンポーネント作成
+### コンポーネント作成
 
 ```cmd
 ng generate component <コンポーネント名>
 ```
 
-#### サービス作成
+### サービス作成
 
 ```cmd
 ng generate service <サービス名>
@@ -32,13 +32,13 @@ ng generate service <サービス名>
 
 <br>
 
-## アプリケーション実行
+# アプリケーション実行
 
 ```cmd
 ng serve
 ```
 
-#### ポートを指定する場合
+### ポートを指定する場合
 
 ```cmd
 ng serve --port <ポートナンバー>
@@ -46,7 +46,7 @@ ng serve --port <ポートナンバー>
 
 <br>
 
-##  アプリケーションビルド
+#  アプリケーションビルド
 
 ```cmd
 ng build --target=production --base-href /
@@ -54,7 +54,7 @@ ng build --target=production --base-href /
 
 <br>
 
-## テスト実行
+# テスト実行
 
 ```cmd
 ng e2e

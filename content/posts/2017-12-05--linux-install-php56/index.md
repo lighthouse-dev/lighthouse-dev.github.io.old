@@ -8,11 +8,13 @@ sitemap :
   priority : 1.0
 ---
 
-## 事前作業
+# 事前作業
 
 * [CentOS6系にremiレポジトリを追加する。](/linux-remi-release/)
 
-## 確認
+<br>
+
+# 確認
 
 ```command
 $ php -v
@@ -25,7 +27,9 @@ $ rpm -qa | grep remi-release
 remi-release-6.8-1.el6.remi.noarch
 ```
 
-## PHPをインストール
+<br>
+
+# PHPをインストール
 
 ```command
 $ yum --enablerepo=remi-php56 install php
@@ -45,7 +49,9 @@ php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
 Complete!
 ```
 
-## 確認
+<br>
+
+# 確認
 
 ```command
 $ rpm -qa | grep php

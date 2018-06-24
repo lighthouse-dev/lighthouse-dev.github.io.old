@@ -10,8 +10,11 @@ sitemap :
 
 こんにちは！
 [Fusic Advent Calendar 2017](https://qiita.com/advent-calendar/2017/fusic) 21日目の記事です。
+[→Qiitaの記事はこちら](https://qiita.com/jslee/items/34bb8ccb6149bbfae427)
 
 `WebRTC`を触ってみた話をさせていただきます。
+
+<br>
 
 # WebRTCとは
 WebRTC(Web Real-Time Communication)は、ウェブブラウザーの間で特定のプラグインがなくても通信できるAPIです。
@@ -20,36 +23,39 @@ WebRTC(Web Real-Time Communication)は、ウェブブラウザーの間で特定
 
 映像、音声、P2Pファイル共有などで活用できます。
 
-### WebRTC API
+## WebRTC API
 
 WebRTCで提供するAPIは以下の三つです！
 
-#### 1. MediaStream
+### 1. MediaStream
 
 ユーザー端末機のビデオ、マイクにアクセスできます。
 
 `getUserMedia`を使ってアクセスし、MedisStreamオブジェクトを`PeerConnection`に渡して転送することになります。
 
-#### 2. PeerConnection
+### 2. PeerConnection
 
 一番重要なAPIであり、ブラウザ間でビデオ、音声などのやりとりするAPIです！
 
-#### 3. DataChannel
+### 3. DataChannel
 
 ブラウザ間でのテキストやファイルなどをやりとりします。
 
-## 事前準備
+<br>
+
+# 事前準備
 
 - Webサーバー
 - [Node.js](http://lighthouse-dev.hatenablog.com/entry/2018/03/08/230508)
 - WebSocket
 
-## カメラを触ってみよう
+<br>
+
+# カメラを触ってみよう
 
 Webサーバーに以下のサンプルコードを作成し、試してみましょう！
 
-#### サンプルコード
-
+##### ▼ サンプルコード
 ```html
 <!doctype html>
 <html>
@@ -83,9 +89,11 @@ Webサーバーに以下のサンプルコードを作成し、試してみま�
 
 OKボタンを押して許可してください。
 
-## シグナリングサーバーを動かす
+<br>
 
-#### ・WebRTCの通信について
+# シグナリングサーバーを動かす
+
+## WebRTCの通信について
 
 WebRTCでは、映像や音声などリアルタイムに取得されたデータを、ブラウザ間で送受信することができます。
 それを司るのが　RTCPeerConnection です。 RTCPeerConnectionには2つの特徴があります。
@@ -93,7 +101,7 @@ WebRTCでは、映像や音声などリアルタイムに取得されたデー�
 - Peer-to-Peer(P2P)の通信 → ブラウザとブラウザの間で直接通信する
 - UDP/IPを使用 → TCP/IPのようにパケットの到着は保障しないが、オーバーヘッドが少ない(らしい)
 
-#### ・P2P通信を行うために
+## P2P通信を行うために
 
 ブラウザ間でP2P通信を行うには、
 
@@ -104,32 +112,33 @@ WebRTCでは、映像や音声などリアルタイムに取得されたデー�
 
 そのために、WebRTCでは以下の情報をやり取りしています。
 
-##### SDP (Session Description Protocol)
+### SDP (Session Description Protocol)
 
 - セッションが含むメディアの種類（音声、映像）、
 - メディアの形式（コーデック）
 - IPアドレス、ポート番号 などなど
 
-###### ICE (Interactive Connectivity Establishment)
+### ICE (Interactive Connectivity Establishment)
 
 - P2Pによる直接通信
 - NATを通過するためのSTUNサーバーから取得したポートマッピング → 最終的にはP2Pになる
 - Firefallを越えるための、TURNによるリレーサーバーを介した中継通信
 
-#### ・シグナリングサーバーを動かしてみよう！
+## ということでシグナリングサーバーを動かしてみよう！
 
 P2Pを始めるまでの情報のやり取りを「シグナリング」と言います。
 
 シグナリングサーバーは、クライアントからメッセージを受け取ったら他のクライアントに送信する役割をします。
 
-##### WebSocketをのインストール
+### WebSocketをのインストール
 
 ```command
 npm install ws
 ```
 
-##### シングルサーバーサンプルコード
+### シングルサーバーサンプルコードを作成
 
+##### ▼ signaling.js
 ```javascript
 "use strict";
 
@@ -158,7 +167,7 @@ function isSame(ws1, ws2) {
 }
 ```
 
-##### シングルサーバーを起動
+### シングルサーバーを起動
 
 ```command
 node signaling.js
@@ -166,7 +175,9 @@ node signaling.js
 
 シグナリングサーバーの動作はシンプルで、クライアントからメッセージを受け取ったら他のクライアントに送信するだけです。
 
-## 実際に動かしてみよう！（結果）
+<br>
+
+# 実際に動かしてみよう！（結果）
 
 ブラウザーからアクセスし、スクリプトを読み込むと
 
@@ -176,8 +187,9 @@ node signaling.js
 
 こんな感じです！
 
+<br>
 
-## 最後に
+# 最後に
 
 何よりも[Fusic開発合宿](https://fusic.co.jp/doings/184)で普段から自分が作りたかったものや
 
@@ -185,7 +197,9 @@ node signaling.js
 
 まだまだいけてないところや課題もたくさんあるんですが、引き続き勉強しつつ発展させていきたいと思います！！
 
-## 参考
+<br>
+
+# 参考
 
 - [WebRTC入門2016](https://html5experts.jp/series/webrtc2016/) 大変参考になりました！！
 - あと、[SkyWay](https://webrtc.ecl.ntt.com/)というサービスもありますので、参考までに・・

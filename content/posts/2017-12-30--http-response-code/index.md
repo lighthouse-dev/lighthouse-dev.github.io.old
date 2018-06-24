@@ -29,8 +29,8 @@ Response Class | Response Class意味 | 説明
 4 | Client Error <br>（クライアントエラー） | クライアントからのリクエストに誤りがあった。
 5 | Server Error <br>（サーバーエラー） | サーバがリクエストの処理に失敗した。
 
- 
 4番と、5番はエラーではありますが、違いは「4番台」はクライアントの間違ったリクエストでサーバーで処理ができない状態。
+
 「5番台」のエラーはクライアントからのリクエストには問題ないが、サーバーで処理中にサーバーの問題によってエラーが発生したという点です。
 
 <br>
@@ -79,8 +79,7 @@ Response Class | Response Class意味 | 説明
 504 | Gateway Timeout | ゲートウェイタイムアウト。ゲートウェイ・プロキシサーバはURIから推測されるサーバからの適切なレスポンスがなくタイムアウトした。
 505 | HTTP Version Not Supported | サポートしていないHTTPバージョン。リクエストがサポートされていないHTTPバージョンである場合に返される。
 
-
 <br>
 
 # 参考リンク
-[wikipedia HTTPステータスコード](https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89)
+- [wikipedia HTTPステータスコード](https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89)

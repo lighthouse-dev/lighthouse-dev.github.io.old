@@ -8,7 +8,7 @@ sitemap :
   priority : 1.0
 ---
 
-## 事前確認
+# 事前確認
 
 ```command
 $ yum repolist
@@ -30,7 +30,9 @@ Available Packages
 epel-release.noarch                                6-8                                 extras
 ```
 
-## epel インストール
+<br>
+
+# epel インストール
 
 ```command
 $ yum install epel-release
@@ -44,7 +46,9 @@ Complete!
 
 [※ epel-releaseで検索し、最新バージョンを確認する。](http://dl.fedoraproject.org/pub/epel/6/x86_64/)
 
-## 確認
+<br>
+
+# 確認
 
 ```command
 $ rpm -qa epel-release

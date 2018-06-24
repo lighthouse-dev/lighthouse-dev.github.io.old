@@ -115,10 +115,10 @@ $ chkconfig smb on
 
 # 接続方法
 
-### Windows
+#### Windows
 
 スタートからプログラムとファイルの検索に「\\サーバーIPアドレス」 
 
-### Mac
+#### Mac
 
 「Finder」からサーバへ接続機能を使って、ローカルのIP打ち込む

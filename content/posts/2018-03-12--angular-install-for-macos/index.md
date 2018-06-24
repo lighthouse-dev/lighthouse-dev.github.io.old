@@ -8,13 +8,11 @@ sitemap :
   priority : 1.0
 ---
 
-# MacでAngularインストール
-
 Mac環境で [Angular](https://angular.io/) のインストール方法を紹介します！
 
 <br>
 
-## まず`Node.js`をインストールする
+# まず`Node.js`をインストールする
 
 Angularを始めるには、まず`Node.js`をインストールする必要があります。
 
@@ -22,9 +20,7 @@ Angularを始めるには、まず`Node.js`をインストールする必要が�
 
 ただし、`Node 6.9.0` 以上のバージョンをインストールしてください。
 
-<br>
-
-### npmバージョン確認
+## npmバージョン確認
 
 Node.jsと一緒に、npm - ノードパッケージ管理者（Node Package Manager）がインストールされます。
 
@@ -36,7 +32,7 @@ npm -v
 
 <br>
 
-## TypeScriptをインストール
+# TypeScriptをインストール
 
 ```cmd
 sudo npm install -g typescript
@@ -46,7 +42,7 @@ sudo npm install -g typescript
 
 <br>
 
-## Angular CLIをインストール
+# Angular CLIをインストール
 
 Angularは、コマンドラインでプロジェクトを作成し、管理できるツールを提供してます。
 
@@ -58,7 +54,11 @@ sudo npm install -g @angular/cli
 
 ※ 詳しくは、[Angular Docs](https://angular.io/guide/quickstart) を参考。
 
-#### インストールされたことを確認！
+<br>
+
+# 確認
+
+インストールされたことを確認してみましょう！
 
 ```cmd
 ng --help

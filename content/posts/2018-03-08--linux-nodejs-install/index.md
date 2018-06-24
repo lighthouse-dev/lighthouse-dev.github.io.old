@@ -8,7 +8,7 @@ sitemap :
   priority : 1.0
 ---
 
-## 対象OS
+# 対象OS
 
 ### CentOS
 
@@ -30,7 +30,7 @@ sitemap :
 
 <br>
 
-## インストール手順
+# インストール手順
 
 Node.js v8（LTS）をインストールする場合は、以下のコマンドを実行
 

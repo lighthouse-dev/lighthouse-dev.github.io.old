@@ -30,8 +30,6 @@ CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定と�
 
 そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する
 
-<br>
-
 > Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency
 
 上記の`app.php`の中に、'default'と同じように 'test' 側も

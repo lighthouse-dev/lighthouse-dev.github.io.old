@@ -8,12 +8,14 @@ sitemap :
   priority : 1.0
 ---
 
-## 事前作業
+# 事前作業
 
 * remi-releaseは、epel-releaseに依存性(dependency)がある。
 * [CentOS6系にepel-releseをインストールする。](/linux-epel-release/)
 
-## 確認
+<br>
+
+# 確認
 
 ```command
 $ rpm -qa | grep remi-release
@@ -21,7 +23,9 @@ $ rpm -qa | grep epel-release
 epel-release-6-8.noarch
 ```
 
-## remi-releaseをインストール
+<br>
+
+# remi-releaseをインストール
 
 ```command
 $ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
@@ -33,7 +37,9 @@ remi-release.noarch 0:6.8-1.el6.remi
 Complete!
 ```
 
-## 確認
+<br>
+
+# 確認
 
 ```command
 $ rpm -qa | grep remi-release

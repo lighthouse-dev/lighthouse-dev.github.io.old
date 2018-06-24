@@ -8,13 +8,13 @@ sitemap :
   priority : 1.0
 ---
 
-## .ctpファイルをphpファイルで認識するように設定
+# .ctpファイルをphpファイルで認識するように設定
 
 ![](./image-1.png)
 
 <br>
 
-## 自動アップロード
+# 自動アップロード
 
 [Tools] > [Deployment] > [Options]
 
@@ -22,7 +22,7 @@ sitemap :
 
 <br>
 
-## 自動インデント
+# 自動インデント
 
 #### メニュー
 

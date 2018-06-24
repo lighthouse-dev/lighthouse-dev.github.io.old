@@ -24,7 +24,9 @@ sitemap :
 
 ということで、今回は、`TypeScript`についてまとめた内容を紹介したいと思います！
 
-## TypeScriptとは
+<br>
+
+# TypeScriptとは
 
 - MSとGoogleが協業で開発。
 - `TypeScript`は、新しい言語ではなく、ES6のスーパーセット。
@@ -34,7 +36,9 @@ sitemap :
 
 <img src="./typescript-1.jpg" width="50" height="50">
 
-## インストール方法
+<br>
+
+# インストール方法
 
 インストール方法は、すごく簡単。
 
@@ -42,7 +46,10 @@ sitemap :
 npm install -g typescript
 ```
 
-## TypeScriptを使うメリット
+<br>
+
+
+# TypeScriptを使うメリット
 
 `TypeScript`のメリットは以下です！
 
@@ -52,7 +59,7 @@ npm install -g typescript
 - インポート
 - 言語ユーティリティー
 
-### タイプ
+## タイプ
 
 ES5から改善された点がいくつかありますが、まず1つ目は「タイプが指定できること」です。
 
@@ -67,14 +74,14 @@ ES5から改善された点がいくつかありますが、まず1つ目は「�
 
 例えば、サンプルコードを書いてみたりする時には、タイプを省略し、後から指定することもできます。
 
-#### タイプ指定の例
+### タイプ指定の例
 
-##### 変数
+#### 変数
 ```javascript
 var name: string;
 ```
 
-##### 関数
+#### 関数
 関数を宣言する時も、次のようにパラメーターとリターンどちらもタイプを指定できます。
 
 ```javascript
@@ -82,7 +89,7 @@ function sample(name: string): string {
   return "Hello" + name;
 }
 ```
-#### タイプの種類
+### タイプの種類
 
 - string
 - number
@@ -94,7 +101,7 @@ function sample(name: string): string {
 
 それでは、タイプの種類を一つずつ見ていきましょう！
 
-##### 1. string
+#### 1. string
 
 文字列は、`string`タイプで宣言します。
 
@@ -102,7 +109,7 @@ function sample(name: string): string {
 var name: string = 'jslee';
 ```
 
-##### 2. number
+#### 2. number
 
 言葉通り"数字"を表すタイプ。
 
@@ -110,7 +117,7 @@ var name: string = 'jslee';
 var age: number = 26;
 ```
 
-##### 3. boolean
+#### 3. boolean
 
 true / false
 
@@ -118,7 +125,7 @@ true / false
 var married: boolean = true;
 ```
 
-##### 4. Array
+#### 4. Array
 
 配列タイプです。
 
@@ -136,7 +143,7 @@ var hogehoge: Array<number> = [1, 2, 3];
 var hogehoge: number[] = [1, 2, 3];
 ```
 
-##### 5. 列挙型
+#### 5. 列挙型
 
 列挙型は、`enum`を使います！
 
@@ -168,7 +175,7 @@ enum Role {Employee = 3, Manager = 5, Admin = 7};
 console.log('Roles: ', Role[3], ',', Role[5], 'and', Role[7]);
 ```
 
-##### 6. any
+#### 6. any
 
 `any`は、変数のタイプを省略する時に、デフォルトで指定されるタイプです。
 
@@ -180,7 +187,7 @@ something = 1;
 something = [1, 2, 3];
 ```
 
-##### 7. void
+#### 7. void
 
 `void`は、"タイプが無い"という意味です。
 
@@ -192,7 +199,7 @@ function setName(name: String) void {
 }
 ```
 
-### クラス
+## クラス
 
 ES5では、クラスの代わりに「プロトタイプ」が使われましたが、
 
@@ -205,7 +212,7 @@ class sampleClass {
 ```
 クラスには、プロパティとメソッド、コンストラクタを持たせます。
 
-##### プロパティ
+#### プロパティ
 
 プロパティは、クラスのインスタンスに属するデータを定義します！
 
@@ -217,7 +224,7 @@ class Person {
 }
 ```
 
-##### メソッド
+#### メソッド
 
 ```javascript
 class Person {
@@ -238,7 +245,7 @@ p.name = 'jslee';
 p.greet();
 ```
 
-##### コンストラクタ
+#### コンストラクタ
 
 コンストラクタ（constructor）は、皆さんもご存知の通りインスタンスが生成される時に実行されるメソッドですね。
 
@@ -256,7 +263,7 @@ class sampleClass {
   }
 }
 ```
-##### 継承(Inheritance)
+#### 継承(Inheritance)
 
 `extends`キーワードを使って、継承します！
 
@@ -269,7 +276,7 @@ class sampleClass extends parentClass {
 }
 ```
 
-### ユーティリティー
+## ユーティリティー
 
 ES6, TypeScriptは、プログラミングをもっと楽しめる多くの文法構造を提供してます！
 
@@ -278,11 +285,11 @@ ES6, TypeScriptは、プログラミングをもっと楽しめる多くの文�
 - アロー関数
 - テンプレート文字列
  
-#### アロー関数
+### アロー関数
 
 アロー関数（=>）は、関数を作成するための縮約形表記です。
 
-##### ES5での例
+#### ES5での例
 ```javascript
 var languages = ['PHP', 'TypeScript', 'C++'];
 languages.forEach(function(language) {
@@ -290,7 +297,7 @@ languages.forEach(function(language) {
 });
 ```
 
-##### アロー(=>)関数の書き方
+#### アロー(=>)関数の書き方
 
 ```javascript
 var languages: string[] = ['PHP', 'TypeScript', 'C++'];
@@ -299,7 +306,7 @@ languages.forEach( language => {
 });
 ```
 
-##### アロー(=>)は、`$this`を共有できる
+#### アロー(=>)は、`$this`を共有できる
 
 ```javascript
 // ES5
@@ -329,14 +336,14 @@ var hoge = {
 };
 ```
 
-#### テンプレート文字列
+### テンプレート文字列
 
 ES6, TypeScriptでは、新しいテンプレート文字列が導入されました！
 
 - 文字列中に変数（ +でつなぐ必要がなくなった ）
 - 多行（multi-line）文字列
 
-##### 文字列中に変数（string interpolation）
+#### 文字列中に変数（string interpolation）
 
 文字列の中に変数を使うことができるのがコツ。
 
@@ -349,7 +356,7 @@ var greeting = `Hello ${firstName} ${$lastName}`;
 console.log(greeting);
 ```
 
-##### 多行文字列(multi-line)
+#### 多行文字列(multi-line)
 
 多行文字列(multi-line)機能は、長い文字列をコードに書く時に役に立ちそうです！
 
@@ -364,7 +371,9 @@ var template = `
 `
 ```
 
-## まとめ
+<br>
+
+# まとめ
 
 少々長くなりましたが、ざっくりこんな感じです！
 

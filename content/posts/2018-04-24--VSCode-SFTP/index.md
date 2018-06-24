@@ -10,13 +10,13 @@ sitemap :
 
 こんにちは！
 
-普段から開発エディターで [Visual Studio Code](https://code.visualstudio.com/)を使ってます。
+普段開発エディターで [Visual Studio Code](https://code.visualstudio.com/)を使ってます。
 
 今回は、`VSCode`でSFTPファイル同期について紹介します ✈️
 
 <br>
 
-## SFTP拡張モジュールをインストール
+# SFTP拡張モジュールをインストール
 
 [sftp - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=liximomo.sftp) をインストールし、リロードします
 
@@ -24,13 +24,13 @@ sitemap :
 
 <br>
 
-## 設定
+# 設定
 
-#### 1. 「shift + command + P」で`SFTP`を入力
+## 1. 「shift + command + P」で`SFTP`を入力
 
 ![](./img-2.png)
 
-#### 2. `SFTP:Config`をクリックし、設定ファイルを開く
+## 2. `SFTP:Config`をクリックし、設定ファイルを開く
 
 ```json
 {

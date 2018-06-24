@@ -10,17 +10,15 @@ sitemap :
 
 sshで接続するリモートサーバーに設定すると、クライアントに同じように適用される。
 
-## 設定
+# 設定方法
 
-### sshd_configを開く
+## sshd_configを開く
 
 ```cmd
 vim /etc/ssh/sshd_config
 ```
 
-<br>
-
-### sshd_configを修正
+## sshd_configを修正
 
 以下のようにを修正
 
@@ -41,7 +39,7 @@ ClientAliveCountMax 5
 
 <br>
 
-### ssh 再起動
+# ssh 再起動
 
 ```cmd
 service sshd restart
