@@ -86,7 +86,8 @@ module.exports = {
             resolve: `gatsby-remark-images`,
             options: {
               maxWidth: 800,
-              backgroundColor: "transparent"
+              backgroundColor: "transparent",
+              wrapperStyle: `margin-left: 0 !important`
             }
           },
           {
@@ -198,9 +199,9 @@ module.exports = {
                     node {
                       excerpt
                       html
-                      fields { 
+                      fields {
                         slug
-                        prefix 
+                        prefix
                       }
                       frontmatter {
                         title
