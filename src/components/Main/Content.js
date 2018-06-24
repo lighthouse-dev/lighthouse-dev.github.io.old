@@ -28,11 +28,15 @@ const styles = theme => ({
       borderRadius: ".1em"
     },
     "& .gatsby-resp-image-link": {
-      margin: "2em -1.5rem",
+      // margin: "2em -1.5rem",
       border: "none",
       [`@media (min-width: ${theme.mediaQueryTresholds.M}px)`]: {
-        margin: "2.5em -3.5rem"
+        // margin: "2.5em -3.5rem"
       }
+    },
+    "& h1": {
+      borderBottom: "1px solid #ddd",
+      paddingBottom: "10px"
     },
     "& h2, & h3": {
       color: theme.main.colors.contentHeading,
