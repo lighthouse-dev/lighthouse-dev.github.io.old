@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 24 Jun 2018 14:49:06 GMT</lastBuildDate><item><title><![CDATA[.ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールする方法]]></title><description><![CDATA[こんにちは！ 最近、教務で  でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、 やり方が分からない、、 で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、 まとめておきたいと思います。 やりたいこと 単純に.ipaファイルでIOS…]]></description><link>https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 24 Jun 2018 15:13:28 GMT</lastBuildDate><item><title><![CDATA[.ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールする方法]]></title><description><![CDATA[こんにちは！ 最近、教務で  でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、 やり方が分からない、、 で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、 まとめておきたいと思います。 やりたいこと 単純に.ipaファイルでIOS…]]></description><link>https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
 &lt;p&gt;最近、教務で &lt;code class=&quot;language-text&quot;&gt;.ipaファイル&lt;/code&gt;でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、&lt;/p&gt;
 &lt;p&gt;やり方が分からない、、&lt;/p&gt;
 &lt;p&gt;で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、&lt;/p&gt;
@@ -347,17 +347,7 @@
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;基本的な設定は以上になりますが、&lt;/p&gt;
-&lt;p&gt;これ以外の設定は、&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=liximomo.sftp&quot;&gt;sftp - Visual Studio Marketplace&lt;/a&gt; 👈ここを参考にしてください。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[はてなブログで画像のサイズの変更方法 - Markdown]]></title><description><![CDATA[はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！ が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍 変更方法 最後（plain）の後ろに をつけるだけです！ 例えば、500pxに変更したい　→   をつける 変更前（デフォルト） 変更後（20…]]></description><link>https://lighthouse-dev.github.io/hatena-image-resize/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/hatena-image-resize/</guid><content:encoded>&lt;p&gt;はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！&lt;/p&gt;
-&lt;p&gt;が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍&lt;/p&gt;
-&lt;br&gt;
-&lt;h1&gt;変更方法&lt;/h1&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w350]&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;最後（plain）の後ろに&lt;code class=&quot;language-text&quot;&gt;:w350&lt;/code&gt;をつけるだけです！&lt;/p&gt;
-&lt;p&gt;例えば、500pxに変更したい　→ &lt;code class=&quot;language-text&quot;&gt;:w500&lt;/code&gt; をつける&lt;/p&gt;
-&lt;h2&gt;変更前（デフォルト）&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain]&lt;/code&gt;&lt;/p&gt;
-&lt;h2&gt;変更後（200に指定）&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w200]&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid() エラー対応]]></title><description><![CDATA[PHPで以下のエラーが発生した時の対応をメモ。 エラー内容 PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid…]]></description><link>https://lighthouse-dev.github.io/php-error-posix-getpwuid/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-error-posix-getpwuid/</guid><content:encoded>&lt;p&gt;PHPで以下のエラーが発生した時の対応をメモ。&lt;/p&gt;
+&lt;p&gt;これ以外の設定は、&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=liximomo.sftp&quot;&gt;sftp - Visual Studio Marketplace&lt;/a&gt; 👈ここを参考にしてください。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid() エラー対応]]></title><description><![CDATA[PHPで以下のエラーが発生した時の対応をメモ。 エラー内容 PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid…]]></description><link>https://lighthouse-dev.github.io/php-error-posix-getpwuid/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-error-posix-getpwuid/</guid><content:encoded>&lt;p&gt;PHPで以下のエラーが発生した時の対応をメモ。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;エラー内容&lt;/h1&gt;
 &lt;blockquote&gt;
@@ -373,7 +363,17 @@
 &lt;h2&gt;2. Apach再起動&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service httpd restart&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Angular-CLI コマンドまとめ]]></title><description><![CDATA[プロジェクト作成 テンプレート作成 コンポーネント作成 サービス作成 アプリケーション実行 ポートを指定する場合 アプリケーションビルド テスト実行]]></description><link>https://lighthouse-dev.github.io/angular-cli/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-cli/</guid><content:encoded>&lt;h1&gt;プロジェクト作成&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[はてなブログで画像のサイズを変更方法 - Markdown]]></title><description><![CDATA[はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！ が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍 変更方法 最後（plain）の後ろに をつけるだけです！ 例えば、500pxに変更したい　→   をつける 変更前（デフォルト） 変更後（20…]]></description><link>https://lighthouse-dev.github.io/hatena-image-resize/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/hatena-image-resize/</guid><content:encoded>&lt;p&gt;はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！&lt;/p&gt;
+&lt;p&gt;が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;変更方法&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w350]&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;最後（plain）の後ろに&lt;code class=&quot;language-text&quot;&gt;:w350&lt;/code&gt;をつけるだけです！&lt;/p&gt;
+&lt;p&gt;例えば、500pxに変更したい　→ &lt;code class=&quot;language-text&quot;&gt;:w500&lt;/code&gt; をつける&lt;/p&gt;
+&lt;h2&gt;変更前（デフォルト）&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain]&lt;/code&gt;&lt;/p&gt;
+&lt;h2&gt;変更後（200に指定）&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w200]&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Angular-CLI コマンドまとめ]]></title><description><![CDATA[プロジェクト作成 テンプレート作成 コンポーネント作成 サービス作成 アプリケーション実行 ポートを指定する場合 アプリケーションビルド テスト実行]]></description><link>https://lighthouse-dev.github.io/angular-cli/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-cli/</guid><content:encoded>&lt;h1&gt;プロジェクト作成&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng new &amp;lt;プロジェクト名&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -1259,6 +1259,79 @@ ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
 &lt;h1&gt;ssh 再起動&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service sshd restart&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[【 PHP 】変数の存在有無をチェックする isset()、empty()の違い]]></title><description><![CDATA[こんにちは！ 今回は、PHPで変数の値をチェックする方法についてメモです。 もし変数の値が存在するかをチェックする時って、どうすれば良いでしょうか。 こういう時に使えるのが   と  です。 isset(チェックする変数名); empty(チェックする変数名); isset…]]></description><link>https://lighthouse-dev.github.io/php-isset-empty/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-isset-empty/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
+&lt;p&gt;今回は、PHPで変数の値をチェックする方法についてメモです。&lt;/p&gt;
+&lt;p&gt;もし変数の値が存在するかをチェックする時って、どうすれば良いでしょうか。&lt;/p&gt;
+&lt;p&gt;こういう時に使えるのが &lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;です。&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;isset(チェックする変数名);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;blockquote&gt;
+&lt;p&gt;empty(チェックする変数名);&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;br&gt;
+&lt;h1&gt;isset()、 empty() 関数について&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt;も&lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;も変数の値も存在有無を確認できる関数です。&lt;/p&gt;
+&lt;p&gt;この二つの違いって何でしょうか。&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th align=&quot;left&quot;&gt;関数名&lt;/th&gt;
+&lt;th align=&quot;left&quot;&gt;説明&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;isset()&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;値の存在有無を
+&lt;code class=&quot;language-text&quot;&gt;boolean&lt;/code&gt;
+で返す。
+&lt;br&gt;
+ 値が存在し、nullでなければ
+&lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;
+を返す。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td align=&quot;left&quot;&gt;empty()&lt;/td&gt;
+&lt;td align=&quot;left&quot;&gt;値が存在しない または 値が
+&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;
+or
+&lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;
+or
+&lt;code class=&quot;language-text&quot;&gt;null&lt;/code&gt;
+の場合、
+&lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;
+を返す。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;h1&gt;isset()サンプルコード&lt;/h1&gt;
+&lt;p&gt;isset()を使って変数の値の存在有無をチェックします。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$hoge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;値を持っている&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;値を持ってない&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token delimiter important&quot;&gt;?&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;empty()サンプルコード&lt;/h1&gt;
+&lt;p&gt;それでは、empty()について。&lt;/p&gt;
+&lt;p&gt;似ている関数のように見えますが、&lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;関数は、変数が&lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;or&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;だとしても&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;を返すという点が&lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt;と確実な違いを持ってます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
+&lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$hoge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;「値がない」or「0」or「false」or「null」&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;else&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
+    &lt;span class=&quot;token keyword&quot;&gt;echo&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;値を持っている&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+&lt;span class=&quot;token delimiter important&quot;&gt;?&gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[HTTPサーバー Response Codeのまとめ]]></title><description><![CDATA[HTTPステータスコードについてのまとめです！ 各コードは100単位で分かれています。
 例えば、300番台同士、40…]]></description><link>https://lighthouse-dev.github.io/http-response-code/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/http-response-code/</guid><content:encoded>&lt;p&gt;HTTPステータスコードについてのまとめです！&lt;/p&gt;
 &lt;p&gt;各コードは100単位で分かれています。
