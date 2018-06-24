@@ -2,7 +2,7 @@
 title: WebRTCでビデオチャットアプリを作ってみた！
 subTitle: ""
 category: "WebRTC"
-cover: webrtc.png
+cover: webrtc-logo.png
 sitemap :
   changefreq : daily
   priority : 1.0
@@ -181,9 +181,9 @@ node signaling.js
 
 ブラウザーからアクセスし、スクリプトを読み込むと
 
-![](./webrtc-image-1.png)
+![](img-1.png)
 
-![](./webrtc-image-2.png)
+![](img-2.png)
 
 こんな感じです！
 
