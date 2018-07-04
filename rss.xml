@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 24 Jun 2018 16:42:09 GMT</lastBuildDate><item><title><![CDATA[.ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールする方法]]></title><description><![CDATA[こんにちは！ 最近、教務で  でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、 やり方が分からない、、 で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、 まとめておきたいと思います。 やりたいこと 単純に.ipaファイルでIOS…]]></description><link>https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Wed, 04 Jul 2018 09:46:51 GMT</lastBuildDate><item><title><![CDATA[VSCodeでvendor配下のファイルが検索できない]]></title><description><![CDATA[現象 VSCodeで、クイックオープン( )でファイルを検索することが多い。
+が、Laravelのvendor配下が検索できない。（CakePHPも同様） 👆のせいで、 金子さん がVSCodeを裏切って、Sublime Textに乗り換えた。 やりたいこと vendor…]]></description><link>https://lighthouse-dev.github.io/vscode-search-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vscode-search-setting/</guid><content:encoded>&lt;h1&gt;現象&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;VSCodeで、クイックオープン(&lt;code class=&quot;language-text&quot;&gt;Cmd + p&lt;/code&gt;)でファイルを検索することが多い。
+が、Laravelのvendor配下が検索できない。（CakePHPも同様）&lt;/li&gt;
+&lt;li&gt;👆のせいで、&lt;a href=&quot;https://fusic.co.jp/members/56&quot;&gt;金子さん&lt;/a&gt;がVSCodeを裏切って、Sublime Textに乗り換えた。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;やりたいこと&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;vendor配下まで検索できるようにしたい。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://fusic.co.jp/members/56&quot;&gt;金子さん&lt;/a&gt;がVSCodeに戻って来てほしい。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;検索できなかった理由&lt;/h1&gt;
+&lt;p&gt;基本的にVSCodeのデフォルト設定で&lt;code class=&quot;language-text&quot;&gt;&amp;quot;search.useIgnoreFiles&amp;quot;: true&lt;/code&gt;になっているはずです。&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;search.useIgnoreFiles&lt;/code&gt;設定は、 クイックオープン(Ctrl+P)でファイルを探す時に、.gitignore/.ignoreに記載されているファイルを表示させるかどうかの設定です。&lt;/p&gt;
+&lt;p&gt;つまり、この設定が &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;になっていて、.gitignore/.ignoreに&lt;code class=&quot;language-text&quot;&gt;vender&lt;/code&gt;ディレクトリを記載している場合、
+検索で&lt;code class=&quot;language-text&quot;&gt;vender&lt;/code&gt;配下のファイルは検索できなくなるということ。(vendor以外も同様)&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;解決方法&lt;/h1&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;search.useIgnoreFiles&amp;quot;: false&lt;/code&gt;に設定し、&lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt;を見ないようにするだけでOK!&lt;/p&gt;
+&lt;br&gt;</content:encoded></item><item><title><![CDATA[.ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールする方法]]></title><description><![CDATA[こんにちは！ 最近、教務で  でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、 やり方が分からない、、 で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、 まとめておきたいと思います。 やりたいこと 単純に.ipaファイルでIOS…]]></description><link>https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
 &lt;p&gt;最近、教務で &lt;code class=&quot;language-text&quot;&gt;.ipaファイル&lt;/code&gt;でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、&lt;/p&gt;
 &lt;p&gt;やり方が分からない、、&lt;/p&gt;
 &lt;p&gt;で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、&lt;/p&gt;
