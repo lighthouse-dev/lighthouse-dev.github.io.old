@@ -13,5 +13,4 @@ menuTitle: README
 - Vue.js
 - GraphQL
 - Docker
-- Web Design
 - UI/UX Design

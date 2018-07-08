@@ -1,3 +1,3 @@
-### lighthouse-dev
+# lighthouse.log
 
 https://lighthouse-dev.github.io/
