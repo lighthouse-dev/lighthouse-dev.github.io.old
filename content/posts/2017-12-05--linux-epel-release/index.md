@@ -1,5 +1,5 @@
 ---
-title: CentOS6系にepel-releseをインストールする
+title: CentOSにepel-releseをインストールする
 subTitle: ""
 category: "Linux"
 cover: centos.jpg
@@ -75,3 +75,5 @@ updates                 CentOS-6 - Updates                                      
 repolist: 18,676
 
 ```
+
+<br><br>

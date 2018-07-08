@@ -1,5 +1,5 @@
 ---
-title: CentOS6系にPHP 5.6をインストールする
+title: CentOSにPHPをインストールする
 subTitle: ""
 category: "Linux"
 cover: centos.jpg
@@ -10,7 +10,7 @@ sitemap :
 
 # 事前作業
 
-* [CentOS6系にremiレポジトリを追加する。](/linux-remi-release/)
+* [CentOSにremiレポジトリを追加する。](/linux-remi-release/)
 
 <br>
 
@@ -31,6 +31,8 @@ remi-release-6.8-1.el6.remi.noarch
 
 # PHPをインストール
 
+### `例`：PHP5.6をインストールする
+
 ```command
 $ yum --enablerepo=remi-php56 install php
 
@@ -47,6 +49,12 @@ php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
 php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
 
 Complete!
+```
+
+### `例`：PHP7.2をインストールする
+
+```command
+$ yum --enablerepo=remi-php72 install php
 ```
 
 <br>
@@ -68,3 +76,5 @@ PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
 Copyright (c) 1997-2016 The PHP Group
 Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies
 ```
+
+<br><br>

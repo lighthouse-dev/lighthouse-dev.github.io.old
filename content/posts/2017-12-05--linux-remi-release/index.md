@@ -1,5 +1,5 @@
 ---
-title: CentOS6系にremiレポジトリを追加する
+title: CentOSにremiレポジトリを追加する
 subTitle: ""
 category: "Linux"
 cover: centos.jpg
@@ -11,7 +11,7 @@ sitemap :
 # 事前作業
 
 * remi-releaseは、epel-releaseに依存性(dependency)がある。
-* [CentOS6系にepel-releseをインストールする。](/linux-epel-release/)
+* [CentOSにepel-releseをインストールする。](/linux-epel-release/)
 
 <br>
 
@@ -59,3 +59,5 @@ $ yum repolist | grep remi
 * remi-safe: mirror.innosol.asia
 remi-safe                  Safe Remi's RPM repository for Enterprise Linu    881
 ```
+
+<br><br>
