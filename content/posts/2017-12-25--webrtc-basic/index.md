@@ -1,7 +1,7 @@
 ---
 title: WebRTCでビデオチャットアプリを作ってみた！
 subTitle: ""
-category: "WebRTC"
+category: "Default"
 cover: webrtc-logo.png
 sitemap :
   changefreq : daily

@@ -1,7 +1,7 @@
 ---
 title: "変数ネーミングルール（変数名規約, Naming Rule, Naming Convention)"
 subTitle: ""
-category: "Programming Basics"
+category: "Default"
 cover: code-logo.png
 sitemap :
   changefreq : daily

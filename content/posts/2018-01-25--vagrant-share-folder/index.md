@@ -1,7 +1,7 @@
 ---
 title: "Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない問題"
 subTitle: ""
-category: "Vagrant"
+category: "Default"
 cover: vagrant-logo.png
 sitemap :
   changefreq : daily

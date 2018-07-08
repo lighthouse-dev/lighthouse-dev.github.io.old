@@ -1,7 +1,7 @@
 ---
 title: TypeScript入門
 subTitle: ""
-category: "TypeScript"
+category: "JavaScript"
 cover: typescript-logo.png
 sitemap :
   changefreq : daily

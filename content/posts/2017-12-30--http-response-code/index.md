@@ -1,7 +1,7 @@
 ---
 title:  HTTPサーバー Response Codeのまとめ
 subTitle: ""
-category: "WebDev"
+category: "Default"
 cover: http-logo.png
 sitemap :
   changefreq : daily

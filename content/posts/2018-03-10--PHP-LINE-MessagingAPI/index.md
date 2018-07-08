@@ -1,7 +1,7 @@
 ---
 title: 'PHPでLINEのMessaging APIを使ってメッセージを送る'
 subTitle: ""
-category: "LINE Developers"
+category: "Default"
 cover: line-logo.png
 sitemap :
   changefreq : daily

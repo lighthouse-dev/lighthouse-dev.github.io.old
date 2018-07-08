@@ -1,7 +1,7 @@
 ---
 title: 'LinuxでNode.jsインストール'
 subTitle: ""
-category: "Node.js"
+category: "Linux"
 cover: nodejs-logo.jpg
 sitemap :
   changefreq : daily
