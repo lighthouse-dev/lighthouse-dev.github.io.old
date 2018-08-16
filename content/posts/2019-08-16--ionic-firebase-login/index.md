@@ -1,5 +1,5 @@
 ---
-title: "IonicとFirebaseでログイン機能を実装してみた"
+title: "IonicとFirebaseでログイン機能を実装"
 subTitle: ""
 category: "Ionic"
 cover: ionic-logo.png
@@ -8,9 +8,19 @@ sitemap :
   priority : 1.0
 ---
 
+こんにちは!
+
+久々の投稿になります 😇
+
+今回は、「IonicとFirebaseでログイン機能を実装」についてまとめてみました。 
+
+まず、Firebaseの設定からです!
+
 # Firebaseの設定
 
 ### プロジェクトを作成
+
+まず、Firebaseのプロジェクトを作成します！
 
 ![](firebase-1.png)
 
@@ -19,6 +29,8 @@ sitemap :
 <br>
 
 ### Email / Password ログインを許可
+
+次は、Email / Password ログインを許可します。
 
 ![](firebase-3.png)
 
@@ -60,7 +72,7 @@ ionic generate page Login
 
 ## environment.tsを作成
 
-`src`の配下に`environment.ts`を作成し、[Firebaseの設定 > ウェブアプリにFirebaseを追加]()
+`src`の配下に`environment.ts`を作成し、「↑ Firebaseの設定 > ウェブアプリにFirebaseを追加」
 でコピーした設定情報を貼り付けてください 😃
 
 ```javascript
