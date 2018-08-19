@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Thu, 16 Aug 2018 08:47:02 GMT</lastBuildDate><item><title><![CDATA[IonicとFirebaseでログイン機能を実装]]></title><description><![CDATA[こんにちは! 久々の投稿になります 😇 今回は、「IonicとFirebaseでログイン機能を実装」についてまとめてみました。  まず、Firebaseの設定からです! Firebaseの設定 プロジェクトを作成 まず、Firebaseのプロジェクトを作成します！ Email…]]></description><link>https://lighthouse-dev.github.io/ionic-firebase-login/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ionic-firebase-login/</guid><content:encoded>&lt;p&gt;こんにちは!&lt;/p&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 19 Aug 2018 05:17:18 GMT</lastBuildDate><item><title><![CDATA[IonicとFirebaseでログイン機能を実装]]></title><description><![CDATA[こんにちは! 久々の投稿になります 😇 今回は、「IonicとFirebaseでログイン機能を実装」についてまとめてみました。  まず、Firebaseの設定からです! Firebaseの設定 プロジェクトを作成 まず、Firebaseのプロジェクトを作成します！ Email…]]></description><link>https://lighthouse-dev.github.io/ionic-firebase-login/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ionic-firebase-login/</guid><content:encoded>&lt;p&gt;こんにちは!&lt;/p&gt;
 &lt;p&gt;久々の投稿になります 😇&lt;/p&gt;
 &lt;p&gt;今回は、「IonicとFirebaseでログイン機能を実装」についてまとめてみました。 &lt;/p&gt;
 &lt;p&gt;まず、Firebaseの設定からです!&lt;/p&gt;
@@ -2495,7 +2495,7 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
 &lt;h2&gt;P2P通信を行うために&lt;/h2&gt;
 &lt;p&gt;ブラウザ間でP2P通信を行うには、&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;相手のIPアドレスを&lt;/li&gt;
+&lt;li&gt;相手のIPアドレス&lt;/li&gt;
 &lt;li&gt;動的に割り振られるUDPのポート番号&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;を知る必要があります。&lt;/p&gt;
