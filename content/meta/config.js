@@ -15,7 +15,7 @@ module.exports = {
   infoTitle: "lighthouse.log",
   infoTitleNote: "jslee blog",
   // manifest.json
-  manifestName: "jslee Personal Blog",
+  manifestName: "jslee blog",
   manifestShortName: "jsleeBlog", // max 12 characters
   manifestStartUrl: "/",
   manifestBackgroundColor: colors.bg,
