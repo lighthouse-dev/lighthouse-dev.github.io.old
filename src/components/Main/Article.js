@@ -14,14 +14,7 @@ const styles = theme => ({
     "& a": {
       fontWeight: "bold",
       letterSpacing: "-.02em",
-      textShadow: `
-           2px  2px ${theme.main.colors.background},
-          -2px  2px ${theme.main.colors.background},
-          -2px -2px ${theme.main.colors.background},
-          -2px  2px ${theme.main.colors.background},
-          -2px  0   ${theme.main.colors.background},
-           2px  0   ${theme.main.colors.background}
-        `,
+      textShadow: "none",
       display: "inline-block",
       textDecoration: "none",
       transition: "0.3s",
