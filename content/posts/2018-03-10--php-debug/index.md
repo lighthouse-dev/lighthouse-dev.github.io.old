@@ -16,7 +16,7 @@ PHP デバッグ方法のメモ。
 
 # エラーログをコードに仕込んで出力
 
-```php
+```php:title=sample.php
 error_log(print_r($outputData,true));
 ```
 
@@ -24,7 +24,7 @@ error_log(print_r($outputData,true));
 
 ## 任意のファイルに出力
 
-```php
+```php:title=sample.php
 error_log(print_r($outputData,true),"3","/tmp/debug.log");
 ```
 

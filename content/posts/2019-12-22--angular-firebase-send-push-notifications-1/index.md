@@ -79,8 +79,7 @@ https://www.npmjs.com/package/firebase
 
  `gcm_sender_id`は、固定値ですので、変更しないでください！
 
-▼ src/manifest.json
-```json
+```json:title=src/manifest.json
 {
   ... 省略 ...
   "gcm_sender_id": "103953800507" // ← gcm_sender_idを追加
@@ -92,7 +91,7 @@ https://www.npmjs.com/package/firebase
 
 Pushメッセージには、 `service worker` が必要になります。
 まず、Firebaseで `messagingSenderId`をコピーしておきましょう。
-j
+
 
 <img src="./image-1.png" width="40" height="50">
 
@@ -100,8 +99,7 @@ j
 
 そして、↑でコピーした`messagingSenderId` を、以下の `firebase.initializeApp()` に貼りつけます！
 
-▼ src/firebase-messaging-sw.js
-```typescript
+```typescript:title=src/firebase-messaging-sw.js
 // Give the service worker access to Firebase Messaging.
 // Note that you can only use Firebase Messaging here, other Firebase libraries
 // are not available in the service worker.
@@ -143,8 +141,7 @@ self.addEventListener('activate', function(event) {
 
 angular.jsonに`manifest.json`, `firebase-messaging-sw.js` を追加
 
-▼ angular.json
-```json
+```json:title=angular.json
 {
   ... 省略 ...
   "projects": {
@@ -195,8 +192,7 @@ ng g service messaging
 ##### `receiveMessage()`
 - メッセージを受信
 
-▼ src/app/service/messaging.service.ts
-```typescript
+```typescript:title=src/app/service/messaging.service.ts
 import { Injectable } from '@angular/core';
 import { AngularFireDatabase } from 'angularfire2/database';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -258,8 +254,7 @@ export class MessagingService {
 
 #### app.module.tsを修正
 
-▼ src/app/app.module.ts
-```typescript
+```typescript:title=src/app/app.module.ts
 // ... 省略 ...
 import { MessagingService } from './service/messaging.service';
 
@@ -274,8 +269,7 @@ export class AppModule {}
 
 #### app.component.tsを修正
 
-▼ src/app/app.component.ts
-```typescript
+```typescript:title=src/app/app.component.ts
 // ... 省略 ...
 import { MessagingService } from './service/messaging.service';
 

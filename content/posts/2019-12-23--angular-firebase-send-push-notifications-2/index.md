@@ -63,8 +63,7 @@ DBに更新がある度に、トリガーによって `onCreate()` が実行さ�
 
 また、DBに保存されているFCMトークンを取得し、メッセージデータを用いてユーザーに送信するペイロードが作られます。
 
-▼ functions/src/index.ts
-```typescript
+```typescript:title=functions/src/index.ts
 import * as functions from 'firebase-functions';
 import * as admin from 'firebase-admin';
 admin.initializeApp();

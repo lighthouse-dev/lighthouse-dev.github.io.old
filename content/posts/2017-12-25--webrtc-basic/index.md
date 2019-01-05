@@ -55,8 +55,7 @@ WebRTCで提供するAPIは以下の三つです！
 
 Webサーバーに以下のサンプルコードを作成し、試してみましょう！
 
-##### ▼ サンプルコード
-```html
+```html:title=sample.html
 <!doctype html>
 <html>
   <head>
@@ -138,8 +137,7 @@ npm install ws
 
 ### シングルサーバーサンプルコードを作成
 
-##### ▼ signaling.js
-```javascript
+```javascript:title=signaling.js
 "use strict";
 
 let WebSocketServer = require('ws').Server;

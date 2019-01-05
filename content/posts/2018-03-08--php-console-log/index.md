@@ -25,7 +25,7 @@ sitemap :
 とは言っても、大した事はしてませんし、
 ただデーターをスクリプト言語に入れただけなんです。
 
-```php
+```php:title=sample.php
 <?php
 function console_log( $data ){
   echo '<script>';

@@ -30,7 +30,7 @@ Ajaxは、皆さんも知っている通り、基本的に非同期で通信し�
 
 まずは非同期通信のサンプルです。
 
-```javascript
+```javascript:title=sample.js
 $.ajax({
   type: 'POST',
   url: 'test.php',
@@ -50,7 +50,7 @@ doAnything();
 
 # 同期
 
-```javascript
+```javascript:title=sample.js
 $.ajax({
   type: 'POST',
   url: 'test.php',

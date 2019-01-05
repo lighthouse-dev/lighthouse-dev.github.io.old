@@ -16,6 +16,8 @@ sitemap :
 
 まず、Firebaseの設定からです!
 
+<br>
+
 # Firebaseの設定
 
 ### プロジェクトを作成
@@ -75,7 +77,7 @@ ionic generate page Login
 `src`の配下に`environment.ts`を作成し、「↑ Firebaseの設定 > ウェブアプリにFirebaseを追加」
 でコピーした設定情報を貼り付けてください 😃
 
-```javascript
+```javascript:title=src/environment.ts
 export const environment = {
   production: false,
   firebase: {
@@ -91,7 +93,7 @@ export const environment = {
 
 ## app.module.tsを修正
 
-```javascript
+```javascript:title=src/app/app.module.ts
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
@@ -148,9 +150,7 @@ export class AppModule {}
 
 ### ログイン画面をそれっぽく修正
 
-`src/pages/login/login.html`を修正します。
-
-```html
+```html:title=src/pages/login/login.html
 <ion-header>
   <ion-navbar color="primary">
     <ion-title> Login </ion-title>
@@ -183,9 +183,7 @@ export class AppModule {}
 
 ### ユーザーモデルを作成
 
-`src/model/user.ts`を作成します。
-
-```javascript
+```javascript:title=src/model/user.ts
 export interface User {
   email: string;
   password: string;
@@ -194,9 +192,7 @@ export interface User {
 
 ### ログイン処理を作成
 
-`src/pages/login/login.ts`を修正します。
-
-```javascript
+```javascript:title=src/pages/login/login.ts
 import { Component } from '@angular/core';
 import { IonicPage, NavController, ToastController } from 'ionic-angular';
 import { AngularFireAuth } from 'angularfire2/auth';
@@ -269,7 +265,7 @@ export class LoginPage {
 
 `app.component.ts`を修正、およびログアウト処理を作成します。
 
-```javascript
+```javascript:title=app.component.ts
 import { Component, ViewChild } from '@angular/core';
 import { Nav, Platform, ToastController } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
@@ -335,6 +331,8 @@ export class MyApp {
   }
 }
 ```
+
+実装は以上になります！
 
 <br><br>
 

@@ -48,7 +48,7 @@ vi /etc/php.ini
 
 ↓以下を追加
 
-```json
+```json:title=/etc/php.ini
 [xdebug]  
 zend_extension="/usr/lib64/php/modules/xdebug.so"  
 xdebug.default_enable = 1  

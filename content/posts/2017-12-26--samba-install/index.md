@@ -42,7 +42,7 @@ $ vi /etc/sysconfig/iptables
 
 自分は下記2つをとりあえずコメントアウト
 
-```cmd
+```cmd:title=/etc/sysconfig/iptables
 #-A INPUT -j REJECT --reject-with icmp-host-prohibited
 #-A FORWARD -j REJECT --reject-with icmp-host-prohibited
 ```
@@ -71,7 +71,7 @@ $ vi /etc/samba/smb.conf
 
 変更は以下の通り
 
-```conf
+```conf:title=/etc/samba/smb.conf
 [global]
 unix charset = UTF-8 #追記
 dos charset = CP932 #追記

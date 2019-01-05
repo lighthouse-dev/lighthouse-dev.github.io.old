@@ -67,7 +67,7 @@ PHPでMessaging APIを動かすサンプルを紹介したいと思います。
 
 ### サンプルコード
 
-```php
+```php:title=sample.php
 <?php
 $replyToken = <Webhookで受信する応答トークン>
 $accessToken = <アクセストークン>

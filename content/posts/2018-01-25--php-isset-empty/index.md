@@ -39,7 +39,7 @@ empty() | 値が存在しない または 値が`0`or`false`or`null`の場合、
 # isset()サンプルコード
 isset()を使って変数の値の存在有無をチェックします。
 
-```php
+```php:title=sample.php
 <?php
 if (isset($hoge)) {
     echo '値を持っている';
@@ -60,7 +60,7 @@ if (isset($hoge)) {
 `true`を返すという点が`isset()`と確実な違いを持ってます。
 
 
-```php
+```php:title=sample.php
 <?php
 if (empty($hoge)) {
     echo '「値がない」or「0」or「false」or「null」';
