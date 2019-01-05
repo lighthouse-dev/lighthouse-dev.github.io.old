@@ -1,5 +1,5 @@
 ---
-title: README.md
+title: JSLEE 🦁
 menuTitle: README
 ---
 
@@ -9,21 +9,23 @@ PHPやVue.js、Angularなど書いてます！ <br>
 
 [→自己紹介ページはこちら](https://fusic.co.jp/members/55)
 
-### Skills Summary
-#### Frontend
+<br>
+
+# Skills Summary 🎩
+### Frontend
 - JavaScript
 - CSS/SCSS
 - Angular
 - Vue.js
 - Ionic
 
-#### Backend
+### Backend
 - C/C++
 - PHP：CakePHP、Laravel
 - Database：MySQL、PostgreSQL、MongoDB、GraphQL
 
-#### OS
+### OS
 - Linux：CentOS、Debian
 
-#### Etc
+### Etc
 - TypeScript、Firebase、PWA、Git、Docker、UI/UX Design
