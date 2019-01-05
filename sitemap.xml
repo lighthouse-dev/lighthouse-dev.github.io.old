@@ -25,7 +25,6 @@
 <url> <loc>https://lighthouse-dev.github.io/typescript-basic/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/about/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/success/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
-<url> <loc>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-1/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/ionic-firebase-login/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
@@ -36,6 +35,7 @@
 <url> <loc>https://lighthouse-dev.github.io/webrtc-basic/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/phpstorm-remote-setting/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/ajax-sync/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
+<url> <loc>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/contact/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
 <url> <loc>https://lighthouse-dev.github.io/search/</loc> <changefreq>daily</changefreq> <priority>0.7</priority> </url>
