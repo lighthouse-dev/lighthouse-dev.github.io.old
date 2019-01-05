@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 07:50:01 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 07:58:11 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
 に引き続き、Firebase Functions側の実装です。 Push機能実装：Firebase Functions側 Firebaseのfunctions…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-1&quot;&gt;Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）&lt;/a&gt;
 に引き続き、Firebase Functions側の実装です。&lt;/p&gt;
 &lt;br&gt;
@@ -1029,6 +1029,15 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 検索で&lt;code class=&quot;language-text&quot;&gt;vender&lt;/code&gt;配下のファイルは検索できなくなるということ。(vendor以外も同様)&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;解決方法&lt;/h1&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;User Settings&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;...省略
+
+  &lt;span class=&quot;token property&quot;&gt;&quot;search.useIgnoreFiles&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+
+...省略
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;search.useIgnoreFiles&amp;quot;: false&lt;/code&gt;に設定し、&lt;code class=&quot;language-text&quot;&gt;.gitignore&lt;/code&gt;を見ないようにするだけでOK!&lt;/p&gt;
 &lt;br&gt;</content:encoded></item><item><title><![CDATA[.ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールする方法]]></title><description><![CDATA[こんにちは！ 最近、教務で  でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、 やり方が分からない、、 で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、 まとめておきたいと思います。 やりたいこと 単純に.ipaファイルでIOS…]]></description><link>https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ios-custom-enterprise-app-install/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
 &lt;p&gt;最近、教務で &lt;code class=&quot;language-text&quot;&gt;.ipaファイル&lt;/code&gt;でIOSデバイスにカスタムのアプリをインストールすることがあったんですが、&lt;/p&gt;
