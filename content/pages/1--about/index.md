@@ -19,11 +19,11 @@ PHPやVue.js、Angularなど書いてます！ <br>
 
 #### Backend
 - C/C++
-- PHP - CakePHP、Laravel
-- Database - MySQL、PostgreSQL、MongoDB、GraphQL
+- PHP：CakePHP、Laravel
+- Database：MySQL、PostgreSQL、MongoDB、GraphQL
 
 #### OS
-- Linux - CentOS、Debian
+- Linux：CentOS、Debian
 
 #### Etc
-- TypeScript、Firebase、Git、Docker、UI/UX Design
+- TypeScript、Firebase、PWA、Git、Docker、UI/UX Design
