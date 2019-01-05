@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 04:32:58 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 06:31:31 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
 に引き続き、Firebase Functions側の実装です。 Push機能実装：Firebase Functions側 Firebaseのfunctions…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-1&quot;&gt;Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）&lt;/a&gt;
 に引き続き、Firebase Functions側の実装です。&lt;/p&gt;
 &lt;br&gt;
@@ -41,7 +41,7 @@
 &lt;h3&gt;index.tsを修正&lt;/h3&gt;
 &lt;p&gt;DBに更新がある度に、トリガーによって &lt;code class=&quot;language-text&quot;&gt;onCreate()&lt;/code&gt; が実行されます。&lt;/p&gt;
 &lt;p&gt;また、DBに保存されているFCMトークンを取得し、メッセージデータを用いてユーザーに送信するペイロードが作られます。&lt;/p&gt;
-&lt;p&gt;▼ functions/src/index.ts&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;functions/src/index.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; functions &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;firebase-functions&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; admin &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;firebase-admin&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -165,7 +165,7 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 manifest.json のブラウザ送信者 ID は固定値で、すべての FCM JavaScript クライアントで共通です。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt; &lt;code class=&quot;language-text&quot;&gt;gcm_sender_id&lt;/code&gt;は、固定値ですので、変更しないでください！&lt;/p&gt;
-&lt;p&gt;▼ src/manifest.json&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/manifest.json&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   ... 省略 ...
@@ -176,8 +176,7 @@ manifest.json のブラウザ送信者 ID は固定値で、すべての FCM Jav
       &lt;/div&gt;
 &lt;h3&gt;メッセージサービスワーカーを作成&lt;/h3&gt;
 &lt;p&gt;Pushメッセージには、 &lt;code class=&quot;language-text&quot;&gt;service worker&lt;/code&gt; が必要になります。
-まず、Firebaseで &lt;code class=&quot;language-text&quot;&gt;messagingSenderId&lt;/code&gt;をコピーしておきましょう。
-j&lt;/p&gt;
+まず、Firebaseで &lt;code class=&quot;language-text&quot;&gt;messagingSenderId&lt;/code&gt;をコピーしておきましょう。&lt;/p&gt;
 
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/image-1-2942bf1f0d78ee14e610bf7e0b5d43b9-6eb54.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
   
@@ -194,7 +193,7 @@ j&lt;/p&gt;
     
 &lt;p&gt;次は、&lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt;ディレクトリの配下に &lt;code class=&quot;language-text&quot;&gt;firebase-messaging-sw.js&lt;/code&gt; を作成します。&lt;/p&gt;
 &lt;p&gt;そして、↑でコピーした&lt;code class=&quot;language-text&quot;&gt;messagingSenderId&lt;/code&gt; を、以下の &lt;code class=&quot;language-text&quot;&gt;firebase.initializeApp()&lt;/code&gt; に貼りつけます！&lt;/p&gt;
-&lt;p&gt;▼ src/firebase-messaging-sw.js&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/firebase-messaging-sw.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// Give the service worker access to Firebase Messaging.&lt;/span&gt;
 &lt;span class=&quot;token comment&quot;&gt;// Note that you can only use Firebase Messaging here, other Firebase libraries&lt;/span&gt;
@@ -234,7 +233,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;p&gt;これで、ユーザーがアプリを閉じても、アプリが新しいメッセージを検知することができます！&lt;/p&gt;
 &lt;h3&gt;angular.jsonを修正&lt;/h3&gt;
 &lt;p&gt;angular.jsonに&lt;code class=&quot;language-text&quot;&gt;manifest.json&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;firebase-messaging-sw.js&lt;/code&gt; を追加&lt;/p&gt;
-&lt;p&gt;▼ angular.json&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;angular.json&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   ... 省略 ...
@@ -293,7 +292,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;ul&gt;
 &lt;li&gt;メッセージを受信&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;▼ src/app/service/messaging.service.ts&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/service/messaging.service.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Injectable &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/core&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; AngularFireDatabase &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;angularfire2/database&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -355,7 +354,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h4&gt;app.module.tsを修正&lt;/h4&gt;
-&lt;p&gt;▼ src/app/app.module.ts&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/app.module.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ... 省略 ...&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; MessagingService &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./service/messaging.service&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -370,7 +369,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h4&gt;app.component.tsを修正&lt;/h4&gt;
-&lt;p&gt;▼ src/app/app.component.ts&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/app.component.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ... 省略 ...&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; MessagingService &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;./service/messaging.service&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -403,6 +402,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;p&gt;久々の投稿になります 😇&lt;/p&gt;
 &lt;p&gt;今回は、「IonicとFirebaseでログイン機能を実装」についてまとめてみました。 &lt;/p&gt;
 &lt;p&gt;まず、Firebaseの設定からです!&lt;/p&gt;
+&lt;br&gt;
 &lt;h1&gt;Firebaseの設定&lt;/h1&gt;
 &lt;h3&gt;プロジェクトを作成&lt;/h3&gt;
 &lt;p&gt;まず、Firebaseのプロジェクトを作成します！&lt;/p&gt;
@@ -669,6 +669,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;h2&gt;environment.tsを作成&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt;の配下に&lt;code class=&quot;language-text&quot;&gt;environment.ts&lt;/code&gt;を作成し、「↑ Firebaseの設定 &gt; ウェブアプリにFirebaseを追加」
 でコピーした設定情報を貼り付けてください 😃&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/environment.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;const&lt;/span&gt; environment &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   production&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -684,6 +685,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h2&gt;app.module.tsを修正&lt;/h2&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/app.module.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; BrowserModule &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/platform-browser&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; ErrorHandler&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; NgModule &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/core&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -738,7 +740,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;br&gt;
 &lt;h2&gt;本格的にログイン周りを修正していきましょう ✨&lt;/h2&gt;
 &lt;h3&gt;ログイン画面をそれっぽく修正&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;src/pages/login/login.html&lt;/code&gt;を修正します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/pages/login/login.html&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ion-header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ion-navbar&lt;/span&gt; &lt;span class=&quot;token attr-name&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token attr-value&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;primary&lt;span class=&quot;token punctuation&quot;&gt;&quot;&lt;/span&gt;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -770,7 +772,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;ユーザーモデルを作成&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;src/model/user.ts&lt;/code&gt;を作成します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/model/user.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   email&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -779,7 +781,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;ログイン処理を作成&lt;/h3&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;src/pages/login/login.ts&lt;/code&gt;を修正します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/pages/login/login.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Component &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/core&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; IonicPage&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; NavController&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ToastController &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ionic-angular&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -850,6 +852,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
       &lt;/div&gt;
 &lt;h3&gt;ログアウト処理を作成&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;app.component.ts&lt;/code&gt;を修正、およびログアウト処理を作成します。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;app.component.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Component&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ViewChild &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/core&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Nav&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Platform&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; ToastController &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;ionic-angular&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -917,6 +920,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
+&lt;p&gt;実装は以上になります！&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;h1&gt;まとめ 🎉&lt;/h1&gt;
 &lt;p&gt;ざっくりこんな感じです！&lt;/p&gt;
@@ -1912,34 +1916,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng --help&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;これで Augular CLIのインストールが完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHPデバッグ方法]]></title><description><![CDATA[PHP デバッグ方法のメモ。 他のデバッグ方法も今後追記していく予定です。 エラーログをコードに仕込んで出力 任意のファイルに出力  関数の第1引数 -> 出力したい変数/文字列を入れる。  の第2引数 ->  を渡すと配列が展開されてログに出力される。 関数の第…]]></description><link>https://lighthouse-dev.github.io/php-debug/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-debug/</guid><content:encoded>&lt;p&gt;PHP デバッグ方法のメモ。&lt;/p&gt;
-&lt;p&gt;他のデバッグ方法も今後追記していく予定です。&lt;/p&gt;
-&lt;br&gt;
-&lt;h1&gt;エラーログをコードに仕込んで出力&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h2&gt;任意のファイルに出力&lt;/h2&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;/tmp/debug.log&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;ol&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;errer_log&lt;/code&gt; 関数の第1引数 -&gt; 出力したい変数/文字列を入れる。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;print_r&lt;/code&gt; の第2引数 -&gt; &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;を渡すと配列が展開されてログに出力される。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt;関数の第2引数 -&gt; &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; は、任意のファイルに出力ということ&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt; 関数の第3引数 -&gt; 任意のファイルの出力パス&lt;/p&gt;
-&lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[PHPでLINEのMessaging APIを使ってメッセージを送る]]></title><description><![CDATA[PHPでMessaging APIを動かすサンプルを紹介したいと思います。 ※ LINE@MANAGERの設定については、あとで追記します！ Messaging APIの説明 ユーザー、グループ、またはトークルームからのイベントに対して応答メッセージを送信するAPI…]]></description><link>https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</guid><content:encoded>&lt;p&gt;PHPでMessaging APIを動かすサンプルを紹介したいと思います。&lt;/p&gt;
+&lt;p&gt;これで Augular CLIのインストールが完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHPでLINEのMessaging APIを使ってメッセージを送る]]></title><description><![CDATA[PHPでMessaging APIを動かすサンプルを紹介したいと思います。 ※ LINE@MANAGERの設定については、あとで追記します！ Messaging APIの説明 ユーザー、グループ、またはトークルームからのイベントに対して応答メッセージを送信するAPI…]]></description><link>https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</guid><content:encoded>&lt;p&gt;PHPでMessaging APIを動かすサンプルを紹介したいと思います。&lt;/p&gt;
 &lt;p&gt;※ LINE@MANAGERの設定については、あとで追記します！&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;Messaging APIの説明&lt;/h1&gt;
@@ -2014,6 +1991,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;h3&gt;サンプルコード&lt;/h3&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class=&quot;token variable&quot;&gt;$replyToken&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;&amp;lt;&lt;/span&gt;Webhookで受信する応答トークン&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt;
@@ -2109,7 +2087,36 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[LinuxでNode.jsインストール]]></title><description><![CDATA[対象OS CentOS CentOS 5 (32-bit、64-bit) CentOS 6 (32-bit、64-bit) CentOS 7 (64-bit) Fedora Fedora 21 (Twenty One) (32-bit、64-bit) Fedora 2…]]></description><link>https://lighthouse-dev.github.io/linux-nodejs-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-nodejs-install/</guid><content:encoded>&lt;h1&gt;対象OS&lt;/h1&gt;
+&lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHPデバッグ方法]]></title><description><![CDATA[PHP デバッグ方法のメモ。 他のデバッグ方法も今後追記していく予定です。 エラーログをコードに仕込んで出力 任意のファイルに出力  関数の第1引数 -> 出力したい変数/文字列を入れる。  の第2引数 ->  を渡すと配列が展開されてログに出力される。 関数の第…]]></description><link>https://lighthouse-dev.github.io/php-debug/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-debug/</guid><content:encoded>&lt;p&gt;PHP デバッグ方法のメモ。&lt;/p&gt;
+&lt;p&gt;他のデバッグ方法も今後追記していく予定です。&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;エラーログをコードに仕込んで出力&lt;/h1&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h2&gt;任意のファイルに出力&lt;/h2&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;/tmp/debug.log&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;errer_log&lt;/code&gt; 関数の第1引数 -&gt; 出力したい変数/文字列を入れる。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;print_r&lt;/code&gt; の第2引数 -&gt; &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;を渡すと配列が展開されてログに出力される。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt;関数の第2引数 -&gt; &lt;code class=&quot;language-text&quot;&gt;3&lt;/code&gt; は、任意のファイルに出力ということ&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt; 関数の第3引数 -&gt; 任意のファイルの出力パス&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[LinuxでNode.jsインストール]]></title><description><![CDATA[対象OS CentOS CentOS 5 (32-bit、64-bit) CentOS 6 (32-bit、64-bit) CentOS 7 (64-bit) Fedora Fedora 21 (Twenty One) (32-bit、64-bit) Fedora 2…]]></description><link>https://lighthouse-dev.github.io/linux-nodejs-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-nodejs-install/</guid><content:encoded>&lt;h1&gt;対象OS&lt;/h1&gt;
 &lt;h3&gt;CentOS&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;CentOS 5 (32-bit、64-bit)&lt;/li&gt;
@@ -2149,6 +2156,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;h1&gt;使い方&lt;/h1&gt;
 &lt;p&gt;とは言っても、大した事はしてませんし、
 ただデーターをスクリプト言語に入れただけなんです。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;console_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; &lt;span class=&quot;token variable&quot;&gt;$data&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -2385,6 +2393,7 @@ or
 &lt;br&gt;
 &lt;h1&gt;isset()サンプルコード&lt;/h1&gt;
 &lt;p&gt;isset()を使って変数の値の存在有無をチェックします。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;isset&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$hoge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -2400,6 +2409,7 @@ or
 &lt;p&gt;それでは、empty()について。&lt;/p&gt;
 &lt;p&gt;似ている関数のように見えますが、&lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;関数は、変数が&lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;or&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;だとしても&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;を返すという点が&lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt;と確実な違いを持ってます。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;empty&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$hoge&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -2765,6 +2775,7 @@ setenforce: SELinux is disabled&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/sysconfig/iptables&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;自分は下記2つをとりあえずコメントアウト&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;/etc/sysconfig/iptables&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;#-A INPUT -j REJECT --reject-with icmp-host-prohibited
 #-A FORWARD -j REJECT --reject-with icmp-host-prohibited&lt;/code&gt;&lt;/pre&gt;
@@ -2784,6 +2795,7 @@ setenforce: SELinux is disabled&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/samba/smb.conf&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;変更は以下の通り&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;/etc/samba/smb.conf&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-conf&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;[global]
 unix charset = UTF-8 #追記
@@ -2852,7 +2864,7 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
 &lt;br&gt;
 &lt;h1&gt;カメラを触ってみよう&lt;/h1&gt;
 &lt;p&gt;Webサーバーに以下のサンプルコードを作成し、試してみましょう！&lt;/p&gt;
-&lt;h5&gt;▼ サンプルコード&lt;/h5&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.html&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!doctype html&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -2921,7 +2933,7 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;npm install ws&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;h3&gt;シングルサーバーサンプルコードを作成&lt;/h3&gt;
-&lt;h5&gt;▼ signaling.js&lt;/h5&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;signaling.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
@@ -3035,60 +3047,46 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://html5experts.jp/series/webrtc2016/&quot;&gt;WebRTC入門2016&lt;/a&gt; 大変参考になりました！！&lt;/li&gt;
 &lt;li&gt;あと、&lt;a href=&quot;https://webrtc.ecl.ntt.com/&quot;&gt;SkyWay&lt;/a&gt;というサービスもありますので、参考までに・・&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h1&gt;確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
--bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+$ rpm -qa | grep epel-release
+epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1&gt;PHPをインストール&lt;/h1&gt;
-&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
+&lt;h1&gt;remi-releaseをインストール&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
 
-... (省略)
+$ ... (省略)
 Installed:
-php.x86_64 0:5.6.26-1.el6.remi
-
-Dependency Installed:
-libedit.x86_64 0:2.11-4.20080712cvs.1.el6
-libzip-last.x86_64 0:1.1.3-1.el6.remi
-php-cli.x86_64 0:5.6.26-1.el6.remi
-php-common.x86_64 0:5.6.26-1.el6.remi
-php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
-php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
+remi-release.noarch 0:6.8-1.el6.remi
 
 Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
 &lt;h1&gt;確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-php-common-5.6.26-1.el6.remi.x86_64
-php-cli-5.6.26-1.el6.remi.x86_64
-php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
-php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
-php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
-PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
-Copyright (c) 1997-2016 The PHP Group
-Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
+
+... (省略)
+Installed Packages
+remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
+* remi-safe: mirror.innosol.asia
+remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h1&gt;事前確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -3145,46 +3143,60 @@ extras                  CentOS-6 - Extras                                       
 updates                 CentOS-6 - Updates                                                298
 repolist: 18,676&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
 &lt;ul&gt;
-&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
 &lt;h1&gt;確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-$ rpm -qa | grep epel-release
-epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+-bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1&gt;remi-releaseをインストール&lt;/h1&gt;
+&lt;h1&gt;PHPをインストール&lt;/h1&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
 
-$ ... (省略)
+... (省略)
 Installed:
-remi-release.noarch 0:6.8-1.el6.remi
+php.x86_64 0:5.6.26-1.el6.remi
+
+Dependency Installed:
+libedit.x86_64 0:2.11-4.20080712cvs.1.el6
+libzip-last.x86_64 0:1.1.3-1.el6.remi
+php-cli.x86_64 0:5.6.26-1.el6.remi
+php-common.x86_64 0:5.6.26-1.el6.remi
+php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
+php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
 
 Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
 &lt;h1&gt;確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+php-common-5.6.26-1.el6.remi.x86_64
+php-cli-5.6.26-1.el6.remi.x86_64
+php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
+php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
+php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
-
-... (省略)
-Installed Packages
-remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
-* remi-safe: mirror.innosol.asia
-remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 インストール 遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h1&gt;SSHFS?&lt;/h1&gt;
 &lt;ul&gt;
@@ -3243,6 +3255,7 @@ yum --enablerepo=remi-php56 install php-devel php-pear&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;vi /etc/php.ini&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;↓以下を追加&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;/etc/php.ini&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;xdebug&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;  
 zend_extension=&lt;span class=&quot;token string&quot;&gt;&quot;/usr/lib64/php/modules/xdebug.so&quot;&lt;/span&gt;  
@@ -3391,6 +3404,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;br&gt;
 &lt;h1&gt;非同期&lt;/h1&gt;
 &lt;p&gt;まずは非同期通信のサンプルです。&lt;/p&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;$&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;POST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -3408,6 +3422,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;p&gt;※ここでdoAnything()は、上のAjaxの結果と関係なく、必ず実行されます。&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;同期&lt;/h1&gt;
+&lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;$&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   type&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;POST&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
