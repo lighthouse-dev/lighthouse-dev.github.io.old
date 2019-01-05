@@ -68,7 +68,7 @@ const styles = theme => ({
       fontStyle: "italic",
       margin: "2.5em 0",
       padding: "1em 1.1em 1em 1.3em",
-      position: "relative",
+      position: "unset",
       "& p": {
         margin: 0
       },
@@ -83,7 +83,6 @@ const styles = theme => ({
         width: "94%"
       },
       "&::after": {
-        top: "auto",
         bottom: "-5px"
       }
     },
