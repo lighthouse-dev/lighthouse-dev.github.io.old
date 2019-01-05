@@ -1,12 +1,11 @@
 .gatsby-remark-code-title {
-  background: #03A9F4;
+  background: #2196F3;
   color: white;
   margin-bottom: -2.2rem;
-  padding: 1rem 1rem 0.9rem 1rem;
+  padding: 0.9rem 1rem 0.8rem 1rem;
   font-size: 0.9em;
   line-height: 0.2;
   font-family: SFMono-Regular,Menlo,Monaco,Consolas,Liberation Mono,Courier New,monospace;
-  font-weight: 550;
   border-radius: 8px 8px 0 0;
   display: table;
 }
