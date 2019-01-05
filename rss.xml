@@ -1,9 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 10:55:50 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sat, 05 Jan 2019 16:51:32 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
 に引き続き、Firebase Functions側の実装です。 Push機能実装：Firebase Functions側 Firebaseのfunctions…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-1&quot;&gt;Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）&lt;/a&gt;
 に引き続き、Firebase Functions側の実装です。&lt;/p&gt;
-&lt;br&gt;
-&lt;h2&gt;Push機能実装：Firebase Functions側&lt;/h2&gt;
-&lt;h3&gt;Firebaseのfunctionsを初期化し、関数を作成する&lt;/h3&gt;
+&lt;h1&gt;Push機能実装：Firebase Functions側&lt;/h1&gt;
+&lt;h2&gt;Firebaseのfunctionsを初期化し、関数を作成する&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;firebase init functions&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -37,8 +36,7 @@
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;ここからは、functions/src/index.ts を修正していきますー！&lt;/p&gt;
-&lt;br&gt;
-&lt;h3&gt;index.tsを修正&lt;/h3&gt;
+&lt;h2&gt;index.tsを修正&lt;/h2&gt;
 &lt;p&gt;DBに更新がある度に、トリガーによって &lt;code class=&quot;language-text&quot;&gt;onCreate()&lt;/code&gt; が実行されます。&lt;/p&gt;
 &lt;p&gt;また、DBに保存されているFCMトークンを取得し、メッセージデータを用いてユーザーに送信するペイロードが作られます。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;functions/src/index.ts&lt;/div&gt;
@@ -90,6 +88,7 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;p&gt;これで実装完了です！&lt;/p&gt;
 &lt;p&gt;実際に、こんな感じでPush通知が飛んできます。&lt;/p&gt;
 &lt;img src=&quot;https://qiita-image-store.s3.amazonaws.com/0/128271/9a5062ac-19e2-53ed-f152-720c0ba59efe.png&quot; width=&quot;30%&quot;&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
 &lt;p&gt;今回は、特定のユーザー一人一人にPush通知を送信していますが、&lt;/p&gt;
 &lt;p&gt;複数ユーザーにメッセージを送信することもできるらしいので、&lt;a href=&quot;https://firebase.google.com/docs/cloud-messaging/js/send-multiple?hl=ja&quot;&gt;こちら&lt;/a&gt;もぜひ参考にしてください！&lt;/p&gt;
 &lt;br&gt;
@@ -2337,23 +2336,7 @@ ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;パスカルケースもキャメルケースと同じく小文字を使うが、単語と単語の間を大文字で&lt;/p&gt;
 &lt;p&gt;つける記法です。&lt;/p&gt;
 &lt;p&gt;ただし、一番最初の文字も大文字を使うというところがキャメルケースとの違いです！&lt;/p&gt;
-&lt;p&gt;例えば、&lt;code class=&quot;language-text&quot;&gt;appletree&lt;/code&gt; という関数の場合は、関数名を &lt;code class=&quot;language-text&quot;&gt;AppleTre&lt;/code&gt; のように宣言する記法です。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない問題]]></title><description><![CDATA[現状 Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない 解決方法 httpd.confを開く 以下を検索して、修正する Apache再起動]]></description><link>https://lighthouse-dev.github.io/vagrant-share-folder/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vagrant-share-folder/</guid><content:encoded>&lt;h1&gt;現状&lt;/h1&gt;
-&lt;p&gt;Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない&lt;/p&gt;
-&lt;br&gt;
-&lt;h1&gt;解決方法&lt;/h1&gt;
-&lt;p&gt;httpd.confを開く&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo vim /etc/httpd/conf/httpd.conf&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;以下を検索して、修正する&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-conf&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;EnableMMAP off
-EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;Apache再起動&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo systemctl restart httpd&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[【 PHP 】変数の存在有無をチェックする isset()、empty()の違い]]></title><description><![CDATA[こんにちは！ 今回は、PHPで変数の値をチェックする方法についてメモです。 もし変数の値が存在するかをチェックする時って、どうすれば良いでしょうか。 こういう時に使えるのが   と  です。 isset(チェックする変数名); empty(チェックする変数名); isset…]]></description><link>https://lighthouse-dev.github.io/php-isset-empty/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-isset-empty/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
+&lt;p&gt;例えば、&lt;code class=&quot;language-text&quot;&gt;appletree&lt;/code&gt; という関数の場合は、関数名を &lt;code class=&quot;language-text&quot;&gt;AppleTre&lt;/code&gt; のように宣言する記法です。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[【 PHP 】変数の存在有無をチェックする isset()、empty()の違い]]></title><description><![CDATA[こんにちは！ 今回は、PHPで変数の値をチェックする方法についてメモです。 もし変数の値が存在するかをチェックする時って、どうすれば良いでしょうか。 こういう時に使えるのが   と  です。 isset(チェックする変数名); empty(チェックする変数名); isset…]]></description><link>https://lighthouse-dev.github.io/php-isset-empty/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-isset-empty/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
 &lt;p&gt;今回は、PHPで変数の値をチェックする方法についてメモです。&lt;/p&gt;
 &lt;p&gt;もし変数の値が存在するかをチェックする時って、どうすれば良いでしょうか。&lt;/p&gt;
 &lt;p&gt;こういう時に使えるのが &lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt; と &lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;です。&lt;/p&gt;
@@ -2428,6 +2411,22 @@ or
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token delimiter important&quot;&gt;?&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない問題]]></title><description><![CDATA[現状 Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない 解決方法 httpd.confを開く 以下を検索して、修正する Apache再起動]]></description><link>https://lighthouse-dev.github.io/vagrant-share-folder/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vagrant-share-folder/</guid><content:encoded>&lt;h1&gt;現状&lt;/h1&gt;
+&lt;p&gt;Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない&lt;/p&gt;
+&lt;br&gt;
+&lt;h1&gt;解決方法&lt;/h1&gt;
+&lt;p&gt;httpd.confを開く&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo vim /etc/httpd/conf/httpd.conf&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;以下を検索して、修正する&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-conf&quot;&gt;&lt;code class=&quot;language-conf&quot;&gt;EnableMMAP off
+EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;Apache再起動&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo systemctl restart httpd&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[HTTPサーバー Response Codeのまとめ]]></title><description><![CDATA[HTTPステータスコードについてのまとめです！ 各コードは100単位で分かれています。
 例えば、300番台同士、40…]]></description><link>https://lighthouse-dev.github.io/http-response-code/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/http-response-code/</guid><content:encoded>&lt;p&gt;HTTPステータスコードについてのまとめです！&lt;/p&gt;
 &lt;p&gt;各コードは100単位で分かれています。
@@ -2653,7 +2652,7 @@ or
 &lt;h1&gt;参考リンク&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&quot;&gt;wikipedia HTTPステータスコード&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[phpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/phpstorm-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-setting/</guid><content:encoded>&lt;h1&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[PhpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/phpstorm-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-setting/</guid><content:encoded>&lt;h1&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h1&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -3056,7 +3055,62 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://html5experts.jp/series/webrtc2016/&quot;&gt;WebRTC入門2016&lt;/a&gt; 大変参考になりました！！&lt;/li&gt;
 &lt;li&gt;あと、&lt;a href=&quot;https://webrtc.ecl.ntt.com/&quot;&gt;SkyWay&lt;/a&gt;というサービスもありますので、参考までに・・&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+-bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;PHPをインストール&lt;/h1&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
+
+... (省略)
+Installed:
+php.x86_64 0:5.6.26-1.el6.remi
+
+Dependency Installed:
+libedit.x86_64 0:2.11-4.20080712cvs.1.el6
+libzip-last.x86_64 0:1.1.3-1.el6.remi
+php-cli.x86_64 0:5.6.26-1.el6.remi
+php-common.x86_64 0:5.6.26-1.el6.remi
+php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
+php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
+
+Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+php-common-5.6.26-1.el6.remi.x86_64
+php-cli-5.6.26-1.el6.remi.x86_64
+php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
+php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
+php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
@@ -3151,61 +3205,6 @@ epel                    Extra Packages for Enterprise Linux 6 - x86_64          
 extras                  CentOS-6 - Extras                                                  35
 updates                 CentOS-6 - Updates                                                298
 repolist: 18,676&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;h1&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
--bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1&gt;PHPをインストール&lt;/h1&gt;
-&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
-
-... (省略)
-Installed:
-php.x86_64 0:5.6.26-1.el6.remi
-
-Dependency Installed:
-libedit.x86_64 0:2.11-4.20080712cvs.1.el6
-libzip-last.x86_64 0:1.1.3-1.el6.remi
-php-cli.x86_64 0:5.6.26-1.el6.remi
-php-common.x86_64 0:5.6.26-1.el6.remi
-php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
-php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
-
-Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-php-common-5.6.26-1.el6.remi.x86_64
-php-cli-5.6.26-1.el6.remi.x86_64
-php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
-php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
-php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
-PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
-Copyright (c) 1997-2016 The PHP Group
-Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 インストール 遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h1&gt;SSHFS?&lt;/h1&gt;
 &lt;ul&gt;
