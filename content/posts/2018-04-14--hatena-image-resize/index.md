@@ -2,6 +2,7 @@
 title: "はてなブログで画像のサイズを変更方法 - Markdown"
 subTitle: ""
 category: "Default"
+tags: ["Etc"]
 cover: hatena-logo.png
 sitemap :
   changefreq : daily

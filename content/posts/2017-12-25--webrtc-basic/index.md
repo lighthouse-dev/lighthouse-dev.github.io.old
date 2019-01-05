@@ -2,6 +2,7 @@
 title: WebRTCでビデオチャットアプリを作ってみた！
 subTitle: ""
 category: "Default"
+tags: ["WebRTC", "Node.js", "websocket", "JavaScript"]
 cover: webrtc-logo.png
 sitemap :
   changefreq : daily

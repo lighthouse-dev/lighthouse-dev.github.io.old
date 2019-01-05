@@ -2,6 +2,7 @@
 title: "Angular-CLI コマンドまとめ"
 subTitle: ""
 category: "Angular"
+tags: ["Angular", "Command"]
 cover: angular-logo.png
 sitemap :
   changefreq : daily

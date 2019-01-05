@@ -2,6 +2,7 @@
 title:  HTTPサーバー Response Codeのまとめ
 subTitle: ""
 category: "Default"
+tags: ["WebDev", "HTTP"]
 cover: http-logo.png
 sitemap :
   changefreq : daily

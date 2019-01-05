@@ -2,6 +2,7 @@
 title: "VSCodeでvendor配下のファイルが検索できない"
 subTitle: ""
 category: "Tool"
+tags: ["VSCode"]
 cover: vscode-logo.png
 sitemap :
   changefreq : daily
@@ -35,6 +36,14 @@ sitemap :
 <br>
 
 # 解決方法
+
+```json:title=User Settings
+...省略
+
+  "search.useIgnoreFiles": false,
+
+...省略
+```
 
 `search.useIgnoreFiles": false`に設定し、`.gitignore`を見ないようにするだけでOK!
 

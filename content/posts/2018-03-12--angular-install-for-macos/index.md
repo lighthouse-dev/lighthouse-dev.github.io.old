@@ -2,6 +2,7 @@
 title: "MacでAngularをインストール"
 subTitle: ""
 category: "Angular"
+tags: ["Angular", "MacOS", "Install"]
 cover: angular-logo.png
 sitemap :
   changefreq : daily

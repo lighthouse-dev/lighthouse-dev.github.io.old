@@ -2,6 +2,7 @@
 title: 'SSH接続をタイムアウトしないようにする'
 subTitle: ""
 category: "Linux"
+tags: ["Linux", "SSH"]
 cover: ssh-logo.jpg
 sitemap :
   changefreq : daily

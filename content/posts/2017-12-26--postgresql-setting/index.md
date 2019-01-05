@@ -2,6 +2,7 @@
 title: CakePHP3.xでPostgreSQLの設定
 subTitle: ""
 category: "PostgreSQL"
+tags: ["PostgreSQL", "CakePHP"]
 cover: postgresql.png
 sitemap :
   changefreq : daily

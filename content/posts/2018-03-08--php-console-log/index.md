@@ -2,6 +2,7 @@
 title: 'console.logをphpで使う（PHP Debug）'
 subTitle: ""
 category: "PHP"
+tags: ["PHP", "Debug"]
 cover: php-logo.png
 sitemap :
   changefreq : daily

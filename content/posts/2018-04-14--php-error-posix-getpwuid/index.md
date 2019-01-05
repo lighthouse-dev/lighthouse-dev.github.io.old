@@ -2,6 +2,7 @@
 title: 'PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid() エラー対応'
 subTitle: ""
 category: "PHP"
+tags: ["PHP", "Error"]
 cover: php-logo.png
 sitemap :
   changefreq : daily

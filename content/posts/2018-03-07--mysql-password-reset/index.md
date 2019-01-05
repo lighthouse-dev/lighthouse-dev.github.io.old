@@ -2,6 +2,7 @@
 title: 'MySQL rootパスワードを忘れた時の対応'
 subTitle: ""
 category: "MySQL"
+tags: ["MySQL"]
 cover: mysql-logo.png
 sitemap :
   changefreq : daily

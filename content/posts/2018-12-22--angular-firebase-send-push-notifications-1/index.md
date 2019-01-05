@@ -2,6 +2,7 @@
 title: "Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）"
 subTitle: ""
 category: "Firebase"
+tags: ["Angular", "Firebase", "PWA"]
 cover: angular-firebase-logo.png
 sitemap :
   changefreq : daily

@@ -2,6 +2,7 @@
 title: Macでsshfsをインストール / 使い方
 subTitle: ""
 category: "Mac"
+tags: ["MacOS", "sshfs"]
 cover: fuse.png
 sitemap :
   changefreq : daily

@@ -2,6 +2,7 @@
 title: ".ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールする方法"
 subTitle: ""
 category: "Default"
+tags: ["MacOS", ".ipa", "Install"]
 cover: apple-logo.jpg
 sitemap :
   changefreq : daily

@@ -2,6 +2,7 @@
 title: "JavaScriptでURLを操作する"
 subTitle: ""
 category: "JavaScript"
+tags: ["JavaScript"]
 cover: javascript-logo.png
 sitemap :
   changefreq : daily

@@ -2,6 +2,7 @@
 title: "【VSCode】SFTPでファイルを同期する"
 subTitle: ""
 category: "Tool"
+tags: ["VSCode", "SFTP"]
 cover: vscode-logo.png
 sitemap :
   changefreq : daily

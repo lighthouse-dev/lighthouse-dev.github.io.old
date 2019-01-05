@@ -2,6 +2,7 @@
 title: Sambaインストール
 subTitle: ""
 category: "Linux"
+tags: ["Linux", "Samba"]
 cover: samba-logo.png
 sitemap :
   changefreq : daily

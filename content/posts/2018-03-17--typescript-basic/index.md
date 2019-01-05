@@ -2,6 +2,7 @@
 title: TypeScript入門
 subTitle: ""
 category: "JavaScript"
+tags: ["TypeScript", "ES6", "Getting started", "Install"]
 cover: typescript-logo.png
 sitemap :
   changefreq : daily

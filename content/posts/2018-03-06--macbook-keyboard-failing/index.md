@@ -2,6 +2,7 @@
 title: 新型 Macbook pro キーボードの一部が反応しない時の対応
 subTitle: ""
 category: "Mac"
+tags: ["Mac"]
 cover: apple-logo.jpg
 sitemap :
   changefreq : daily

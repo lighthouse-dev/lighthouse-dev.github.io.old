@@ -2,6 +2,7 @@
 title: CentOSにremiレポジトリを追加する
 subTitle: ""
 category: "Linux"
+tags: ["Linux", "CentOS", "remi-release"]
 cover: centos.jpg
 sitemap :
   changefreq : daily

@@ -2,6 +2,7 @@
 title: "Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）"
 subTitle: ""
 category: "Firebase"
+tags: ["Angular", "Firebase", "PWA"]
 cover: angular-firebase-logo.png
 sitemap :
   changefreq : daily
@@ -11,11 +12,10 @@ sitemap :
 [Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）](/angular-firebase-send-push-notifications-1)
 に引き続き、Firebase Functions側の実装です。
 
-<br>
 
-## Push機能実装：Firebase Functions側
+# Push機能実装：Firebase Functions側
 
-### Firebaseのfunctionsを初期化し、関数を作成する
+## Firebaseのfunctionsを初期化し、関数を作成する
 
 ```cmd
 firebase init functions
@@ -55,9 +55,7 @@ myproject
 
 ここからは、functions/src/index.ts を修正していきますー！
 
-<br>
-
-### index.tsを修正
+## index.tsを修正
 
 DBに更新がある度に、トリガーによって `onCreate()` が実行されます。
 
@@ -112,6 +110,8 @@ export const fcmSend = functions.database
 実際に、こんな感じでPush通知が飛んできます。
 
 <img src="https://qiita-image-store.s3.amazonaws.com/0/128271/9a5062ac-19e2-53ed-f152-720c0ba59efe.png" width=30%>
+
+<br><br>
 
 今回は、特定のユーザー一人一人にPush通知を送信していますが、
 

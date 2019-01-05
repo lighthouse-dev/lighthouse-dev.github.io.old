@@ -2,6 +2,7 @@
 title: "ng serveでモジュールがないというエラー（Error: Cannot find module '@angular-devkit/core'）"
 subTitle: ""
 category: "Angular"
+tags: ["Angular", "Error"]
 cover: angular-logo.png
 sitemap :
   changefreq : daily

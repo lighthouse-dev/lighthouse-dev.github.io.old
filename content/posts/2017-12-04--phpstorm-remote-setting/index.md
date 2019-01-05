@@ -2,6 +2,7 @@
 title: PhpStorm + Xdebugでリモートデスクトップ
 subTitle: ""
 category: "Tool"
+tags: ["PhpStorm", "Xdebug", "PHP"]
 cover: php-storm.png
 sitemap :
   changefreq : daily

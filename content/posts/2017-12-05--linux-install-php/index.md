@@ -2,6 +2,7 @@
 title: CentOSにPHPをインストールする
 subTitle: ""
 category: "Linux"
+tags: ["Linux", "CentOS", "PHP"]
 cover: centos.jpg
 sitemap :
   changefreq : daily

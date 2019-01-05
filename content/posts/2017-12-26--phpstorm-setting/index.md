@@ -1,7 +1,8 @@
 ---
-title: phpStorm設定メモ
+title: PhpStorm設定メモ
 subTitle: ""
 category: "Tool"
+tags: ["PhpStorm"]
 cover: php-storm.png
 sitemap :
   changefreq : daily

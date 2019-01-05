@@ -2,6 +2,7 @@
 title: "IonicとFirebaseでログイン機能を実装"
 subTitle: ""
 category: "Ionic"
+tags: ["Ionic", "Angular", "Firebase"]
 cover: ionic-logo.png
 sitemap :
   changefreq : daily

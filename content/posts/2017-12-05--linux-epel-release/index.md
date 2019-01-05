@@ -2,6 +2,7 @@
 title: CentOSにepel-releseをインストールする
 subTitle: ""
 category: "Linux"
+tags: ["Linux", "CentOS", "epel-relese"]
 cover: centos.jpg
 sitemap :
   changefreq : daily

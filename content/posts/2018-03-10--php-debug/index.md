@@ -2,6 +2,7 @@
 title: 'PHPデバッグ方法'
 subTitle: ""
 category: "PHP"
+tags: ["PHP", "Debug"]
 cover: php-logo.png
 sitemap :
   changefreq : daily
