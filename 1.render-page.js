@@ -1,14 +1,14 @@
 exports.ids = [1];
 exports.modules = {
 
-/***/ 664:
+/***/ 666:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
 	
 	exports.__esModule = true;
 	
-	var _InfoBox = __webpack_require__(665);
+	var _InfoBox = __webpack_require__(667);
 	
 	Object.defineProperty(exports, "default", {
 	  enumerable: true,
@@ -23,7 +23,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 665:
+/***/ 667:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -38,35 +38,35 @@ exports.modules = {
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(321);
+	var _reactJss = __webpack_require__(323);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
-	var _reactRedux = __webpack_require__(456);
+	var _reactRedux = __webpack_require__(458);
 	
-	var _SocialIcons = __webpack_require__(666);
+	var _SocialIcons = __webpack_require__(668);
 	
 	var _SocialIcons2 = _interopRequireDefault(_SocialIcons);
 	
-	var _InfoMenu = __webpack_require__(670);
+	var _InfoMenu = __webpack_require__(672);
 	
 	var _InfoMenu2 = _interopRequireDefault(_InfoMenu);
 	
-	var _InfoHeader = __webpack_require__(671);
+	var _InfoHeader = __webpack_require__(673);
 	
 	var _InfoHeader2 = _interopRequireDefault(_InfoHeader);
 	
-	var _InfoText = __webpack_require__(673);
+	var _InfoText = __webpack_require__(675);
 	
 	var _InfoText2 = _interopRequireDefault(_InfoText);
 	
-	var _StackIcons = __webpack_require__(674);
+	var _StackIcons = __webpack_require__(676);
 	
 	var _StackIcons2 = _interopRequireDefault(_StackIcons);
 	
-	var _shared = __webpack_require__(532);
+	var _shared = __webpack_require__(534);
 	
-	var _store = __webpack_require__(488);
+	var _store = __webpack_require__(490);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -76,7 +76,7 @@ exports.modules = {
 	
 	function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
 	
-	__webpack_require__(685);
+	__webpack_require__(687);
 	
 	var styles = function styles(theme) {
 	  var _infoBox;
@@ -205,7 +205,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 666:
+/***/ 668:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -220,19 +220,19 @@ exports.modules = {
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(321);
+	var _reactJss = __webpack_require__(323);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
-	var _config = __webpack_require__(659);
+	var _config = __webpack_require__(661);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
-	var _github = __webpack_require__(667);
+	var _github = __webpack_require__(669);
 	
-	var _facebook = __webpack_require__(668);
+	var _facebook = __webpack_require__(670);
 	
-	var _twitter = __webpack_require__(669);
+	var _twitter = __webpack_require__(671);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -301,7 +301,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 667:
+/***/ 669:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -344,7 +344,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 668:
+/***/ 670:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -387,7 +387,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 669:
+/***/ 671:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -430,7 +430,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 670:
+/***/ 672:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -445,11 +445,11 @@ exports.modules = {
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(321);
+	var _reactJss = __webpack_require__(323);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
-	var _gatsbyLink = __webpack_require__(224);
+	var _gatsbyLink = __webpack_require__(226);
 	
 	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
 	
@@ -522,7 +522,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 671:
+/***/ 673:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -537,27 +537,27 @@ exports.modules = {
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(321);
+	var _reactJss = __webpack_require__(323);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
-	var _gatsbyLink = __webpack_require__(224);
+	var _gatsbyLink = __webpack_require__(226);
 	
 	var _gatsbyLink2 = _interopRequireDefault(_gatsbyLink);
 	
-	var _IconButton = __webpack_require__(535);
+	var _IconButton = __webpack_require__(537);
 	
 	var _IconButton2 = _interopRequireDefault(_IconButton);
 	
-	var _ExpandMore = __webpack_require__(672);
+	var _ExpandMore = __webpack_require__(674);
 	
 	var _ExpandMore2 = _interopRequireDefault(_ExpandMore);
 	
-	var _avatar2 = __webpack_require__(660);
+	var _avatar2 = __webpack_require__(662);
 	
 	var _avatar3 = _interopRequireDefault(_avatar2);
 	
-	var _config = __webpack_require__(659);
+	var _config = __webpack_require__(661);
 	
 	var _config2 = _interopRequireDefault(_config);
 	
@@ -709,7 +709,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 672:
+/***/ 674:
 /***/ (function(module, exports, __webpack_require__) {
 
 	'use strict';
@@ -722,11 +722,11 @@ exports.modules = {
 	
 	var _react2 = _interopRequireDefault(_react);
 	
-	var _pure = __webpack_require__(559);
+	var _pure = __webpack_require__(561);
 	
 	var _pure2 = _interopRequireDefault(_pure);
 	
-	var _SvgIcon = __webpack_require__(564);
+	var _SvgIcon = __webpack_require__(566);
 	
 	var _SvgIcon2 = _interopRequireDefault(_SvgIcon);
 	
@@ -751,7 +751,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 673:
+/***/ 675:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -766,7 +766,7 @@ exports.modules = {
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(321);
+	var _reactJss = __webpack_require__(323);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
@@ -812,7 +812,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 674:
+/***/ 676:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -827,29 +827,29 @@ exports.modules = {
 	
 	var _propTypes2 = _interopRequireDefault(_propTypes);
 	
-	var _reactJss = __webpack_require__(321);
+	var _reactJss = __webpack_require__(323);
 	
 	var _reactJss2 = _interopRequireDefault(_reactJss);
 	
-	var _algolia = __webpack_require__(675);
+	var _algolia = __webpack_require__(677);
 	
-	var _react3 = __webpack_require__(676);
+	var _react3 = __webpack_require__(678);
 	
-	var _graphql = __webpack_require__(677);
+	var _graphql = __webpack_require__(679);
 	
-	var _jss = __webpack_require__(678);
+	var _jss = __webpack_require__(680);
 	
-	var _materialUi = __webpack_require__(679);
+	var _materialUi = __webpack_require__(681);
 	
-	var _redux = __webpack_require__(680);
+	var _redux = __webpack_require__(682);
 	
-	var _gatsby = __webpack_require__(681);
+	var _gatsby = __webpack_require__(683);
 	
-	var _webpack = __webpack_require__(682);
+	var _webpack = __webpack_require__(684);
 	
-	var _babel = __webpack_require__(683);
+	var _babel = __webpack_require__(685);
 	
-	var _netlify = __webpack_require__(684);
+	var _netlify = __webpack_require__(686);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -936,7 +936,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 675:
+/***/ 677:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -988,7 +988,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 676:
+/***/ 678:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1047,7 +1047,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 677:
+/***/ 679:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1121,7 +1121,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 678:
+/***/ 680:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1175,7 +1175,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 679:
+/***/ 681:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1275,7 +1275,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 680:
+/***/ 682:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1324,7 +1324,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 681:
+/***/ 683:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1368,7 +1368,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 682:
+/***/ 684:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1423,7 +1423,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 683:
+/***/ 685:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
@@ -1472,7 +1472,7 @@ exports.modules = {
 
 /***/ }),
 
-/***/ 684:
+/***/ 686:
 /***/ (function(module, exports, __webpack_require__) {
 
 	"use strict";
