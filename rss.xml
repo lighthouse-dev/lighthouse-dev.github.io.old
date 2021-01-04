@@ -1,13 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Sun, 06 Jan 2019 05:22:46 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側） 
-に引き続き、Firebase Functions側の実装です。 Push機能実装：Firebase Functions側 Firebaseのfunctions…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;p&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-1&quot;&gt;Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）&lt;/a&gt;
-に引き続き、Firebase Functions側の実装です。&lt;/p&gt;
-&lt;h1&gt;Push機能実装：Firebase Functions側&lt;/h1&gt;
-&lt;h2&gt;Firebaseのfunctionsを初期化し、関数を作成する&lt;/h2&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 04 Jan 2021 07:54:02 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Push 機能実装：Firebase Functions 側 Firebase の functions を初期化し、関数を作成する index.ts を修正 まとめ おまけ 参考 URL Push 機能実装：Firebase Functions 側 Angular…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+&lt;!-- code_chunk_output --&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;#push-%E6%A9%9F%E8%83%BD%E5%AE%9F%E8%A3%85firebase-functions-%E5%81%B4&quot;&gt;Push 機能実装：Firebase Functions 側&lt;/a&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;#firebase-%E3%81%AE-functions-%E3%82%92%E5%88%9D%E6%9C%9F%E5%8C%96%E3%81%97%E9%96%A2%E6%95%B0%E3%82%92%E4%BD%9C%E6%88%90%E3%81%99%E3%82%8B&quot;&gt;Firebase の functions を初期化し、関数を作成する&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#indexts-%E3%82%92%E4%BF%AE%E6%AD%A3&quot;&gt;index.ts を修正&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%81%BE%E3%81%A8%E3%82%81&quot;&gt;まとめ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E3%81%8A%E3%81%BE%E3%81%91&quot;&gt;おまけ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;#%E5%8F%82%E8%80%83-url&quot;&gt;参考 URL&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- /code_chunk_output --&gt;
+&lt;h1&gt;Push 機能実装：Firebase Functions 側&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-1&quot;&gt;Angular + Firebase + PWA で Push 通知機能を実装する（アプリ側）&lt;/a&gt;
+に引き続き、Firebase Functions 側の実装です。&lt;/p&gt;
+&lt;h2&gt;Firebase の functions を初期化し、関数を作成する&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;firebase init functions&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;※ 作成の詳細手順については、&lt;a href=&quot;https://firebase.google.com/docs/functions/get-started?hl=ja&quot;&gt;こちら&lt;/a&gt;を見てください！&lt;/p&gt;
-&lt;br&gt; 
+&lt;br&gt;
 &lt;p&gt;初期化すると、以下の構成になります！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;myproject
@@ -36,9 +50,9 @@
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;ここからは、functions/src/index.ts を修正していきますー！&lt;/p&gt;
-&lt;h2&gt;index.tsを修正&lt;/h2&gt;
-&lt;p&gt;DBに更新がある度に、トリガーによって &lt;code class=&quot;language-text&quot;&gt;onCreate()&lt;/code&gt; が実行されます。&lt;/p&gt;
-&lt;p&gt;また、DBに保存されているFCMトークンを取得し、メッセージデータを用いてユーザーに送信するペイロードが作られます。&lt;/p&gt;
+&lt;h2&gt;index.ts を修正&lt;/h2&gt;
+&lt;p&gt;DB に更新がある度に、トリガーによって &lt;code class=&quot;language-text&quot;&gt;onCreate()&lt;/code&gt; が実行されます。&lt;/p&gt;
+&lt;p&gt;また、DB に保存されている FCM トークンを取得し、メッセージデータを用いてユーザーに送信するペイロードが作られます。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;functions/src/index.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;as&lt;/span&gt; functions &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;firebase-functions&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -86,26 +100,26 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;これで実装完了です！&lt;/p&gt;
-&lt;p&gt;実際に、こんな感じでPush通知が飛んできます。&lt;/p&gt;
+&lt;p&gt;実際に、こんな感じで Push 通知が飛んできます。&lt;/p&gt;
 &lt;img src=&quot;https://qiita-image-store.s3.amazonaws.com/0/128271/9a5062ac-19e2-53ed-f152-720c0ba59efe.png&quot; width=&quot;30%&quot;&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;p&gt;今回は、特定のユーザー一人一人にPush通知を送信していますが、&lt;/p&gt;
+&lt;p&gt;今回は、特定のユーザー一人一人に Push 通知を送信していますが、&lt;/p&gt;
 &lt;p&gt;複数ユーザーにメッセージを送信することもできるらしいので、&lt;a href=&quot;https://firebase.google.com/docs/cloud-messaging/js/send-multiple?hl=ja&quot;&gt;こちら&lt;/a&gt;もぜひ参考にしてください！&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;まとめ&lt;/h1&gt;
-&lt;p&gt;Firebase本当最高！👍👍👍&lt;/p&gt;
+&lt;p&gt;Firebase 本当最高！👍👍👍&lt;/p&gt;
 &lt;br&gt;
 &lt;h1&gt;おまけ&lt;/h1&gt;
 &lt;p&gt;今回の実装を含めた個人プロジェクトを開発し、運用しています。&lt;/p&gt;
 &lt;p&gt;このテーマで、&lt;a href=&quot;https://frontend-conf.fukuoka.jp/&quot;&gt;FRONTEND CONFERENCE FUKUOKA2018&lt;/a&gt;でお話させていただきました。&lt;/p&gt;
 &lt;p&gt;スライドなどを公開してますので、興味ある方は是非見てください！&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;テーマ：AngularとFirebaseで作ったPWA対応アプリで家庭内の課題を解決した話」&lt;/li&gt;
+&lt;li&gt;テーマ：Angular と Firebase で作った PWA 対応アプリで家庭内の課題を解決した話」&lt;/li&gt;
 &lt;li&gt;公式プロフィール ：&lt;a href=&quot;https://frontend-conf.fukuoka.jp/sessions#c-6&quot;&gt;https://frontend-conf.fukuoka.jp/sessions#c-6&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;スライド：&lt;a href=&quot;https://slides.com/lighthouse-dev/fec_fukuoka/#/&quot;&gt;https://slides.com/lighthouse-dev/fec_fukuoka/#/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1&gt;参考URL&lt;/h1&gt;
+&lt;h1&gt;参考 URL&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://angularfirebase.com/lessons/send-push-notifications-in-angular-with-firebase-cloud-messaging/#manifest-json&quot;&gt;https://angularfirebase.com/lessons/send-push-notifications-in-angular-with-firebase-cloud-messaging/#manifest-json&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://firebase.google.com/docs/cloud-messaging/js/client?hl=ja&quot;&gt;https://firebase.google.com/docs/cloud-messaging/js/client?hl=ja&lt;/a&gt;&lt;/li&gt;
@@ -121,7 +135,7 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;p&gt;PWAでPush機能実装したい！&lt;/p&gt;
 &lt;p&gt;※ PWAって何？的な説明は、以下を見てください&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=ja&quot;&gt;はじめてのプログレッシブ ウェブアプリ&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=ja&quot;&gt;https://developers.google.com/web/fundamentals/codelabs/your-first-pwapp/?hl=ja&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/progressive-web-apps/&quot;&gt;https://developers.google.com/web/progressive-web-apps/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
@@ -2872,10 +2886,6 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
 &lt;br&gt;
 &lt;h1&gt;カメラを触ってみよう&lt;/h1&gt;
 &lt;p&gt;Webサーバーに以下のサンプルコードを作成し、試してみましょう！&lt;/p&gt;
-&lt;br&gt;
-&lt;h4&gt;※ 2019.1.6 追記&lt;/h4&gt;
-&lt;p&gt;Chrome68以降で&lt;code class=&quot;language-text&quot;&gt;URL.createObjectURL&lt;/code&gt;が使えなくなったらしいので、&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;srcObject&lt;/code&gt;プロパティを使うように修正しました！（コード内にコメントを書いてますので、ご確認ください）&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.html&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token doctype&quot;&gt;&amp;lt;!doctype html&gt;&lt;/span&gt;
@@ -2890,19 +2900,17 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
       navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getUserMedia &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;getUserMedia &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;webkitGetUserMedia &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;mozGetUserMedia&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
       window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;URL &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;URL &lt;span class=&quot;token operator&quot;&gt;||&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;webkitURL&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 
-      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; video &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;myVideo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-      &lt;span class=&quot;token keyword&quot;&gt;let&lt;/span&gt; localStream &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; video &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; document&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getElementById&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;myVideo&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; localStream &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;null&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
       navigator&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;getUserMedia&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;video&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; audio&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; 
-        &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// for success case&lt;/span&gt;
-          console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-          &lt;span class=&quot;token comment&quot;&gt;/* video.src = window.URL.createObjectURL(stream); 
-             Chrome68以降で URL.createObjectURL が使えなくなったらしいので、
-             以下のsrcObjectプロパティを使うように修正 */&lt;/span&gt;
-          video&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;srcObject &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; stream&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// for error case&lt;/span&gt;
-          console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
-        &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// for success case&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+        video&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;src &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; window&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;URL&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;createObjectURL&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;stream&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+      &lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; &lt;span class=&quot;token comment&quot;&gt;// for error case&lt;/span&gt;
+        console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;err&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
+      &lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
     &lt;/span&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;script&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
   &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;body&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;html&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -3061,103 +3069,7 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://html5experts.jp/series/webrtc2016/&quot;&gt;WebRTC入門2016&lt;/a&gt; 大変参考になりました！！&lt;/li&gt;
 &lt;li&gt;あと、&lt;a href=&quot;https://webrtc.ecl.ntt.com/&quot;&gt;SkyWay&lt;/a&gt;というサービスもありますので、参考までに・・&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;h1&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
--bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1&gt;PHPをインストール&lt;/h1&gt;
-&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
-
-... (省略)
-Installed:
-php.x86_64 0:5.6.26-1.el6.remi
-
-Dependency Installed:
-libedit.x86_64 0:2.11-4.20080712cvs.1.el6
-libzip-last.x86_64 0:1.1.3-1.el6.remi
-php-cli.x86_64 0:5.6.26-1.el6.remi
-php-common.x86_64 0:5.6.26-1.el6.remi
-php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
-php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
-
-Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-php-common-5.6.26-1.el6.remi.x86_64
-php-cli-5.6.26-1.el6.remi.x86_64
-php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
-php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
-php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
-PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
-Copyright (c) 1997-2016 The PHP Group
-Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;h1&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-$ rpm -qa | grep epel-release
-epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1&gt;remi-releaseをインストール&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-
-$ ... (省略)
-Installed:
-remi-release.noarch 0:6.8-1.el6.remi
-
-Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
-
-... (省略)
-Installed Packages
-remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
-* remi-safe: mirror.innosol.asia
-remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h1&gt;事前確認&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h1&gt;事前確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist
 
@@ -3211,6 +3123,102 @@ epel                    Extra Packages for Enterprise Linux 6 - x86_64          
 extras                  CentOS-6 - Extras                                                  35
 updates                 CentOS-6 - Updates                                                298
 repolist: 18,676&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+$ rpm -qa | grep epel-release
+epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;remi-releaseをインストール&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+
+$ ... (省略)
+Installed:
+remi-release.noarch 0:6.8-1.el6.remi
+
+Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
+
+... (省略)
+Installed Packages
+remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
+* remi-safe: mirror.innosol.asia
+remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+-bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;PHPをインストール&lt;/h1&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
+
+... (省略)
+Installed:
+php.x86_64 0:5.6.26-1.el6.remi
+
+Dependency Installed:
+libedit.x86_64 0:2.11-4.20080712cvs.1.el6
+libzip-last.x86_64 0:1.1.3-1.el6.remi
+php-cli.x86_64 0:5.6.26-1.el6.remi
+php-common.x86_64 0:5.6.26-1.el6.remi
+php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
+php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
+
+Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+php-common-5.6.26-1.el6.remi.x86_64
+php-cli-5.6.26-1.el6.remi.x86_64
+php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
+php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
+php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 インストール 遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h1&gt;SSHFS?&lt;/h1&gt;
 &lt;ul&gt;
