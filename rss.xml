@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 04 Jan 2021 08:14:00 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Push 機能実装：Firebase Functions 側 Firebase の functions を初期化し、関数を作成する index.ts を修正 まとめ おまけ 参考 URL Push 機能実装：Firebase Functions 側 Angular…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[lighthouse.log]]></title><description><![CDATA[jslee blog]]></description><link>https://lighthouse-dev.github.io</link><generator>RSS for Node</generator><lastBuildDate>Mon, 04 Jan 2021 08:18:15 GMT</lastBuildDate><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（Firebase Functions側）]]></title><description><![CDATA[Push 機能実装：Firebase Functions 側 Firebase の functions を初期化し、関数を作成する index.ts を修正 まとめ おまけ 参考 URL Push 機能実装：Firebase Functions 側 Angular…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-2/</guid><content:encoded>&lt;!-- @import &quot;[TOC]&quot; {cmd=&quot;toc&quot; depthFrom=1 depthTo=6 orderedList=false} --&gt;
 &lt;!-- code_chunk_output --&gt;
 &lt;ul&gt;
 &lt;li&gt;
@@ -13,10 +13,10 @@
 &lt;li&gt;&lt;a href=&quot;#%E5%8F%82%E8%80%83-url&quot;&gt;参考 URL&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;!-- /code_chunk_output --&gt;
-&lt;h1 id=&quot;push-機能実装：firebase-functions-側&quot;&gt;Push 機能実装：Firebase Functions 側&lt;/h1&gt;
+&lt;h1&gt;Push 機能実装：Firebase Functions 側&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-1&quot;&gt;Angular + Firebase + PWA で Push 通知機能を実装する（アプリ側）&lt;/a&gt;
 に引き続き、Firebase Functions 側の実装です。&lt;/p&gt;
-&lt;h2 id=&quot;firebase-の-functions-を初期化し、関数を作成する&quot;&gt;Firebase の functions を初期化し、関数を作成する&lt;/h2&gt;
+&lt;h2&gt;Firebase の functions を初期化し、関数を作成する&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;firebase init functions&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -50,7 +50,7 @@
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;ここからは、functions/src/index.ts を修正していきますー！&lt;/p&gt;
-&lt;h2 id=&quot;indexts-を修正&quot;&gt;index.ts を修正&lt;/h2&gt;
+&lt;h2&gt;index.ts を修正&lt;/h2&gt;
 &lt;p&gt;DB に更新がある度に、トリガーによって &lt;code class=&quot;language-text&quot;&gt;onCreate()&lt;/code&gt; が実行されます。&lt;/p&gt;
 &lt;p&gt;また、DB に保存されている FCM トークンを取得し、メッセージデータを用いてユーザーに送信するペイロードが作られます。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;functions/src/index.ts&lt;/div&gt;
@@ -106,10 +106,10 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;p&gt;今回は、特定のユーザー一人一人に Push 通知を送信していますが、&lt;/p&gt;
 &lt;p&gt;複数ユーザーにメッセージを送信することもできるらしいので、&lt;a href=&quot;https://firebase.google.com/docs/cloud-messaging/js/send-multiple?hl=ja&quot;&gt;こちら&lt;/a&gt;もぜひ参考にしてください！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
+&lt;h1&gt;まとめ&lt;/h1&gt;
 &lt;p&gt;Firebase 本当最高！👍👍👍&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;おまけ&quot;&gt;おまけ&lt;/h1&gt;
+&lt;h1&gt;おまけ&lt;/h1&gt;
 &lt;p&gt;今回の実装を含めた個人プロジェクトを開発し、運用しています。&lt;/p&gt;
 &lt;p&gt;このテーマで、&lt;a href=&quot;https://frontend-conf.fukuoka.jp/&quot;&gt;FRONTEND CONFERENCE FUKUOKA2018&lt;/a&gt;でお話させていただきました。&lt;/p&gt;
 &lt;p&gt;スライドなどを公開してますので、興味ある方は是非見てください！&lt;/p&gt;
@@ -119,19 +119,19 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;li&gt;スライド：&lt;a href=&quot;https://slides.com/lighthouse-dev/fec_fukuoka/#/&quot;&gt;https://slides.com/lighthouse-dev/fec_fukuoka/#/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;参考-url&quot;&gt;参考 URL&lt;/h1&gt;
+&lt;h1&gt;参考 URL&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://angularfirebase.com/lessons/send-push-notifications-in-angular-with-firebase-cloud-messaging/#manifest-json&quot;&gt;https://angularfirebase.com/lessons/send-push-notifications-in-angular-with-firebase-cloud-messaging/#manifest-json&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://firebase.google.com/docs/cloud-messaging/js/client?hl=ja&quot;&gt;https://firebase.google.com/docs/cloud-messaging/js/client?hl=ja&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://firebase.google.com/docs/functions/get-started?hl=ja&quot;&gt;https://firebase.google.com/docs/functions/get-started?hl=ja&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://firebase.google.com/docs/cloud-messaging/js/send-multiple?hl=ja&quot;&gt;https://firebase.google.com/docs/cloud-messaging/js/send-multiple?hl=ja&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）]]></title><description><![CDATA[はじめに こんにちは！ 去年 に引き続き、今年も書きます。 Fusic Advent Calendar 2018  19日目の記事です！ 今回は、「Angular + Firebase + PWAでPush通知機能を実装」についてまとめてみました 👏 やりたいこと PWA…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-1/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-1/</guid><content:encoded>&lt;h1 id=&quot;はじめに&quot;&gt;はじめに&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Angular + Firebase + PWAでPush通知機能を実装する（アプリ側）]]></title><description><![CDATA[はじめに こんにちは！ 去年 に引き続き、今年も書きます。 Fusic Advent Calendar 2018  19日目の記事です！ 今回は、「Angular + Firebase + PWAでPush通知機能を実装」についてまとめてみました 👏 やりたいこと PWA…]]></description><link>https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-1/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-firebase-send-push-notifications-1/</guid><content:encoded>&lt;h1&gt;はじめに&lt;/h1&gt;
 &lt;p&gt;こんにちは！&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://qiita.com/advent-calendar/2017/fusic&quot;&gt;去年&lt;/a&gt;に引き続き、今年も書きます。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://qiita.com/advent-calendar/2018/fusic&quot;&gt;Fusic Advent Calendar 2018&lt;/a&gt; 19日目の記事です！&lt;/p&gt;
 &lt;p&gt;今回は、「Angular + Firebase + PWAでPush通知機能を実装」についてまとめてみました 👏&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;やりたいこと&quot;&gt;やりたいこと&lt;/h1&gt;
+&lt;h1&gt;やりたいこと&lt;/h1&gt;
 &lt;p&gt;PWAでPush機能実装したい！&lt;/p&gt;
 &lt;p&gt;※ PWAって何？的な説明は、以下を見てください&lt;/p&gt;
 &lt;ul&gt;
@@ -139,7 +139,7 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;li&gt;&lt;a href=&quot;https://developers.google.com/web/progressive-web-apps/&quot;&gt;https://developers.google.com/web/progressive-web-apps/&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;開発環境&quot;&gt;開発環境&lt;/h1&gt;
+&lt;h1&gt;開発環境&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Angular 6&lt;/li&gt;
 &lt;li&gt;
@@ -151,14 +151,14 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
 &lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;さっそく実装に入りましょう-🤩&quot;&gt;さっそく実装に入りましょう 🤩&lt;/h1&gt;
+&lt;h1&gt;さっそく実装に入りましょう 🤩&lt;/h1&gt;
 &lt;p&gt;実装については、以下の流れで説明していきたいと思います！&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;必要なモジュールなどをインストール&lt;/li&gt;
 &lt;li&gt;Push機能実装：アプリ側&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;/angular-firebase-send-push-notifications-2&quot;&gt;Push機能実装：Firebase Functions側&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;必要なモジュールなどをインストール&quot;&gt;必要なモジュールなどをインストール&lt;/h2&gt;
+&lt;h2&gt;必要なモジュールなどをインストール&lt;/h2&gt;
 &lt;p&gt;&lt;strong&gt;Firebase CLIをインストール&lt;/strong&gt;&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;yarn global add firebase-tools@latest&lt;/code&gt;&lt;/pre&gt;
@@ -170,8 +170,8 @@ admin&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span clas
       &lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;https://www.npmjs.com/package/firebase&quot;&gt;https://www.npmjs.com/package/firebase&lt;/a&gt;&lt;/p&gt;
 &lt;br&gt;
-&lt;h2 id=&quot;push機能実装：アプリ側&quot;&gt;Push機能実装：アプリ側&lt;/h2&gt;
-&lt;h3 id=&quot;manifestjsonを修正&quot;&gt;manifest.jsonを修正&lt;/h3&gt;
+&lt;h2&gt;Push機能実装：アプリ側&lt;/h2&gt;
+&lt;h3&gt;manifest.jsonを修正&lt;/h3&gt;
 &lt;p&gt;ハードコード値 &lt;code class=&quot;language-text&quot;&gt;gcm_sender_id&lt;/code&gt; を指定するウェブアプリ マニフェストを追加する必要があります。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;「ブラウザ送信者 ID」と、Firebase プロジェクト設定に示されるプロジェクト固有の送信者 ID 値とを混同しないでください。
@@ -187,7 +187,7 @@ manifest.json のブラウザ送信者 ID は固定値で、すべての FCM Jav
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;メッセージサービスワーカーを作成&quot;&gt;メッセージサービスワーカーを作成&lt;/h3&gt;
+&lt;h3&gt;メッセージサービスワーカーを作成&lt;/h3&gt;
 &lt;p&gt;Pushメッセージには、 &lt;code class=&quot;language-text&quot;&gt;service worker&lt;/code&gt; が必要になります。
 まず、Firebaseで &lt;code class=&quot;language-text&quot;&gt;messagingSenderId&lt;/code&gt;をコピーしておきましょう。&lt;/p&gt;
 
@@ -244,7 +244,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;これで、ユーザーがアプリを閉じても、アプリが新しいメッセージを検知することができます！&lt;/p&gt;
-&lt;h3 id=&quot;angularjsonを修正&quot;&gt;angular.jsonを修正&lt;/h3&gt;
+&lt;h3&gt;angular.jsonを修正&lt;/h3&gt;
 &lt;p&gt;angular.jsonに&lt;code class=&quot;language-text&quot;&gt;manifest.json&lt;/code&gt;, &lt;code class=&quot;language-text&quot;&gt;firebase-messaging-sw.js&lt;/code&gt; を追加&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;angular.json&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -267,9 +267,9 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;メッセージサービスを作成&quot;&gt;メッセージサービスを作成&lt;/h3&gt;
+&lt;h3&gt;メッセージサービスを作成&lt;/h3&gt;
 &lt;p&gt;まずは、Firebaseの「鍵ペア」を生成する必要があります。&lt;/p&gt;
-&lt;h4 id=&quot;firebaseで「鍵ペア」を生成&quot;&gt;Firebaseで「鍵ペア」を生成&lt;/h4&gt;
+&lt;h4&gt;Firebaseで「鍵ペア」を生成&lt;/h4&gt;
 &lt;p&gt;「プロジェクトの設定＞クラウドメッセージング」に入って、鍵ペアを生成してください。&lt;/p&gt;
 
   &lt;a class=&quot;gatsby-resp-image-link&quot; href=&quot;/static/image-2-694ee39e36a729fdf3a2bde5a0a1977e-4dcde.png&quot; style=&quot;display: block&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;
@@ -286,22 +286,22 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
   &lt;/a&gt;
     
 &lt;p&gt;生成した鍵ペアをコピーしておいてください⭐️&lt;/p&gt;
-&lt;h4 id=&quot;サービスを作成&quot;&gt;サービスを作成&lt;/h4&gt;
+&lt;h4&gt;サービスを作成&lt;/h4&gt;
 &lt;p&gt;メッセージサービスは、Push通知メッセージを受け取るユーザーの許可を得る役割をします。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng g service messaging&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;ざっくり以下のような構成になります！&lt;/p&gt;
-&lt;h5 id=&quot;getpermission&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;getPermission()&lt;/code&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;code class=&quot;language-text&quot;&gt;getPermission()&lt;/code&gt;&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;ユーザーからPush通知を行う許可を取得&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&quot;updatetoken&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;updateToken()&lt;/code&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;code class=&quot;language-text&quot;&gt;updateToken()&lt;/code&gt;&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;FirebaseにFCMトークンを保存&lt;/li&gt;
 &lt;li&gt;ユーザーにPush通知を送る度にこのトークンを参照するので、Firebaseに保存する&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h5 id=&quot;receivemessage&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;receiveMessage()&lt;/code&gt;&lt;/h5&gt;
+&lt;h5&gt;&lt;code class=&quot;language-text&quot;&gt;receiveMessage()&lt;/code&gt;&lt;/h5&gt;
 &lt;ul&gt;
 &lt;li&gt;メッセージを受信&lt;/li&gt;
 &lt;/ul&gt;
@@ -366,7 +366,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;appmoduletsを修正&quot;&gt;app.module.tsを修正&lt;/h4&gt;
+&lt;h4&gt;app.module.tsを修正&lt;/h4&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/app.module.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ... 省略 ...&lt;/span&gt;
@@ -381,7 +381,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;AppModule&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;appcomponenttsを修正&quot;&gt;app.component.tsを修正&lt;/h4&gt;
+&lt;h4&gt;app.component.tsを修正&lt;/h4&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/app.component.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-typescript&quot;&gt;&lt;code class=&quot;language-typescript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ... 省略 ...&lt;/span&gt;
@@ -416,8 +416,8 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;p&gt;今回は、「IonicとFirebaseでログイン機能を実装」についてまとめてみました。 &lt;/p&gt;
 &lt;p&gt;まず、Firebaseの設定からです!&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;firebaseの設定&quot;&gt;Firebaseの設定&lt;/h1&gt;
-&lt;h3 id=&quot;プロジェクトを作成&quot;&gt;プロジェクトを作成&lt;/h3&gt;
+&lt;h1&gt;Firebaseの設定&lt;/h1&gt;
+&lt;h3&gt;プロジェクトを作成&lt;/h3&gt;
 &lt;p&gt;まず、Firebaseのプロジェクトを作成します！&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -488,7 +488,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;br&gt;
-&lt;h3 id=&quot;email--password-ログインを許可&quot;&gt;Email / Password ログインを許可&lt;/h3&gt;
+&lt;h3&gt;Email / Password ログインを許可&lt;/h3&gt;
 &lt;p&gt;次は、Email / Password ログインを許可します。&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -526,7 +526,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;br&gt;
-&lt;h3 id=&quot;ログインユーザーを作成&quot;&gt;ログインユーザーを作成&lt;/h3&gt;
+&lt;h3&gt;ログインユーザーを作成&lt;/h3&gt;
 &lt;p&gt;メールアドレス、パスワードを入力し、ログインユーザーを作成します。&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -598,7 +598,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;br&gt;
-&lt;h3 id=&quot;ウェブアプリにfirebaseを追加&quot;&gt;ウェブアプリにFirebaseを追加&lt;/h3&gt;
+&lt;h3&gt;ウェブアプリにFirebaseを追加&lt;/h3&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -669,17 +669,17 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;ログイン機能を実装&quot;&gt;ログイン機能を実装&lt;/h1&gt;
-&lt;h2 id=&quot;angularfire2をインストール&quot;&gt;angularfire2をインストール&lt;/h2&gt;
+&lt;h1&gt;ログイン機能を実装&lt;/h1&gt;
+&lt;h2&gt;angularfire2をインストール&lt;/h2&gt;
 &lt;p&gt;今回は、Firebase、Angularの公式ライブラリーである &lt;a href=&quot;https://github.com/angular/angularfire2&quot;&gt;angularfire2&lt;/a&gt;を利用します！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;npm install firebase angularfire2 --save&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;ログイン画面を作成&quot;&gt;ログイン画面を作成&lt;/h2&gt;
+&lt;h2&gt;ログイン画面を作成&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ionic generate page Login&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;environmenttsを作成&quot;&gt;environment.tsを作成&lt;/h2&gt;
+&lt;h2&gt;environment.tsを作成&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;src&lt;/code&gt;の配下に&lt;code class=&quot;language-text&quot;&gt;environment.ts&lt;/code&gt;を作成し、「↑ Firebaseの設定 &gt; ウェブアプリにFirebaseを追加」
 でコピーした設定情報を貼り付けてください 😃&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/environment.ts&lt;/div&gt;
@@ -697,7 +697,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;appmoduletsを修正&quot;&gt;app.module.tsを修正&lt;/h2&gt;
+&lt;h2&gt;app.module.tsを修正&lt;/h2&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/app/app.module.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; BrowserModule &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/platform-browser&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -751,8 +751,8 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h2 id=&quot;本格的にログイン周りを修正していきましょう-&quot;&gt;本格的にログイン周りを修正していきましょう ✨&lt;/h2&gt;
-&lt;h3 id=&quot;ログイン画面をそれっぽく修正&quot;&gt;ログイン画面をそれっぽく修正&lt;/h3&gt;
+&lt;h2&gt;本格的にログイン周りを修正していきましょう ✨&lt;/h2&gt;
+&lt;h3&gt;ログイン画面をそれっぽく修正&lt;/h3&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/pages/login/login.html&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-html&quot;&gt;&lt;code class=&quot;language-html&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;&lt;/span&gt;ion-header&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
@@ -784,7 +784,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token tag&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;&amp;lt;/&lt;/span&gt;ion-content&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;&gt;&lt;/span&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;ユーザーモデルを作成&quot;&gt;ユーザーモデルを作成&lt;/h3&gt;
+&lt;h3&gt;ユーザーモデルを作成&lt;/h3&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/model/user.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;export&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;interface&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;User&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -793,7 +793,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;ログイン処理を作成&quot;&gt;ログイン処理を作成&lt;/h3&gt;
+&lt;h3&gt;ログイン処理を作成&lt;/h3&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;src/pages/login/login.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt; Component &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;from&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;@angular/core&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -863,7 +863,7 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;ログアウト処理を作成&quot;&gt;ログアウト処理を作成&lt;/h3&gt;
+&lt;h3&gt;ログアウト処理を作成&lt;/h3&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;app.component.ts&lt;/code&gt;を修正、およびログアウト処理を作成します。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;app.component.ts&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -935,14 +935,14 @@ self&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class
       &lt;/div&gt;
 &lt;p&gt;実装は以上になります！&lt;/p&gt;
 &lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;
-&lt;h1 id=&quot;まとめ-&quot;&gt;まとめ 🎉&lt;/h1&gt;
+&lt;h1&gt;まとめ 🎉&lt;/h1&gt;
 &lt;p&gt;ざっくりこんな感じです！&lt;/p&gt;
 &lt;p&gt;&lt;img src=&quot;/ionic-firebase-login-6ead688d43d236b498938b0696c05b2a.gif&quot;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://github.com/angular/angularfire2&quot;&gt;angularfire2&lt;/a&gt;を使うと、簡単にIonicとFirebaseでログイン機能が実装できます！&lt;/li&gt;
 &lt;li&gt;今回は、Email/Passwordでのログインを紹介しましたが、SNS Login(Facebookなど)もできるらしいので、次回まとめて紹介したいと思います 👍&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScriptでURLを操作する]]></title><description><![CDATA[ページをリロードせずに、URLを変更したい HTML5では および メソッドが導入され、 それぞれにより履歴エントリの追加と修正が可能となりました。  つまり、ページをリロードせずに、ページURLだけ変える時に使います！ history.pushState( state…]]></description><link>https://lighthouse-dev.github.io/javascript-url-history/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/javascript-url-history/</guid><content:encoded>&lt;h1 id=&quot;ページをリロードせずに、urlを変更したい&quot;&gt;ページをリロードせずに、URLを変更したい&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[JavaScriptでURLを操作する]]></title><description><![CDATA[ページをリロードせずに、URLを変更したい HTML5では および メソッドが導入され、 それぞれにより履歴エントリの追加と修正が可能となりました。  つまり、ページをリロードせずに、ページURLだけ変える時に使います！ history.pushState( state…]]></description><link>https://lighthouse-dev.github.io/javascript-url-history/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/javascript-url-history/</guid><content:encoded>&lt;h1&gt;ページをリロードせずに、URLを変更したい&lt;/h1&gt;
 &lt;p&gt;HTML5では&lt;code class=&quot;language-text&quot;&gt;history.pushState()&lt;/code&gt;および&lt;code class=&quot;language-text&quot;&gt;history.replaceState()&lt;/code&gt;メソッドが導入され、&lt;/p&gt;
 &lt;p&gt;それぞれにより履歴エントリの追加と修正が可能となりました。 &lt;/p&gt;
 &lt;p&gt;つまり、ページをリロードせずに、ページURLだけ変える時に使います！&lt;/p&gt;
@@ -978,7 +978,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;test.com/hoge3&amp;quot;&lt;/code&gt; → &lt;code class=&quot;language-text&quot;&gt;test.com/hoge2&lt;/code&gt; → &lt;code class=&quot;language-text&quot;&gt;test.com/hoge1&lt;/code&gt; → &lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;の順に、ブラウザのURLが変わっていきます。 (リロードはしないので、ページの内容は変わりません)&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;historypushstateとhistoryrepalcestateの違いは？&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;history.pushState()&lt;/code&gt;と&lt;code class=&quot;language-text&quot;&gt;history.repalceState()&lt;/code&gt;の違いは？&lt;/h1&gt;
+&lt;h1&gt;&lt;code class=&quot;language-text&quot;&gt;history.pushState()&lt;/code&gt;と&lt;code class=&quot;language-text&quot;&gt;history.repalceState()&lt;/code&gt;の違いは？&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;history.repalceState( state, title url );&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -992,56 +992,56 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
       &lt;/div&gt;
 &lt;p&gt;URLが&lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;から&lt;code class=&quot;language-text&quot;&gt;test.com/hoge1&lt;/code&gt;に変わりますが、ブラウザの戻るボタンを押しても、一つ前の&lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;には戻りません。&lt;/p&gt;
 &lt;p&gt;つまり、履歴に&lt;strong&gt;追加されない&lt;/strong&gt;ということ。 まとめると、、&lt;/p&gt;
-&lt;h2 id=&quot;pushstate&quot;&gt;pushState()&lt;/h2&gt;
+&lt;h2&gt;pushState()&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;履歴に新しいURLを追加する。&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;を一つ前のURLとしておいて、新しいURLとして&lt;code class=&quot;language-text&quot;&gt;test.com/hoge1&lt;/code&gt;を追加するということ。&lt;/li&gt;
 &lt;li&gt;そのため、前のURLが残っているので、[戻る]ボタンで&lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;に戻ることでできます。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;replacestate&quot;&gt;replaceState()&lt;/h2&gt;
+&lt;h2&gt;replaceState()&lt;/h2&gt;
 &lt;ul&gt;
 &lt;li&gt;前のURLを消して、URLを変更します。&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;というURL履歴を削除し、&lt;code class=&quot;language-text&quot;&gt;test/com/hoge1&lt;/code&gt;を追加するということ。&lt;/li&gt;
 &lt;li&gt;なので、ブラウザの[戻る]ボタンを押しても、一つ前の&lt;code class=&quot;language-text&quot;&gt;test.com&lt;/code&gt;には戻りません。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;その他&quot;&gt;その他&lt;/h1&gt;
-&lt;h3 id=&quot;前のページに戻る&quot;&gt;前のページに戻る&lt;/h3&gt;
+&lt;h1&gt;その他&lt;/h1&gt;
+&lt;h3&gt;前のページに戻る&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;history.back()&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;これにより、ちょうどユーザーがブラウザのツールバーの「前のページに戻る」ボタンをクリックしたときのような挙動がなされます。&lt;/p&gt;
-&lt;h3 id=&quot;次のページへ進む&quot;&gt;次のページへ進む&lt;/h3&gt;
+&lt;h3&gt;次のページへ進む&lt;/h3&gt;
 &lt;blockquote&gt;
 &lt;p&gt;history.forward()&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;同様に、このようにすることで（ユーザーが「次のページへ進む」ボタンをクリックしたかのように）次のページへ進むこともできます。&lt;/p&gt;
 &lt;p&gt;これらの関数呼び出し後も同様に、popStateイベントが発生します。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;参考url&quot;&gt;参考URL&lt;/h1&gt;
+&lt;h1&gt;参考URL&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://developer.mozilla.org/ja/docs/Web/Guide/DOM/Manipulating_the_browser_history&quot;&gt;ブラウザの履歴を操作する - ウェブデベロッパーガイド | MDN&lt;/a&gt; &lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[VSCodeでvendor配下のファイルが検索できない]]></title><description><![CDATA[現象 VSCodeで、クイックオープン( )でファイルを検索することが多い。
-が、Laravelのvendor配下が検索できない。（CakePHPも同様） 👆のせいで、 金子さん がVSCodeを裏切って、Sublime Textに乗り換えた。 やりたいこと vendor…]]></description><link>https://lighthouse-dev.github.io/vscode-search-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vscode-search-setting/</guid><content:encoded>&lt;h1 id=&quot;現象&quot;&gt;現象&lt;/h1&gt;
+が、Laravelのvendor配下が検索できない。（CakePHPも同様） 👆のせいで、 金子さん がVSCodeを裏切って、Sublime Textに乗り換えた。 やりたいこと vendor…]]></description><link>https://lighthouse-dev.github.io/vscode-search-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vscode-search-setting/</guid><content:encoded>&lt;h1&gt;現象&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;VSCodeで、クイックオープン(&lt;code class=&quot;language-text&quot;&gt;Cmd + p&lt;/code&gt;)でファイルを検索することが多い。
 が、Laravelのvendor配下が検索できない。（CakePHPも同様）&lt;/li&gt;
 &lt;li&gt;👆のせいで、&lt;a href=&quot;https://fusic.co.jp/members/56&quot;&gt;金子さん&lt;/a&gt;がVSCodeを裏切って、Sublime Textに乗り換えた。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;やりたいこと&quot;&gt;やりたいこと&lt;/h1&gt;
+&lt;h1&gt;やりたいこと&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;vendor配下まで検索できるようにしたい。&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;https://fusic.co.jp/members/56&quot;&gt;金子さん&lt;/a&gt;がVSCodeに戻って来てほしい。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;検索できなかった理由&quot;&gt;検索できなかった理由&lt;/h1&gt;
+&lt;h1&gt;検索できなかった理由&lt;/h1&gt;
 &lt;p&gt;基本的にVSCodeのデフォルト設定で&lt;code class=&quot;language-text&quot;&gt;&amp;quot;search.useIgnoreFiles&amp;quot;: true&lt;/code&gt;になっているはずです。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;search.useIgnoreFiles&lt;/code&gt;設定は、 クイックオープン(Ctrl+P)でファイルを探す時に、.gitignore/.ignoreに記載されているファイルを表示させるかどうかの設定です。&lt;/p&gt;
 &lt;p&gt;つまり、この設定が &lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;になっていて、.gitignore/.ignoreに&lt;code class=&quot;language-text&quot;&gt;vender&lt;/code&gt;ディレクトリを記載している場合、
 検索で&lt;code class=&quot;language-text&quot;&gt;vender&lt;/code&gt;配下のファイルは検索できなくなるということ。(vendor以外も同様)&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;解決方法&quot;&gt;解決方法&lt;/h1&gt;
+&lt;h1&gt;解決方法&lt;/h1&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;User Settings&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;...省略
@@ -1058,12 +1058,12 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;で、いろいろ調べた結果、簡単にインストールできる方法が分かったので、&lt;/p&gt;
 &lt;p&gt;まとめておきたいと思います。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;やりたいこと&quot;&gt;やりたいこと&lt;/h1&gt;
+&lt;h1&gt;やりたいこと&lt;/h1&gt;
 &lt;p&gt;単純に.ipaファイルでIOSデバイスにカスタムのエンタープライズアプリをインストールしたい。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;インストール方法&quot;&gt;インストール方法&lt;/h1&gt;
+&lt;h1&gt;インストール方法&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Apple Configurator&lt;/code&gt;というツールを使うと、簡単にインストールできます！&lt;/p&gt;
-&lt;h2 id=&quot;apple-configuratorをインストール&quot;&gt;Apple Configuratorをインストール&lt;/h2&gt;
+&lt;h2&gt;Apple Configuratorをインストール&lt;/h2&gt;
 &lt;p&gt;App Sotreで&lt;code class=&quot;language-text&quot;&gt;Apple Configurator&lt;/code&gt;を検索し、インストールします。&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -1099,7 +1099,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h2 id=&quot;ipaファイルでアプリをインストール&quot;&gt;.ipaファイルでアプリをインストール&lt;/h2&gt;
+&lt;h2&gt;.ipaファイルでアプリをインストール&lt;/h2&gt;
 &lt;p&gt;インストールした &lt;code class=&quot;language-text&quot;&gt;Apple Configurator&lt;/code&gt;を実行し、IOSデバイスをUSBでMacに接続します。&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -1206,7 +1206,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;p&gt;これでアプリのインストールは完了ですが、デバイス側での設定が一つ残ってます！&lt;/p&gt;
-&lt;h2 id=&quot;デバイス側の設定（appを手動でインストールして信頼する）&quot;&gt;デバイス側の設定（Appを手動でインストールして信頼する）&lt;/h2&gt;
+&lt;h2&gt;デバイス側の設定（Appを手動でインストールして信頼する）&lt;/h2&gt;
 &lt;p&gt;アプリをインストールした後に実行すると、以下のようなメッセージが表示されます。(されるはず)&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -1311,13 +1311,13 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;br&gt;
 &lt;p&gt;これで５分でインストール、設定完了！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
+&lt;h1&gt;まとめ&lt;/h1&gt;
 &lt;p&gt;IOSはAndroidよりいろいろ厳しいことが分かりました。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://support.apple.com/ja-jp/ht204460&quot;&gt;iOS でカスタムのエンタープライズ App をインストールする - Apple サポート&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[【VSCode】SFTPでファイルを同期する]]></title><description><![CDATA[こんにちは！ 普段開発エディターで  Visual Studio Code を使ってます。 今回は、 でSFTPファイル同期について紹介します ✈️ SFTP拡張モジュールをインストール sftp - Visual Studio Marketplace…]]></description><link>https://lighthouse-dev.github.io/VSCode-SFTP/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/VSCode-SFTP/</guid><content:encoded>&lt;p&gt;こんにちは！&lt;/p&gt;
 &lt;p&gt;普段開発エディターで &lt;a href=&quot;https://code.visualstudio.com/&quot;&gt;Visual Studio Code&lt;/a&gt;を使ってます。&lt;/p&gt;
 &lt;p&gt;今回は、&lt;code class=&quot;language-text&quot;&gt;VSCode&lt;/code&gt;でSFTPファイル同期について紹介します ✈️&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;sftp拡張モジュールをインストール&quot;&gt;SFTP拡張モジュールをインストール&lt;/h1&gt;
+&lt;h1&gt;SFTP拡張モジュールをインストール&lt;/h1&gt;
 &lt;p&gt;&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=liximomo.sftp&quot;&gt;sftp - Visual Studio Marketplace&lt;/a&gt; をインストールし、リロードします&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -1352,8 +1352,8 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;設定&quot;&gt;設定&lt;/h1&gt;
-&lt;h2 id=&quot;1-「shift--command--p」でsftpを入力&quot;&gt;1. 「shift + command + P」で&lt;code class=&quot;language-text&quot;&gt;SFTP&lt;/code&gt;を入力&lt;/h2&gt;
+&lt;h1&gt;設定&lt;/h1&gt;
+&lt;h2&gt;1. 「shift + command + P」で&lt;code class=&quot;language-text&quot;&gt;SFTP&lt;/code&gt;を入力&lt;/h2&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -1387,7 +1387,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h2 id=&quot;2-sftpconfigをクリックし、設定ファイルを開く&quot;&gt;2. &lt;code class=&quot;language-text&quot;&gt;SFTP:Config&lt;/code&gt;をクリックし、設定ファイルを開く&lt;/h2&gt;
+&lt;h2&gt;2. &lt;code class=&quot;language-text&quot;&gt;SFTP:Config&lt;/code&gt;をクリックし、設定ファイルを開く&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-json&quot;&gt;&lt;code class=&quot;language-json&quot;&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token property&quot;&gt;&quot;protocol&quot;&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&quot;sftp&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
@@ -1403,77 +1403,77 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;基本的な設定は以上になりますが、&lt;/p&gt;
 &lt;p&gt;これ以外の設定は、&lt;a href=&quot;https://marketplace.visualstudio.com/items?itemName=liximomo.sftp&quot;&gt;sftp - Visual Studio Marketplace&lt;/a&gt; 👈ここを参考にしてください。&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid() エラー対応]]></title><description><![CDATA[PHPで以下のエラーが発生した時の対応をメモ。 エラー内容 PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid…]]></description><link>https://lighthouse-dev.github.io/php-error-posix-getpwuid/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-error-posix-getpwuid/</guid><content:encoded>&lt;p&gt;PHPで以下のエラーが発生した時の対応をメモ。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;エラー内容&quot;&gt;エラー内容&lt;/h1&gt;
+&lt;h1&gt;エラー内容&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;PHP Fatal error: Uncaught Error: Call to undefined function Laravel\Envoy\posix_getpwuid()&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;解決方法&quot;&gt;解決方法&lt;/h1&gt;
+&lt;h1&gt;解決方法&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;php-posix&lt;/code&gt;をインストールすることで簡単に解決。&lt;/p&gt;
-&lt;h2 id=&quot;1-php-posixをインストール&quot;&gt;1. php-posixをインストール&lt;/h2&gt;
+&lt;h2&gt;1. php-posixをインストール&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo yum install --enablerepo=remi-php71 php-posix&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;2-apach再起動&quot;&gt;2. Apach再起動&lt;/h2&gt;
+&lt;h2&gt;2. Apach再起動&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service httpd restart&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[はてなブログで画像のサイズを変更方法 - Markdown]]></title><description><![CDATA[はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！ が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍 変更方法 最後（plain）の後ろに をつけるだけです！ 例えば、500pxに変更したい　→   をつける 変更前（デフォルト） 変更後（20…]]></description><link>https://lighthouse-dev.github.io/hatena-image-resize/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/hatena-image-resize/</guid><content:encoded>&lt;p&gt;はてなでブログを書く時に、画像のサイズを変更したい時が結構ある！&lt;/p&gt;
 &lt;p&gt;が、いつも忘れて毎回調べるのがめんどくさいので、書いておきます 👍&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;変更方法&quot;&gt;変更方法&lt;/h1&gt;
+&lt;h1&gt;変更方法&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w350]&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;最後（plain）の後ろに&lt;code class=&quot;language-text&quot;&gt;:w350&lt;/code&gt;をつけるだけです！&lt;/p&gt;
 &lt;p&gt;例えば、500pxに変更したい　→ &lt;code class=&quot;language-text&quot;&gt;:w500&lt;/code&gt; をつける&lt;/p&gt;
-&lt;h2 id=&quot;変更前（デフォルト）&quot;&gt;変更前（デフォルト）&lt;/h2&gt;
+&lt;h2&gt;変更前（デフォルト）&lt;/h2&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain]&lt;/code&gt;&lt;/p&gt;
-&lt;h2 id=&quot;変更後（200に指定）&quot;&gt;変更後（200に指定）&lt;/h2&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w200]&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Angular-CLI コマンドまとめ]]></title><description><![CDATA[プロジェクト作成 テンプレート作成 コンポーネント作成 サービス作成 アプリケーション実行 ポートを指定する場合 アプリケーションビルド テスト実行]]></description><link>https://lighthouse-dev.github.io/angular-cli/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-cli/</guid><content:encoded>&lt;h1 id=&quot;プロジェクト作成&quot;&gt;プロジェクト作成&lt;/h1&gt;
+&lt;h2&gt;変更後（200に指定）&lt;/h2&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;[f:id:lighthouse-dev:20180414164303j:plain:w200]&lt;/code&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Angular-CLI コマンドまとめ]]></title><description><![CDATA[プロジェクト作成 テンプレート作成 コンポーネント作成 サービス作成 アプリケーション実行 ポートを指定する場合 アプリケーションビルド テスト実行]]></description><link>https://lighthouse-dev.github.io/angular-cli/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-cli/</guid><content:encoded>&lt;h1&gt;プロジェクト作成&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng new &amp;lt;プロジェクト名&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;テンプレート作成&quot;&gt;テンプレート作成&lt;/h1&gt;
-&lt;h3 id=&quot;コンポーネント作成&quot;&gt;コンポーネント作成&lt;/h3&gt;
+&lt;h1&gt;テンプレート作成&lt;/h1&gt;
+&lt;h3&gt;コンポーネント作成&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng generate component &amp;lt;コンポーネント名&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;サービス作成&quot;&gt;サービス作成&lt;/h3&gt;
+&lt;h3&gt;サービス作成&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng generate service &amp;lt;サービス名&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;アプリケーション実行&quot;&gt;アプリケーション実行&lt;/h1&gt;
+&lt;h1&gt;アプリケーション実行&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng serve&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;ポートを指定する場合&quot;&gt;ポートを指定する場合&lt;/h3&gt;
+&lt;h3&gt;ポートを指定する場合&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng serve --port &amp;lt;ポートナンバー&amp;gt;&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;アプリケーションビルド&quot;&gt;アプリケーションビルド&lt;/h1&gt;
+&lt;h1&gt;アプリケーションビルド&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng build --target=production --base-href /&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;テスト実行&quot;&gt;テスト実行&lt;/h1&gt;
+&lt;h1&gt;テスト実行&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng e2e&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[ng serveでモジュールがないというエラー（Error: Cannot find module '@angular-devkit/core'）]]></title><description><![CDATA[エラー内容 Error: Cannot find module ‘@angular-devkit/core’ 解決方法 1. npmアップデート 2. node_modulesフォルダーを削除 3. angular-cliバージョンを確認 4. package.jsonを修正…]]></description><link>https://lighthouse-dev.github.io/angular-module-error/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-module-error/</guid><content:encoded>&lt;h1 id=&quot;エラー内容&quot;&gt;エラー内容&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[ng serveでモジュールがないというエラー（Error: Cannot find module '@angular-devkit/core'）]]></title><description><![CDATA[エラー内容 Error: Cannot find module ‘@angular-devkit/core’ 解決方法 1. npmアップデート 2. node_modulesフォルダーを削除 3. angular-cliバージョンを確認 4. package.jsonを修正…]]></description><link>https://lighthouse-dev.github.io/angular-module-error/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-module-error/</guid><content:encoded>&lt;h1&gt;エラー内容&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Error: Cannot find module ‘@angular-devkit/core’&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;解決方法&quot;&gt;解決方法&lt;/h1&gt;
-&lt;h2 id=&quot;1-npmアップデート&quot;&gt;1. npmアップデート&lt;/h2&gt;
+&lt;h1&gt;解決方法&lt;/h1&gt;
+&lt;h2&gt;1. npmアップデート&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;npm update -g&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;2-node_modulesフォルダーを削除&quot;&gt;2. node_modulesフォルダーを削除&lt;/h2&gt;
+&lt;h2&gt;2. node_modulesフォルダーを削除&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;rm -r node_modules&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;3-angular-cliバージョンを確認&quot;&gt;3. angular-cliバージョンを確認&lt;/h2&gt;
+&lt;h2&gt;3. angular-cliバージョンを確認&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng -v&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -1510,7 +1510,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h2 id=&quot;4-packagejsonを修正&quot;&gt;4. package.jsonを修正&lt;/h2&gt;
+&lt;h2&gt;4. package.jsonを修正&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;vim package.json&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -1547,12 +1547,12 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h2 id=&quot;5-npmインストールを実行&quot;&gt;5. npmインストールを実行&lt;/h2&gt;
+&lt;h2&gt;5. npmインストールを実行&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;npm install&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;確認&quot;&gt;確認&lt;/h1&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng serve&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -1599,7 +1599,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;TypeScript&lt;/code&gt;について勉強するきっかけになりました。&lt;/p&gt;
 &lt;p&gt;ということで、今回は、&lt;code class=&quot;language-text&quot;&gt;TypeScript&lt;/code&gt;についてまとめた内容を紹介したいと思います！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;typescriptとは&quot;&gt;TypeScriptとは&lt;/h1&gt;
+&lt;h1&gt;TypeScriptとは&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;MSとGoogleが協業で開発。&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;TypeScript&lt;/code&gt;は、新しい言語ではなく、ES6のスーパーセット。&lt;/li&gt;
@@ -1620,13 +1620,13 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   &lt;/a&gt;
     
 &lt;br&gt;
-&lt;h1 id=&quot;インストール方法&quot;&gt;インストール方法&lt;/h1&gt;
+&lt;h1&gt;インストール方法&lt;/h1&gt;
 &lt;p&gt;インストール方法は、すごく簡単。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;npm install -g typescript&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;typescriptを使うメリット&quot;&gt;TypeScriptを使うメリット&lt;/h1&gt;
+&lt;h1&gt;TypeScriptを使うメリット&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;TypeScript&lt;/code&gt;のメリットは以下です！&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;タイプ&lt;/li&gt;
@@ -1635,7 +1635,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;インポート&lt;/li&gt;
 &lt;li&gt;言語ユーティリティー&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;タイプ&quot;&gt;タイプ&lt;/h2&gt;
+&lt;h2&gt;タイプ&lt;/h2&gt;
 &lt;p&gt;ES5から改善された点がいくつかありますが、まず1つ目は「タイプが指定できること」です。&lt;/p&gt;
 &lt;p&gt;タイプ指定に対応していないJavaScriptを好む方も一部いると思いますが、&lt;/p&gt;
 &lt;p&gt;タイプを指定できることによって、いろんなメリットが生まれます。&lt;/p&gt;
@@ -1647,13 +1647,13 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/blockquote&gt;
 &lt;p&gt;もちろん&lt;code class=&quot;language-text&quot;&gt;TypeScript&lt;/code&gt;でタイプを指定しないことも可能です。&lt;/p&gt;
 &lt;p&gt;例えば、サンプルコードを書いてみたりする時には、タイプを省略し、後から指定することもできます。&lt;/p&gt;
-&lt;h3 id=&quot;タイプ指定の例&quot;&gt;タイプ指定の例&lt;/h3&gt;
-&lt;h4 id=&quot;変数&quot;&gt;変数&lt;/h4&gt;
+&lt;h3&gt;タイプ指定の例&lt;/h3&gt;
+&lt;h4&gt;変数&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;関数&quot;&gt;関数&lt;/h4&gt;
+&lt;h4&gt;関数&lt;/h4&gt;
 &lt;p&gt;関数を宣言する時も、次のようにパラメーターとリターンどちらもタイプを指定できます。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt; &lt;span class=&quot;token function&quot;&gt;sample&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -1661,7 +1661,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;タイプの種類&quot;&gt;タイプの種類&lt;/h3&gt;
+&lt;h3&gt;タイプの種類&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;string&lt;/li&gt;
 &lt;li&gt;number&lt;/li&gt;
@@ -1672,25 +1672,25 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;void&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;それでは、タイプの種類を一つずつ見ていきましょう！&lt;/p&gt;
-&lt;h4 id=&quot;1-string&quot;&gt;1. string&lt;/h4&gt;
+&lt;h4&gt;1. string&lt;/h4&gt;
 &lt;p&gt;文字列は、&lt;code class=&quot;language-text&quot;&gt;string&lt;/code&gt;タイプで宣言します。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;jslee&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;2-number&quot;&gt;2. number&lt;/h4&gt;
+&lt;h4&gt;2. number&lt;/h4&gt;
 &lt;p&gt;言葉通り”数字”を表すタイプ。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; age&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;3-boolean&quot;&gt;3. boolean&lt;/h4&gt;
+&lt;h4&gt;3. boolean&lt;/h4&gt;
 &lt;p&gt;true / false&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; married&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; boolean &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;4-array&quot;&gt;4. Array&lt;/h4&gt;
+&lt;h4&gt;4. Array&lt;/h4&gt;
 &lt;p&gt;配列タイプです。&lt;/p&gt;
 &lt;p&gt;配列はコレクションなので、配列の中でもオブジェクトのタイプを指定する必要があります。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -1704,7 +1704,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; hogehoge&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; number&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;5-列挙型&quot;&gt;5. 列挙型&lt;/h4&gt;
+&lt;h4&gt;5. 列挙型&lt;/h4&gt;
 &lt;p&gt;列挙型は、&lt;code class=&quot;language-text&quot;&gt;enum&lt;/code&gt;を使います！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;enum&lt;/span&gt; Role &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;Employee&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Manager&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Admin&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -1732,7 +1732,7 @@ history&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;Roles: &apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Role&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;,&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Role&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;and&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; Role&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;6-any&quot;&gt;6. any&lt;/h4&gt;
+&lt;h4&gt;6. any&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;any&lt;/code&gt;は、変数のタイプを省略する時に、デフォルトで指定されるタイプです。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;any&lt;/code&gt;タイプの変数は、どんな値も受け取ることができます！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -1741,7 +1741,7 @@ something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
 something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token number&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token number&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;7-void&quot;&gt;7. void&lt;/h4&gt;
+&lt;h4&gt;7. void&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;void&lt;/code&gt;は、“タイプが無い”という意味です。&lt;/p&gt;
 &lt;p&gt;一般的にリターン値がない関数で使うことが多いですね。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -1750,7 +1750,7 @@ something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;クラス&quot;&gt;クラス&lt;/h2&gt;
+&lt;h2&gt;クラス&lt;/h2&gt;
 &lt;p&gt;ES5では、クラスの代わりに「プロトタイプ」が使われましたが、&lt;/p&gt;
 &lt;p&gt;ES6では、&lt;code class=&quot;language-text&quot;&gt;JavaScript&lt;/code&gt;にクラスが導入されました！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -1760,7 +1760,7 @@ something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;クラスには、プロパティとメソッド、コンストラクタを持たせます。&lt;/p&gt;
-&lt;h4 id=&quot;プロパティ&quot;&gt;プロパティ&lt;/h4&gt;
+&lt;h4&gt;プロパティ&lt;/h4&gt;
 &lt;p&gt;プロパティは、クラスのインスタンスに属するデータを定義します！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -1770,7 +1770,7 @@ something &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span c
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;メソッド&quot;&gt;メソッド&lt;/h4&gt;
+&lt;h4&gt;メソッド&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;Person&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
   name&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -1790,7 +1790,7 @@ p&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;name &lt;span cla
 p&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;greet&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;コンストラクタ&quot;&gt;コンストラクタ&lt;/h4&gt;
+&lt;h4&gt;コンストラクタ&lt;/h4&gt;
 &lt;p&gt;コンストラクタ（constructor）は、皆さんもご存知の通りインスタンスが生成される時に実行されるメソッドですね。&lt;/p&gt;
 &lt;p&gt;コンストラクタは、以下のルールを持ってます！&lt;/p&gt;
 &lt;ul&gt;
@@ -1807,7 +1807,7 @@ p&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;継承inheritance&quot;&gt;継承(Inheritance)&lt;/h4&gt;
+&lt;h4&gt;継承(Inheritance)&lt;/h4&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;extends&lt;/code&gt;キーワードを使って、継承します！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;sampleClass&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;extends&lt;/span&gt; &lt;span class=&quot;token class-name&quot;&gt;parentClass&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -1818,16 +1818,16 @@ p&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&q
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;ユーティリティー&quot;&gt;ユーティリティー&lt;/h2&gt;
+&lt;h2&gt;ユーティリティー&lt;/h2&gt;
 &lt;p&gt;ES6, TypeScriptは、プログラミングをもっと楽しめる多くの文法構造を提供してます！&lt;/p&gt;
 &lt;p&gt;その中でも、以下の二つを紹介します。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;アロー関数&lt;/li&gt;
 &lt;li&gt;テンプレート文字列&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;アロー関数&quot;&gt;アロー関数&lt;/h3&gt;
+&lt;h3&gt;アロー関数&lt;/h3&gt;
 &lt;p&gt;アロー関数（=&gt;）は、関数を作成するための縮約形表記です。&lt;/p&gt;
-&lt;h4 id=&quot;es5での例&quot;&gt;ES5での例&lt;/h4&gt;
+&lt;h4&gt;ES5での例&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; languages &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;PHP&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TypeScript&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;C++&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 languages&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;function&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;language&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -1835,7 +1835,7 @@ languages&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;アロー関数の書き方&quot;&gt;アロー(=&gt;)関数の書き方&lt;/h4&gt;
+&lt;h4&gt;アロー(=&gt;)関数の書き方&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; languages&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; string&lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;PHP&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;TypeScript&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;C++&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;]&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 languages&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;forEach&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt; language &lt;span class=&quot;token operator&quot;&gt;=&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -1843,7 +1843,7 @@ languages&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;アローは、thisを共有できる&quot;&gt;アロー(=&gt;)は、&lt;code class=&quot;language-text&quot;&gt;$this&lt;/code&gt;を共有できる&lt;/h4&gt;
+&lt;h4&gt;アロー(=&gt;)は、&lt;code class=&quot;language-text&quot;&gt;$this&lt;/code&gt;を共有できる&lt;/h4&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token comment&quot;&gt;// ES5&lt;/span&gt;
 &lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; hoge &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
@@ -1872,13 +1872,13 @@ languages&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span 
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;テンプレート文字列&quot;&gt;テンプレート文字列&lt;/h3&gt;
+&lt;h3&gt;テンプレート文字列&lt;/h3&gt;
 &lt;p&gt;ES6, TypeScriptでは、新しいテンプレート文字列が導入されました！&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;文字列中に変数（ +でつなぐ必要がなくなった ）&lt;/li&gt;
 &lt;li&gt;多行（multi-line）文字列&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;文字列中に変数（string-interpolation）&quot;&gt;文字列中に変数（string interpolation）&lt;/h4&gt;
+&lt;h4&gt;文字列中に変数（string interpolation）&lt;/h4&gt;
 &lt;p&gt;文字列の中に変数を使うことができるのがコツ。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;var&lt;/span&gt; firstName &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;token string&quot;&gt;&apos;js&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -1889,7 +1889,7 @@ languages&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span 
 console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;greeting&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;多行文字列multi-line&quot;&gt;多行文字列(multi-line)&lt;/h4&gt;
+&lt;h4&gt;多行文字列(multi-line)&lt;/h4&gt;
 &lt;p&gt;多行文字列(multi-line)機能は、長い文字列をコードに書く時に役に立ちそうです！&lt;/p&gt;
 &lt;p&gt;テンプレートのように使えるっていうのが良さそうですね。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -1902,30 +1902,30 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
+&lt;h1&gt;まとめ&lt;/h1&gt;
 &lt;p&gt;少々長くなりましたが、ざっくりこんな感じです！&lt;/p&gt;
 &lt;p&gt;また追加したい内容があったら、追記していきます👍&lt;/p&gt;
 &lt;br&gt;
 &lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[MacでAngularをインストール]]></title><description><![CDATA[Mac環境で  Angular  のインストール方法を紹介します！ まず をインストールする Angularを始めるには、まず をインストールする必要があります。 のインストール方法については、 Node.js…]]></description><link>https://lighthouse-dev.github.io/angular-install-for-macos/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/angular-install-for-macos/</guid><content:encoded>&lt;p&gt;Mac環境で &lt;a href=&quot;https://angular.io/&quot;&gt;Angular&lt;/a&gt; のインストール方法を紹介します！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;まずnodejsをインストールする&quot;&gt;まず&lt;code class=&quot;language-text&quot;&gt;Node.js&lt;/code&gt;をインストールする&lt;/h1&gt;
+&lt;h1&gt;まず&lt;code class=&quot;language-text&quot;&gt;Node.js&lt;/code&gt;をインストールする&lt;/h1&gt;
 &lt;p&gt;Angularを始めるには、まず&lt;code class=&quot;language-text&quot;&gt;Node.js&lt;/code&gt;をインストールする必要があります。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;Node.js&lt;/code&gt;のインストール方法については、&lt;a href=&quot;https://nodejs.org/ja/&quot;&gt;Node.js公式サイト&lt;/a&gt; を見るのをオススメします！&lt;/p&gt;
 &lt;p&gt;ただし、&lt;code class=&quot;language-text&quot;&gt;Node 6.9.0&lt;/code&gt; 以上のバージョンをインストールしてください。&lt;/p&gt;
-&lt;h2 id=&quot;npmバージョン確認&quot;&gt;npmバージョン確認&lt;/h2&gt;
+&lt;h2&gt;npmバージョン確認&lt;/h2&gt;
 &lt;p&gt;Node.jsと一緒に、npm - ノードパッケージ管理者（Node Package Manager）がインストールされます。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;npm -v&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;※ バージョン 3.0.0 以上&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;typescriptをインストール&quot;&gt;TypeScriptをインストール&lt;/h1&gt;
+&lt;h1&gt;TypeScriptをインストール&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo npm install -g typescript&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;※ バージョン 2.1 以上&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;angular-cliをインストール&quot;&gt;Angular CLIをインストール&lt;/h1&gt;
+&lt;h1&gt;Angular CLIをインストール&lt;/h1&gt;
 &lt;p&gt;Angularは、コマンドラインでプロジェクトを作成し、管理できるツールを提供してます。&lt;/p&gt;
 &lt;p&gt;これを使うと、プロジェクトの作成や、新しいコントローラーの追加などの作業を自動化できるらしいです。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -1933,7 +1933,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
       &lt;/div&gt;
 &lt;p&gt;※ 詳しくは、&lt;a href=&quot;https://angular.io/guide/quickstart&quot;&gt;Angular Docs&lt;/a&gt; を参考。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;確認&quot;&gt;確認&lt;/h1&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
 &lt;p&gt;インストールされたことを確認してみましょう！&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ng --help&lt;/code&gt;&lt;/pre&gt;
@@ -1941,16 +1941,16 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;これで Augular CLIのインストールが完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHPでLINEのMessaging APIを使ってメッセージを送る]]></title><description><![CDATA[PHPでMessaging APIを動かすサンプルを紹介したいと思います。 ※ LINE@MANAGERの設定については、あとで追記します！ Messaging APIの説明 ユーザー、グループ、またはトークルームからのイベントに対して応答メッセージを送信するAPI…]]></description><link>https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/PHP-LINE-MessagingAPI/</guid><content:encoded>&lt;p&gt;PHPでMessaging APIを動かすサンプルを紹介したいと思います。&lt;/p&gt;
 &lt;p&gt;※ LINE@MANAGERの設定については、あとで追記します！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;messaging-apiの説明&quot;&gt;Messaging APIの説明&lt;/h1&gt;
+&lt;h1&gt;Messaging APIの説明&lt;/h1&gt;
 &lt;p&gt;ユーザー、グループ、またはトークルームからのイベントに対して応答メッセージを送信するAPIです！&lt;/p&gt;
 &lt;p&gt;イベントが発生するとwebhookを使って通知され、応答できるイベントには応答トークンが発行されるそうです。&lt;/p&gt;
-&lt;h4 id=&quot;注意点&quot;&gt;注意点&lt;/h4&gt;
+&lt;h4&gt;注意点&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;応答トークンは一定の期間が経過すると無効になるため、メッセージを受信したらすぐに応答を返す必要があります。&lt;/li&gt;
 &lt;li&gt;応答トークンは1回のみ使用できます。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;メッセージオブジェクト&quot;&gt;メッセージオブジェクト&lt;/h1&gt;
+&lt;h1&gt;メッセージオブジェクト&lt;/h1&gt;
 &lt;p&gt;以下は、送信するメッセージの内容を表すJSONオブジェクトです。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;テキスト&lt;/li&gt;
@@ -1963,7 +1963,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;テンプレート&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;この中で「テンプレートメッセージ」を見てみましょう！&lt;/p&gt;
-&lt;h2 id=&quot;テンプレートメッセージ&quot;&gt;テンプレートメッセージ&lt;/h2&gt;
+&lt;h2&gt;テンプレートメッセージ&lt;/h2&gt;
 &lt;p&gt;テンプレートメッセージは、あらかじめレイアウトが定義されたテンプレートをカスタマイズして構築するメッセージです。&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;事前定義されたレイアウトが用意されており、よりリッチなユーザー体験の提供に役立ちます。&lt;/p&gt;
@@ -1976,7 +1976,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;画像カルーセル&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;さっそく触ってみましょう！&lt;/p&gt;
-&lt;h3 id=&quot;画像カルーセルテンプレート&quot;&gt;画像カルーセルテンプレート&lt;/h3&gt;
+&lt;h3&gt;画像カルーセルテンプレート&lt;/h3&gt;
 &lt;p&gt;複数の画像を表示するテンプレートです。画像は横にスクロールして順番に表示できます。&lt;/p&gt;
 &lt;p&gt;以下のような感じです！&lt;/p&gt;
 &lt;p&gt;
@@ -2012,7 +2012,7 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h3 id=&quot;サンプルコード&quot;&gt;サンプルコード&lt;/h3&gt;
+&lt;h3&gt;サンプルコード&lt;/h3&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token delimiter important&quot;&gt;&amp;lt;?php&lt;/span&gt;
@@ -2112,14 +2112,14 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;以上！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PHPデバッグ方法]]></title><description><![CDATA[PHP デバッグ方法のメモ。 他のデバッグ方法も今後追記していく予定です。 エラーログをコードに仕込んで出力 任意のファイルに出力  関数の第1引数 -> 出力したい変数/文字列を入れる。  の第2引数 ->  を渡すと配列が展開されてログに出力される。 関数の第…]]></description><link>https://lighthouse-dev.github.io/php-debug/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-debug/</guid><content:encoded>&lt;p&gt;PHP デバッグ方法のメモ。&lt;/p&gt;
 &lt;p&gt;他のデバッグ方法も今後追記していく予定です。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;エラーログをコードに仕込んで出力&quot;&gt;エラーログをコードに仕込んで出力&lt;/h1&gt;
+&lt;h1&gt;エラーログをコードに仕込んで出力&lt;/h1&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h2 id=&quot;任意のファイルに出力&quot;&gt;任意のファイルに出力&lt;/h2&gt;
+&lt;h2&gt;任意のファイルに出力&lt;/h2&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token function&quot;&gt;error_log&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;print_r&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token variable&quot;&gt;$outputData&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;3&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;token double-quoted-string string&quot;&gt;&quot;/tmp/debug.log&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -2138,26 +2138,26 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;li&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;error_log&lt;/code&gt; 関数の第3引数 -&gt; 任意のファイルの出力パス&lt;/p&gt;
 &lt;/li&gt;
-&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[LinuxでNode.jsインストール]]></title><description><![CDATA[対象OS CentOS CentOS 5 (32-bit、64-bit) CentOS 6 (32-bit、64-bit) CentOS 7 (64-bit) Fedora Fedora 21 (Twenty One) (32-bit、64-bit) Fedora 2…]]></description><link>https://lighthouse-dev.github.io/linux-nodejs-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-nodejs-install/</guid><content:encoded>&lt;h1 id=&quot;対象os&quot;&gt;対象OS&lt;/h1&gt;
-&lt;h3 id=&quot;centos&quot;&gt;CentOS&lt;/h3&gt;
+&lt;/ol&gt;</content:encoded></item><item><title><![CDATA[LinuxでNode.jsインストール]]></title><description><![CDATA[対象OS CentOS CentOS 5 (32-bit、64-bit) CentOS 6 (32-bit、64-bit) CentOS 7 (64-bit) Fedora Fedora 21 (Twenty One) (32-bit、64-bit) Fedora 2…]]></description><link>https://lighthouse-dev.github.io/linux-nodejs-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-nodejs-install/</guid><content:encoded>&lt;h1&gt;対象OS&lt;/h1&gt;
+&lt;h3&gt;CentOS&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;CentOS 5 (32-bit、64-bit)&lt;/li&gt;
 &lt;li&gt;CentOS 6 (32-bit、64-bit)&lt;/li&gt;
 &lt;li&gt;CentOS 7 (64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;fedora&quot;&gt;Fedora&lt;/h3&gt;
+&lt;h3&gt;Fedora&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Fedora 21 (Twenty One) (32-bit、64-bit)&lt;/li&gt;
 &lt;li&gt;Fedora 20 (Heisenbug) (32-bit、64-bit)&lt;/li&gt;
 &lt;li&gt;Fedora 19 (Schrödinger’s Cat) (32-bit、64-bit)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;etc&quot;&gt;Etc&lt;/h3&gt;
+&lt;h3&gt;Etc&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;Oracle Linux&lt;/li&gt;
 &lt;li&gt;Amazon Linux&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;インストール手順&quot;&gt;インストール手順&lt;/h1&gt;
+&lt;h1&gt;インストール手順&lt;/h1&gt;
 &lt;p&gt;Node.js v8（LTS）をインストールする場合は、以下のコマンドを実行&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;curl --silent --location https://rpm.nodesource.com/setup_8.x | sudo bash -&lt;/code&gt;&lt;/pre&gt;
@@ -2169,13 +2169,13 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
 &lt;p&gt;その次、以下を実行&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo yum -y install nodejs&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[console.logをphpで使う（PHP Debug）]]></title><description><![CDATA[概要 は、ブラウザの開発ツールで などでよく使ってますよね。 これをサーバー側でも使うことができます。 （多分）ほとんどの言語がこのやり方で、使えます。 今回は、PHP…]]></description><link>https://lighthouse-dev.github.io/php-console-log/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-console-log/</guid><content:encoded>&lt;h1 id=&quot;概要&quot;&gt;概要&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[console.logをphpで使う（PHP Debug）]]></title><description><![CDATA[概要 は、ブラウザの開発ツールで などでよく使ってますよね。 これをサーバー側でも使うことができます。 （多分）ほとんどの言語がこのやり方で、使えます。 今回は、PHP…]]></description><link>https://lighthouse-dev.github.io/php-console-log/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/php-console-log/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;console.log()&lt;/code&gt;は、ブラウザの開発ツールで&lt;code class=&quot;language-text&quot;&gt;JSのデバッグ&lt;/code&gt;などでよく使ってますよね。&lt;/p&gt;
 &lt;p&gt;これをサーバー側でも使うことができます。&lt;/p&gt;
 &lt;p&gt;（多分）ほとんどの言語がこのやり方で、使えます。&lt;/p&gt;
 &lt;p&gt;今回は、PHPで作ってみました！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;使い方&quot;&gt;使い方&lt;/h1&gt;
+&lt;h1&gt;使い方&lt;/h1&gt;
 &lt;p&gt;とは言っても、大した事はしてませんし、
 ただデーターをスクリプト言語に入れただけなんです。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
@@ -2194,20 +2194,20 @@ console&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span cl
       &lt;/div&gt;
 &lt;p&gt;これで終わりです！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;まとめ&quot;&gt;まとめ&lt;/h1&gt;
+&lt;h1&gt;まとめ&lt;/h1&gt;
 &lt;p&gt;すごくシンプルで、思ったより使えるかも。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+&lt;h1&gt;参考&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http://php.net/manual/ja/debugger.php&quot;&gt;PHP: PHP のデバッグ - Manual&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;</content:encoded></item><item><title><![CDATA[MySQL rootパスワードを忘れた時の対応]]></title><description><![CDATA[MySQL rootパスワード忘れた時の対応 1.mysqld 停止 2.mysqld_safe 実行 認証省略オプション + 安全モードでデモン実行 /usr/bin/mysqld safe —skip-grant &
 /usr/bin/mysqld safe —skip…]]></description><link>https://lighthouse-dev.github.io/mysql-password-reset/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/mysql-password-reset/</guid><content:encoded>&lt;p&gt;MySQL rootパスワード忘れた時の対応&lt;/p&gt;
-&lt;h1 id=&quot;1mysqld-停止&quot;&gt;1.mysqld 停止&lt;/h1&gt;
+&lt;h1&gt;1.mysqld 停止&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ service mysqld stop&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;2mysqld_safe-実行&quot;&gt;2.mysqld_safe 実行&lt;/h1&gt;
+&lt;h1&gt;2.mysqld_safe 実行&lt;/h1&gt;
 &lt;p&gt;認証省略オプション + 安全モードでデモン実行&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;/usr/bin/mysqld&lt;em&gt;safe —skip-grant &amp;#x26;
@@ -2221,27 +2221,27 @@ Starting mysqld daemon with databases from /var/lib/mysql&lt;/code&gt;&lt;/pre&g
       &lt;/div&gt;
 &lt;p&gt;これでパスワード無しで mysqlに接続できるようになった！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;3新しいパスワードを設定&quot;&gt;3.新しいパスワードを設定&lt;/h1&gt;
+&lt;h1&gt;3.新しいパスワードを設定&lt;/h1&gt;
 &lt;p&gt;mysql コンソールに接続する。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /usr/bin/mysql -u root mysql&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;以下のSQLコマンドを入力し、設定したいパスワードに変更する。&lt;/p&gt;
-&lt;h3 id=&quot;バージョン57-以下&quot;&gt;バージョン5.7 以下&lt;/h3&gt;
+&lt;h3&gt;バージョン5.7 以下&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; mysql&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;SET&lt;/span&gt; password&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;PASSWORD&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;パスワード&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;root&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
 FLUSH &lt;span class=&quot;token keyword&quot;&gt;PRIVILEGES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 quit
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;バージョン57-以上&quot;&gt;バージョン5.7 以上&lt;/h3&gt;
+&lt;h3&gt;バージョン5.7 以上&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-sql&quot;&gt;&lt;code class=&quot;language-sql&quot;&gt;&lt;span class=&quot;token keyword&quot;&gt;UPDATE&lt;/span&gt; mysql&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;SET&lt;/span&gt; authentication_string&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;PASSWORD&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;パスワード&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;WHERE&lt;/span&gt; &lt;span class=&quot;token keyword&quot;&gt;user&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token string&quot;&gt;&apos;root&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt; 
 FLUSH &lt;span class=&quot;token keyword&quot;&gt;PRIVILEGES&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 quit
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;実行例&quot;&gt;実行例&lt;/h3&gt;
+&lt;h3&gt;実行例&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /usr/bin/mysql -uroot mysql
 Reading table information for completion of table and column names
@@ -2264,7 +2264,7 @@ mysql&amp;gt; quit
 Bye&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;4mysqld-再起動&quot;&gt;4.mysqld 再起動&lt;/h1&gt;
+&lt;h1&gt;4.mysqld 再起動&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ service mysqld restart
 
@@ -2275,46 +2275,46 @@ Stopping MySQL:                                            [  OK  ]
 Starting MySQL:                                            [  OK  ]
 [1]+  Done                    /usr/bin/mysqld_safe --skip-grant&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;バックグラウンドで実行中だった認証省略安全モードの mysqld プロセスが停止され、通常モードの　mysqldで再起動された！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新型 Macbook pro キーボードの一部が反応しない時の対応]]></title><description><![CDATA[現象 いきなりキーボード「f」ボタンが中に少し入ったまま、でてこない。 入力できなくはないが、たまに入力されないこともあり、不便。 やったこと 1. Apple Storeにお問い合わせ Apple Store…]]></description><link>https://lighthouse-dev.github.io/macbook-keyboard-failing/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/macbook-keyboard-failing/</guid><content:encoded>&lt;h1 id=&quot;現象&quot;&gt;現象&lt;/h1&gt;
+&lt;p&gt;バックグラウンドで実行中だった認証省略安全モードの mysqld プロセスが停止され、通常モードの　mysqldで再起動された！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[新型 Macbook pro キーボードの一部が反応しない時の対応]]></title><description><![CDATA[現象 いきなりキーボード「f」ボタンが中に少し入ったまま、でてこない。 入力できなくはないが、たまに入力されないこともあり、不便。 やったこと 1. Apple Storeにお問い合わせ Apple Store…]]></description><link>https://lighthouse-dev.github.io/macbook-keyboard-failing/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/macbook-keyboard-failing/</guid><content:encoded>&lt;h1&gt;現象&lt;/h1&gt;
 &lt;p&gt;いきなりキーボード「f」ボタンが中に少し入ったまま、でてこない。&lt;/p&gt;
 &lt;p&gt;入力できなくはないが、たまに入力されないこともあり、不便。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;やったこと&quot;&gt;やったこと&lt;/h1&gt;
-&lt;h3 id=&quot;1-apple-storeにお問い合わせ&quot;&gt;1. Apple Storeにお問い合わせ&lt;/h3&gt;
+&lt;h1&gt;やったこと&lt;/h1&gt;
+&lt;h3&gt;1. Apple Storeにお問い合わせ&lt;/h3&gt;
 &lt;p&gt;Apple Storeに問い合わせたら、まず予約して、中を見てみないと分からない。&lt;/p&gt;
 &lt;p&gt;修理期間も一週間ぐらいはかかるという答え（短くても三日、四日はかかる）&lt;/p&gt;
-&lt;h3 id=&quot;2-キーボードを掃除する（これで解決！！）&quot;&gt;2. キーボードを掃除する（これで解決！！）&lt;/h3&gt;
+&lt;h3&gt;2. キーボードを掃除する（これで解決！！）&lt;/h3&gt;
 &lt;p&gt;&lt;a href=&quot;https://support.apple.com/ja-jp/HT205662&quot;&gt;MacBook や MacBook Pro のキーボードのお手入れ方法&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;調べたら↑のURLを見つけました。&lt;/p&gt;
 &lt;p&gt;まさかこれで解決するかなって最初は疑ったんですが・・&lt;/p&gt;
 &lt;p&gt;本当にこれで解決。
 （ちゃんと手順が書いてあるし、画像もあったので分かりやすい）&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;結論&quot;&gt;結論&lt;/h1&gt;
+&lt;h1&gt;結論&lt;/h1&gt;
 &lt;p&gt;MacBook (2015 以降) や MacBook Pro (2016 以降) のキーが反応しなくなった場合や、押したときにほかのキーと感触が違うキーがある場合は、まずは、↑の手順にそって、キーボードをきれいに掃除しましょうー！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[SSH接続をタイムアウトしないようにする]]></title><description><![CDATA[sshで接続するリモートサーバーに設定すると、クライアントに同じように適用される。 設定方法 sshd_configを開く sshd_configを修正 以下のようにを修正 ClientAliveInterval…]]></description><link>https://lighthouse-dev.github.io/ssh-timeout-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ssh-timeout-setting/</guid><content:encoded>&lt;p&gt;sshで接続するリモートサーバーに設定すると、クライアントに同じように適用される。&lt;/p&gt;
-&lt;h1 id=&quot;設定方法&quot;&gt;設定方法&lt;/h1&gt;
-&lt;h2 id=&quot;sshd_configを開く&quot;&gt;sshd_configを開く&lt;/h2&gt;
+&lt;h1&gt;設定方法&lt;/h1&gt;
+&lt;h2&gt;sshd_configを開く&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;vim /etc/ssh/sshd_config&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;sshd_configを修正&quot;&gt;sshd_configを修正&lt;/h2&gt;
+&lt;h2&gt;sshd_configを修正&lt;/h2&gt;
 &lt;p&gt;以下のようにを修正&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;ClientAliveInterval 60
 ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h4 id=&quot;clientaliveinterval&quot;&gt;ClientAliveInterval&lt;/h4&gt;
+&lt;h4&gt;ClientAliveInterval&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;データの受信がない場合、指定した一定時間ごとにデータを転送するようにクライアントにリクエストする。&lt;/li&gt;
 &lt;li&gt;&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;に設定した場合、データを転送しない。&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h4 id=&quot;clientalivecountmax&quot;&gt;ClientAliveCountMax&lt;/h4&gt;
+&lt;h4&gt;ClientAliveCountMax&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;無制限でリクエストするのは、問題があるので&lt;code class=&quot;language-text&quot;&gt;ClientAliveCountMax&lt;/code&gt;で最大リクエスト数を指定する。&lt;/li&gt;
 &lt;li&gt;つまり、上の設定の場合は、最大5分（60秒 * 5回）までタイムアウトされない。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;ssh-再起動&quot;&gt;ssh 再起動&lt;/h1&gt;
+&lt;h1&gt;ssh 再起動&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;service sshd restart&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;</content:encoded></item><item><title><![CDATA[変数ネーミングルール（変数名規約, Naming Rule, Naming Convention)]]></title><description><![CDATA[今回は、変数名規約についてです！ 変数名規約には大きく以下の三つがあります。 ハンガリアン記法 キャメルケース(Camel Casing) パスカルケース(Pascal Casing) 各記法をシンプルに説明します！ ハンガリアン記法 intデータ型 + apple…]]></description><link>https://lighthouse-dev.github.io/naming-rule/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/naming-rule/</guid><content:encoded>&lt;p&gt;今回は、変数名規約についてです！&lt;/p&gt;
@@ -2326,7 +2326,7 @@ ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;p&gt;各記法をシンプルに説明します！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;ハンガリアン記法&quot;&gt;ハンガリアン記法&lt;/h1&gt;
+&lt;h1&gt;ハンガリアン記法&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;intデータ型 + apple -&gt; intApple&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2335,7 +2335,7 @@ ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;例えば、&lt;code class=&quot;language-text&quot;&gt;int型&lt;/code&gt;の’number’という変数を宣言する時には、&lt;code class=&quot;language-text&quot;&gt;intNumber&lt;/code&gt;にします。&lt;/p&gt;
 &lt;p&gt;また、文字列である&lt;code class=&quot;language-text&quot;&gt;name&lt;/code&gt;という変数を宣言する時には、&lt;code class=&quot;language-text&quot;&gt;strName&lt;/code&gt;のように指定できます！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;キャメルケースcamel-casing&quot;&gt;キャメルケース(Camel Casing)&lt;/h1&gt;
+&lt;h1&gt;キャメルケース(Camel Casing)&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;apple + tree -&gt; appleTree&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2343,7 +2343,7 @@ ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;ただし、一番最初の文字は、小文字を使います。&lt;/p&gt;
 &lt;p&gt;例えば、&lt;code class=&quot;language-text&quot;&gt;appletree&lt;/code&gt; という関数の場合は、関数名を &lt;code class=&quot;language-text&quot;&gt;appleTree()&lt;/code&gt; のように宣言する記法です。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;パスカルケースpascal-casing&quot;&gt;パスカルケース(Pascal Casing)&lt;/h1&gt;
+&lt;h1&gt;パスカルケース(Pascal Casing)&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;apple + tree -&gt; AppleTree&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -2361,7 +2361,7 @@ ClientAliveCountMax 5&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;empty(チェックする変数名);&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;isset、-empty-関数について&quot;&gt;isset()、 empty() 関数について&lt;/h1&gt;
+&lt;h1&gt;isset()、 empty() 関数について&lt;/h1&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt;も&lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;も変数の値も存在有無を確認できる関数です。&lt;/p&gt;
 &lt;p&gt;この二つの違いって何でしょうか。&lt;/p&gt;
 &lt;table&gt;
@@ -2397,7 +2397,7 @@ or
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;issetサンプルコード&quot;&gt;isset()サンプルコード&lt;/h1&gt;
+&lt;h1&gt;isset()サンプルコード&lt;/h1&gt;
 &lt;p&gt;isset()を使って変数の値の存在有無をチェックします。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.php&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -2411,7 +2411,7 @@ or
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;emptyサンプルコード&quot;&gt;empty()サンプルコード&lt;/h1&gt;
+&lt;h1&gt;empty()サンプルコード&lt;/h1&gt;
 &lt;p&gt;それでは、empty()について。&lt;/p&gt;
 &lt;p&gt;似ている関数のように見えますが、&lt;code class=&quot;language-text&quot;&gt;empty()&lt;/code&gt;関数は、変数が&lt;code class=&quot;language-text&quot;&gt;false&lt;/code&gt;or&lt;code class=&quot;language-text&quot;&gt;0&lt;/code&gt;だとしても&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;true&lt;/code&gt;を返すという点が&lt;code class=&quot;language-text&quot;&gt;isset()&lt;/code&gt;と確実な違いを持ってます。&lt;/p&gt;
@@ -2425,10 +2425,10 @@ or
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;span class=&quot;token delimiter important&quot;&gt;?&gt;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない問題]]></title><description><![CDATA[現状 Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない 解決方法 httpd.confを開く 以下を検索して、修正する Apache再起動]]></description><link>https://lighthouse-dev.github.io/vagrant-share-folder/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vagrant-share-folder/</guid><content:encoded>&lt;h1 id=&quot;現状&quot;&gt;現状&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない問題]]></title><description><![CDATA[現状 Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない 解決方法 httpd.confを開く 以下を検索して、修正する Apache再起動]]></description><link>https://lighthouse-dev.github.io/vagrant-share-folder/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/vagrant-share-folder/</guid><content:encoded>&lt;h1&gt;現状&lt;/h1&gt;
 &lt;p&gt;Vagrantの共有フォルダをapacheの公開ディレクトリにしていると更新が反映されない&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;解決方法&quot;&gt;解決方法&lt;/h1&gt;
+&lt;h1&gt;解決方法&lt;/h1&gt;
 &lt;p&gt;httpd.confを開く&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;sudo vim /etc/httpd/conf/httpd.conf&lt;/code&gt;&lt;/pre&gt;
@@ -2449,7 +2449,7 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
 この一番目の数字(コード)を「Response Class」と言います。
 それでは、各レスポンスコードについて説明します！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;response-class-code&quot;&gt;Response Class Code&lt;/h1&gt;
+&lt;h1&gt;Response Class Code&lt;/h1&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2499,7 +2499,7 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;4番と、5番はエラーではありますが、違いは「4番台」はクライアントの間違ったリクエストでサーバーで処理ができない状態。&lt;/p&gt;
 &lt;p&gt;「5番台」のエラーはクライアントからのリクエストには問題ないが、サーバーで処理中にサーバーの問題によってエラーが発生したという点です。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;2xx-success-成功&quot;&gt;2xx Success 成功&lt;/h1&gt;
+&lt;h1&gt;2xx Success 成功&lt;/h1&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2533,7 +2533,7 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;3xx-redirection-リダイレクション&quot;&gt;3xx Redirection リダイレクション&lt;/h1&gt;
+&lt;h1&gt;3xx Redirection リダイレクション&lt;/h1&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2578,7 +2578,7 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;4xx-client-error-クライアントエラー&quot;&gt;4xx Client Error クライアントエラー&lt;/h1&gt;
+&lt;h1&gt;4xx Client Error クライアントエラー&lt;/h1&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2626,7 +2626,7 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;5xx-server-error-サーバエラー&quot;&gt;5xx Server Error サーバエラー&lt;/h1&gt;
+&lt;h1&gt;5xx Server Error サーバエラー&lt;/h1&gt;
 &lt;table&gt;
 &lt;thead&gt;
 &lt;tr&gt;
@@ -2663,10 +2663,10 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
 &lt;/tbody&gt;
 &lt;/table&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;参考リンク&quot;&gt;参考リンク&lt;/h1&gt;
+&lt;h1&gt;参考リンク&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/HTTP%E3%82%B9%E3%83%86%E3%83%BC%E3%82%BF%E3%82%B9%E3%82%B3%E3%83%BC%E3%83%89&quot;&gt;wikipedia HTTPステータスコード&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[PhpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/phpstorm-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-setting/</guid><content:encoded>&lt;h1 id=&quot;ctpファイルをphpファイルで認識するように設定&quot;&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[PhpStorm設定メモ]]></title><description><![CDATA[.ctpファイルをphpファイルで認識するように設定 自動アップロード Tools  >  Deployment  >  Options 自動インデント メニュー Code  >  Auto-Indent Lines ショートカット Mac : control + option…]]></description><link>https://lighthouse-dev.github.io/phpstorm-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-setting/</guid><content:encoded>&lt;h1&gt;.ctpファイルをphpファイルで認識するように設定&lt;/h1&gt;
 &lt;p&gt;
   &lt;a
     class=&quot;gatsby-resp-image-link&quot;
@@ -2702,7 +2702,7 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;自動アップロード&quot;&gt;自動アップロード&lt;/h1&gt;
+&lt;h1&gt;自動アップロード&lt;/h1&gt;
 &lt;p&gt;[Tools] &gt; [Deployment] &gt; [Options]&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -2739,47 +2739,17 @@ EnableSendfile off&lt;/code&gt;&lt;/pre&gt;
   &lt;/a&gt;
     &lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;自動インデント&quot;&gt;自動インデント&lt;/h1&gt;
-&lt;h4 id=&quot;メニュー&quot;&gt;メニュー&lt;/h4&gt;
+&lt;h1&gt;自動インデント&lt;/h1&gt;
+&lt;h4&gt;メニュー&lt;/h4&gt;
 &lt;p&gt;[Code] &gt; [Auto-Indent Lines]&lt;/p&gt;
-&lt;h4 id=&quot;ショートカット&quot;&gt;ショートカット&lt;/h4&gt;
+&lt;h4&gt;ショートカット&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;Mac : control + option + “I”&lt;/li&gt;
 &lt;li&gt;Windows : Control + Alt + “I”&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1 id=&quot;configappphpを修正&quot;&gt;/config/app.phpを修正&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;persistent&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;host&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;username&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;password&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;database&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;encoding&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;timezone&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;cacheMetadata&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;log&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている&lt;/p&gt;
-&lt;p&gt;そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;上記の&lt;code class=&quot;language-text&quot;&gt;app.php&lt;/code&gt;の中に、‘default’と同じように ‘test’ 側も&lt;/p&gt;
-&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;Cake\Database\Driver\Postgres&amp;#39;&lt;/code&gt; に変える必要がある。&lt;/p&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;test&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
-  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[Sambaインストール]]></title><description><![CDATA[事前準備 ローカルからサーバーにSSH接続できる SELinuxを無効化 SELINUXを無効化 そして反映！ iptablesの設定 ローカルだしアクセス制限なくしちゃいます。 自分は下記2つをとりあえずコメントアウト 変更後、再起動！ samba…]]></description><link>https://lighthouse-dev.github.io/samba-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/samba-install/</guid><content:encoded>&lt;h1 id=&quot;事前準備&quot;&gt;事前準備&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[Sambaインストール]]></title><description><![CDATA[事前準備 ローカルからサーバーにSSH接続できる SELinuxを無効化 SELINUXを無効化 そして反映！ iptablesの設定 ローカルだしアクセス制限なくしちゃいます。 自分は下記2つをとりあえずコメントアウト 変更後、再起動！ samba…]]></description><link>https://lighthouse-dev.github.io/samba-install/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/samba-install/</guid><content:encoded>&lt;h1&gt;事前準備&lt;/h1&gt;
 &lt;p&gt;ローカルからサーバーにSSH接続できる&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;selinuxを無効化&quot;&gt;SELinuxを無効化&lt;/h1&gt;
+&lt;h1&gt;SELinuxを無効化&lt;/h1&gt;
 &lt;p&gt;SELINUXを無効化&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/selinux/config
@@ -2791,7 +2761,7 @@ SELINUX=disabled&lt;/code&gt;&lt;/pre&gt;
 setenforce: SELinux is disabled&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;iptablesの設定&quot;&gt;iptablesの設定&lt;/h1&gt;
+&lt;h1&gt;iptablesの設定&lt;/h1&gt;
 &lt;p&gt;ローカルだしアクセス制限なくしちゃいます。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ vi /etc/sysconfig/iptables&lt;/code&gt;&lt;/pre&gt;
@@ -2807,7 +2777,7 @@ setenforce: SELinux is disabled&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /etc/init.d/iptables restart&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;sambaのインストール・設定&quot;&gt;sambaのインストール・設定&lt;/h1&gt;
+&lt;h1&gt;sambaのインストール・設定&lt;/h1&gt;
 &lt;p&gt;sambaをインストール&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ yum -y install samba&lt;/code&gt;&lt;/pre&gt;
@@ -2846,45 +2816,75 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ /etc/init.d/smb start&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;常に実行するように設定&quot;&gt;常に実行するように設定&lt;/h1&gt;
+&lt;h1&gt;常に実行するように設定&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-cmd&quot;&gt;&lt;code class=&quot;language-cmd&quot;&gt;$ chkconfig smb on&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;これでファイルの接続が可能になりました!&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;接続方法&quot;&gt;接続方法&lt;/h1&gt;
-&lt;h4 id=&quot;windows&quot;&gt;Windows&lt;/h4&gt;
+&lt;h1&gt;接続方法&lt;/h1&gt;
+&lt;h4&gt;Windows&lt;/h4&gt;
 &lt;p&gt;スタートからプログラムとファイルの検索に「\サーバーIPアドレス」 &lt;/p&gt;
-&lt;h4 id=&quot;mac&quot;&gt;Mac&lt;/h4&gt;
-&lt;p&gt;「Finder」からサーバへ接続機能を使って、ローカルのIP打ち込む&lt;/p&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
+&lt;h4&gt;Mac&lt;/h4&gt;
+&lt;p&gt;「Finder」からサーバへ接続機能を使って、ローカルのIP打ち込む&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CakePHP3.xでPostgreSQLの設定]]></title><description><![CDATA[/config/app.phpを修正 CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する Database driver…]]></description><link>https://lighthouse-dev.github.io/postgresql-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/postgresql-setting/</guid><content:encoded>&lt;h1&gt;/config/app.phpを修正&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Datasources&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;default&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;persistent&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;host&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;localhost&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;username&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;password&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;database&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;★★&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;encoding&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;utf8&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;timezone&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;UTC&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;cacheMetadata&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;true&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+        &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;log&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token boolean&quot;&gt;false&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;CakePHP3ではデフォルトで、Mysqlのドライバを参照する設定となっている&lt;/p&gt;
+&lt;p&gt;そのため、Postgresqlを使用予定で php-mysqlをインストールしていない場合は、以下のようなエラーが発生する&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Database driver Cake\Database\Driver\Mysql cannot be used due to a missing PHP extension or unmet dependency&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;上記の&lt;code class=&quot;language-text&quot;&gt;app.php&lt;/code&gt;の中に、‘default’と同じように ‘test’ 側も&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;#39;driver&amp;#39; =&amp;gt; &amp;#39;Cake\Database\Driver\Postgres&amp;#39;&lt;/code&gt; に変える必要がある。&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-php&quot;&gt;&lt;code class=&quot;language-php&quot;&gt;&lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;test&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;[&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;className&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Connection&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+    &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;driver&apos;&lt;/span&gt; &lt;span class=&quot;token operator&quot;&gt;=&lt;/span&gt;&lt;span class=&quot;token operator&quot;&gt;&gt;&lt;/span&gt; &lt;span class=&quot;token single-quoted-string string&quot;&gt;&apos;Cake\Database\Driver\Postgres&apos;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;,&lt;/span&gt;
+  &lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[WebRTCでビデオチャットアプリを作ってみた！]]></title><description><![CDATA[こんにちは！
  Fusic Advent Calendar 2017  21日目の記事です。
  →Qiitaの記事はこちら を触ってみた話をさせていただきます。 WebRTCとは WebRTC(Web Real-Time Communication…]]></description><link>https://lighthouse-dev.github.io/webrtc-basic/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/webrtc-basic/</guid><content:encoded>&lt;p&gt;こんにちは！
 &lt;a href=&quot;https://qiita.com/advent-calendar/2017/fusic&quot;&gt;Fusic Advent Calendar 2017&lt;/a&gt; 21日目の記事です。
 &lt;a href=&quot;https://qiita.com/jslee/items/34bb8ccb6149bbfae427&quot;&gt;→Qiitaの記事はこちら&lt;/a&gt;&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;WebRTC&lt;/code&gt;を触ってみた話をさせていただきます。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;webrtcとは&quot;&gt;WebRTCとは&lt;/h1&gt;
+&lt;h1&gt;WebRTCとは&lt;/h1&gt;
 &lt;p&gt;WebRTC(Web Real-Time Communication)は、ウェブブラウザーの間で特定のプラグインがなくても通信できるAPIです。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&quot;https://ja.wikipedia.org/wiki/World_Wide_Web_Consortium&quot;&gt;W3C&lt;/a&gt;で提示された草案であり、&lt;/p&gt;
 &lt;p&gt;映像、音声、P2Pファイル共有などで活用できます。&lt;/p&gt;
-&lt;h2 id=&quot;webrtc-api&quot;&gt;WebRTC API&lt;/h2&gt;
+&lt;h2&gt;WebRTC API&lt;/h2&gt;
 &lt;p&gt;WebRTCで提供するAPIは以下の三つです！&lt;/p&gt;
-&lt;h3 id=&quot;1-mediastream&quot;&gt;1. MediaStream&lt;/h3&gt;
+&lt;h3&gt;1. MediaStream&lt;/h3&gt;
 &lt;p&gt;ユーザー端末機のビデオ、マイクにアクセスできます。&lt;/p&gt;
 &lt;p&gt;&lt;code class=&quot;language-text&quot;&gt;getUserMedia&lt;/code&gt;を使ってアクセスし、MedisStreamオブジェクトを&lt;code class=&quot;language-text&quot;&gt;PeerConnection&lt;/code&gt;に渡して転送することになります。&lt;/p&gt;
-&lt;h3 id=&quot;2-peerconnection&quot;&gt;2. PeerConnection&lt;/h3&gt;
+&lt;h3&gt;2. PeerConnection&lt;/h3&gt;
 &lt;p&gt;一番重要なAPIであり、ブラウザ間でビデオ、音声などのやりとりするAPIです！&lt;/p&gt;
-&lt;h3 id=&quot;3-datachannel&quot;&gt;3. DataChannel&lt;/h3&gt;
+&lt;h3&gt;3. DataChannel&lt;/h3&gt;
 &lt;p&gt;ブラウザ間でのテキストやファイルなどをやりとりします。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;事前準備&quot;&gt;事前準備&lt;/h1&gt;
+&lt;h1&gt;事前準備&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;Webサーバー&lt;/li&gt;
 &lt;li&gt;&lt;a href=&quot;http://lighthouse-dev.hatenablog.com/entry/2018/03/08/230508&quot;&gt;Node.js&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;WebSocket&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;カメラを触ってみよう&quot;&gt;カメラを触ってみよう&lt;/h1&gt;
+&lt;h1&gt;カメラを触ってみよう&lt;/h1&gt;
 &lt;p&gt;Webサーバーに以下のサンプルコードを作成し、試してみましょう！&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.html&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -2919,15 +2919,15 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;最初ブラウザーからアクセスすると、カメラにアクセスしてもいいかどうかの確認ダイアログが表示されるので、&lt;/p&gt;
 &lt;p&gt;OKボタンを押して許可してください。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;シグナリングサーバーを動かす&quot;&gt;シグナリングサーバーを動かす&lt;/h1&gt;
-&lt;h2 id=&quot;webrtcの通信について&quot;&gt;WebRTCの通信について&lt;/h2&gt;
+&lt;h1&gt;シグナリングサーバーを動かす&lt;/h1&gt;
+&lt;h2&gt;WebRTCの通信について&lt;/h2&gt;
 &lt;p&gt;WebRTCでは、映像や音声などリアルタイムに取得されたデータを、ブラウザ間で送受信することができます。
 それを司るのが　RTCPeerConnection です。 RTCPeerConnectionには2つの特徴があります。&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Peer-to-Peer(P2P)の通信 → ブラウザとブラウザの間で直接通信する&lt;/li&gt;
 &lt;li&gt;UDP/IPを使用 → TCP/IPのようにパケットの到着は保障しないが、オーバーヘッドが少ない(らしい)&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;p2p通信を行うために&quot;&gt;P2P通信を行うために&lt;/h2&gt;
+&lt;h2&gt;P2P通信を行うために&lt;/h2&gt;
 &lt;p&gt;ブラウザ間でP2P通信を行うには、&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;相手のIPアドレス&lt;/li&gt;
@@ -2935,26 +2935,26 @@ share modes = yes&lt;/code&gt;&lt;/pre&gt;
 &lt;/ul&gt;
 &lt;p&gt;を知る必要があります。&lt;/p&gt;
 &lt;p&gt;そのために、WebRTCでは以下の情報をやり取りしています。&lt;/p&gt;
-&lt;h3 id=&quot;sdp-session-description-protocol&quot;&gt;SDP (Session Description Protocol)&lt;/h3&gt;
+&lt;h3&gt;SDP (Session Description Protocol)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;セッションが含むメディアの種類（音声、映像）、&lt;/li&gt;
 &lt;li&gt;メディアの形式（コーデック）&lt;/li&gt;
 &lt;li&gt;IPアドレス、ポート番号 などなど&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h3 id=&quot;ice-interactive-connectivity-establishment&quot;&gt;ICE (Interactive Connectivity Establishment)&lt;/h3&gt;
+&lt;h3&gt;ICE (Interactive Connectivity Establishment)&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;P2Pによる直接通信&lt;/li&gt;
 &lt;li&gt;NATを通過するためのSTUNサーバーから取得したポートマッピング → 最終的にはP2Pになる&lt;/li&gt;
 &lt;li&gt;Firefallを越えるための、TURNによるリレーサーバーを介した中継通信&lt;/li&gt;
 &lt;/ul&gt;
-&lt;h2 id=&quot;ということでシグナリングサーバーを動かしてみよう！&quot;&gt;ということでシグナリングサーバーを動かしてみよう！&lt;/h2&gt;
+&lt;h2&gt;ということでシグナリングサーバーを動かしてみよう！&lt;/h2&gt;
 &lt;p&gt;P2Pを始めるまでの情報のやり取りを「シグナリング」と言います。&lt;/p&gt;
 &lt;p&gt;シグナリングサーバーは、クライアントからメッセージを受け取ったら他のクライアントに送信する役割をします。&lt;/p&gt;
-&lt;h3 id=&quot;websocketをのインストール&quot;&gt;WebSocketをのインストール&lt;/h3&gt;
+&lt;h3&gt;WebSocketをのインストール&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;npm install ws&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;シングルサーバーサンプルコードを作成&quot;&gt;シングルサーバーサンプルコードを作成&lt;/h3&gt;
+&lt;h3&gt;シングルサーバーサンプルコードを作成&lt;/h3&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;signaling.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;&lt;span class=&quot;token string&quot;&gt;&quot;use strict&quot;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
@@ -2984,13 +2984,13 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h3 id=&quot;シングルサーバーを起動&quot;&gt;シングルサーバーを起動&lt;/h3&gt;
+&lt;h3&gt;シングルサーバーを起動&lt;/h3&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;node signaling.js&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;シグナリングサーバーの動作はシンプルで、クライアントからメッセージを受け取ったら他のクライアントに送信するだけです。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;実際に動かしてみよう！（結果）&quot;&gt;実際に動かしてみよう！（結果）&lt;/h1&gt;
+&lt;h1&gt;実際に動かしてみよう！（結果）&lt;/h1&gt;
 &lt;p&gt;ブラウザーからアクセスし、スクリプトを読み込むと&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -3060,16 +3060,112 @@ wsServer&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span c
     &lt;/p&gt;
 &lt;p&gt;こんな感じです！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;最後に&quot;&gt;最後に&lt;/h1&gt;
+&lt;h1&gt;最後に&lt;/h1&gt;
 &lt;p&gt;何よりも&lt;a href=&quot;https://fusic.co.jp/doings/184&quot;&gt;Fusic開発合宿&lt;/a&gt;で普段から自分が作りたかったものや&lt;/p&gt;
 &lt;p&gt;新しい技術を勉強できて、とても楽しめたと思います！&lt;/p&gt;
 &lt;p&gt;まだまだいけてないところや課題もたくさんあるんですが、引き続き勉強しつつ発展させていきたいと思います！！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;参考&quot;&gt;参考&lt;/h1&gt;
+&lt;h1&gt;参考&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https://html5experts.jp/series/webrtc2016/&quot;&gt;WebRTC入門2016&lt;/a&gt; 大変参考になりました！！&lt;/li&gt;
 &lt;li&gt;あと、&lt;a href=&quot;https://webrtc.ecl.ntt.com/&quot;&gt;SkyWay&lt;/a&gt;というサービスもありますので、参考までに・・&lt;/li&gt;
-&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h1 id=&quot;事前確認&quot;&gt;事前確認&lt;/h1&gt;
+&lt;/ul&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+-bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;PHPをインストール&lt;/h1&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
+
+... (省略)
+Installed:
+php.x86_64 0:5.6.26-1.el6.remi
+
+Dependency Installed:
+libedit.x86_64 0:2.11-4.20080712cvs.1.el6
+libzip-last.x86_64 0:1.1.3-1.el6.remi
+php-cli.x86_64 0:5.6.26-1.el6.remi
+php-common.x86_64 0:5.6.26-1.el6.remi
+php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
+php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
+
+Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;h3&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
+php-common-5.6.26-1.el6.remi.x86_64
+php-cli-5.6.26-1.el6.remi.x86_64
+php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
+php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
+php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
+PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
+Copyright (c) 1997-2016 The PHP Group
+Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1&gt;事前作業&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
+&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+$ rpm -qa | grep epel-release
+epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;remi-releaseをインストール&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
+
+$ ... (省略)
+Installed:
+remi-release.noarch 0:6.8-1.el6.remi
+
+Complete!&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;br&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
+remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
+
+... (省略)
+Installed Packages
+remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;div class=&quot;gatsby-highlight&quot;&gt;
+      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
+* remi-safe: mirror.innosol.asia
+remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
+      &lt;/div&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにepel-releseをインストールする]]></title><description><![CDATA[事前確認 epel インストール ※ epel-releaseで検索し、最新バージョンを確認する。 確認]]></description><link>https://lighthouse-dev.github.io/linux-epel-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-epel-release/</guid><content:encoded>&lt;h1&gt;事前確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist
 
@@ -3089,7 +3185,7 @@ Available Packages
 epel-release.noarch                                6-8                                 extras&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;epel-インストール&quot;&gt;epel インストール&lt;/h1&gt;
+&lt;h1&gt;epel インストール&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install epel-release
 
@@ -3101,7 +3197,7 @@ Complete!&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;&lt;a href=&quot;http://dl.fedoraproject.org/pub/epel/6/x86_64/&quot;&gt;※ epel-releaseで検索し、最新バージョンを確認する。&lt;/a&gt;&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;確認&quot;&gt;確認&lt;/h1&gt;
+&lt;h1&gt;確認&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa epel-release
 epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
@@ -3124,119 +3220,23 @@ extras                  CentOS-6 - Extras                                       
 updates                 CentOS-6 - Updates                                                298
 repolist: 18,676&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにPHPをインストールする]]></title><description><![CDATA[事前作業 CentOSにremiレポジトリを追加する。 確認 PHPをインストール ：PHP5.6をインストールする ：PHP7.2をインストールする 確認]]></description><link>https://lighthouse-dev.github.io/linux-install-php/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-install-php/</guid><content:encoded>&lt;h1 id=&quot;事前作業&quot;&gt;事前作業&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-remi-release/&quot;&gt;CentOSにremiレポジトリを追加する。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;h1 id=&quot;確認&quot;&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
--bash: php: command not found&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1 id=&quot;phpをインストール&quot;&gt;PHPをインストール&lt;/h1&gt;
-&lt;h3 id=&quot;例：php56をインストールする&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP5.6をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php56 install php
-
-... (省略)
-Installed:
-php.x86_64 0:5.6.26-1.el6.remi
-
-Dependency Installed:
-libedit.x86_64 0:2.11-4.20080712cvs.1.el6
-libzip-last.x86_64 0:1.1.3-1.el6.remi
-php-cli.x86_64 0:5.6.26-1.el6.remi
-php-common.x86_64 0:5.6.26-1.el6.remi
-php-pecl-jsonc.x86_64 0:1.3.10-1.el6.remi.5.6
-php-pecl-zip.x86_64 0:1.13.4-1.el6.remi.5.6
-
-Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;h3 id=&quot;例：php72をインストールする&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;例&lt;/code&gt;：PHP7.2をインストールする&lt;/h3&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum --enablerepo=remi-php72 install php&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1 id=&quot;確認-1&quot;&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep php
-php-common-5.6.26-1.el6.remi.x86_64
-php-cli-5.6.26-1.el6.remi.x86_64
-php-pecl-jsonc-1.3.10-1.el6.remi.5.6.x86_64
-php-pecl-zip-1.13.4-1.el6.remi.5.6.x86_64
-php-5.6.26-1.el6.remi.x86_64&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ php -v
-PHP 5.6.26 (cli) (built: Sep 15 2016 14:57:05)
-Copyright (c) 1997-2016 The PHP Group
-Zend Engine v2.6.0, Copyright (c) 1998-2016 Zend Technologies&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[CentOSにremiレポジトリを追加する]]></title><description><![CDATA[事前作業 remi-releaseは、epel-releaseに依存性(dependency)がある。 CentOSにepel-releseをインストールする。 確認 remi-releaseをインストール 確認]]></description><link>https://lighthouse-dev.github.io/linux-remi-release/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/linux-remi-release/</guid><content:encoded>&lt;h1 id=&quot;事前作業&quot;&gt;事前作業&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;remi-releaseは、epel-releaseに依存性(dependency)がある。&lt;/li&gt;
-&lt;li&gt;&lt;a href=&quot;/linux-epel-release/&quot;&gt;CentOSにepel-releseをインストールする。&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;br&gt;
-&lt;h1 id=&quot;確認&quot;&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-$ rpm -qa | grep epel-release
-epel-release-6-8.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1 id=&quot;remi-releaseをインストール&quot;&gt;remi-releaseをインストール&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum install http://rpms.famillecollet.com/enterprise/remi-release-6.rpm
-
-$ ... (省略)
-Installed:
-remi-release.noarch 0:6.8-1.el6.remi
-
-Complete!&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;br&gt;
-&lt;h1 id=&quot;確認-1&quot;&gt;確認&lt;/h1&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ rpm -qa | grep remi-release
-remi-release-6.8-1.el6.remi.noarch&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum list remi-release
-
-... (省略)
-Installed Packages
-remi-release.noarch                     6.8-1.el6.remi                     @/remi-release-6&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;div class=&quot;gatsby-highlight&quot;&gt;
-      &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;$ yum repolist | grep remi
-* remi-safe: mirror.innosol.asia
-remi-safe                  Safe Remi&amp;#39;s RPM repository for Enterprise Linu    881&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;
-&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PhpStorm + Xdebugでリモートデスクトップ]]></title><description><![CDATA[Xdebug? デバック及びプロファイリング機能を提供するPHP拡張モデュール PECLを用いてインストール可能 Xdebugをインストール（CentOS） php-devel、php-pearをインストール gcc、gcc-c++、autoconf、automake…]]></description><link>https://lighthouse-dev.github.io/phpstorm-remote-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-remote-setting/</guid><content:encoded>&lt;h1 id=&quot;xdebug&quot;&gt;Xdebug?&lt;/h1&gt;
+&lt;p&gt;&lt;br&gt;&lt;br&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[PhpStorm + Xdebugでリモートデスクトップ]]></title><description><![CDATA[Xdebug? デバック及びプロファイリング機能を提供するPHP拡張モデュール PECLを用いてインストール可能 Xdebugをインストール（CentOS） php-devel、php-pearをインストール gcc、gcc-c++、autoconf、automake…]]></description><link>https://lighthouse-dev.github.io/phpstorm-remote-setting/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/phpstorm-remote-setting/</guid><content:encoded>&lt;h1&gt;Xdebug?&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;デバック及びプロファイリング機能を提供するPHP拡張モデュール&lt;/li&gt;
 &lt;li&gt;PECLを用いてインストール可能&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;xdebugをインストール（centos）&quot;&gt;Xdebugをインストール（CentOS）&lt;/h1&gt;
-&lt;h2 id=&quot;php-devel、php-pearをインストール&quot;&gt;php-devel、php-pearをインストール&lt;/h2&gt;
+&lt;h1&gt;Xdebugをインストール（CentOS）&lt;/h1&gt;
+&lt;h2&gt;php-devel、php-pearをインストール&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;yum install php-devel
 yum install php-pear&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;gcc、gcc-c、autoconf、automakeをインストール&quot;&gt;gcc、gcc-c++、autoconf、automakeをインストール&lt;/h2&gt;
+&lt;h2&gt;gcc、gcc-c++、autoconf、automakeをインストール&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;yum install gcc gcc-c++ autoconf automake&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;xdebugをインストール&quot;&gt;Xdebugをインストール&lt;/h2&gt;
+&lt;h2&gt;Xdebugをインストール&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;pecl install Xdebug
 
@@ -3244,7 +3244,7 @@ yum install php-pear&lt;/code&gt;&lt;/pre&gt;
 // yum --enablerepo=remi-phpバージョン install php-devel php-pear
 yum --enablerepo=remi-php56 install php-devel php-pear&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;etcphpiniを修正&quot;&gt;/etc/php.iniを修正&lt;/h2&gt;
+&lt;h2&gt;/etc/php.iniを修正&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;vi /etc/php.ini&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
@@ -3264,16 +3264,16 @@ xdebug.idekey = &lt;span class=&quot;token string&quot;&gt;&quot;PHPSTORM&quot;&
 xdebug.remote_host=xxx.xxx.xxx.xxx  
 &lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
-&lt;h2 id=&quot;apacheをリスタート&quot;&gt;Apacheをリスタート&lt;/h2&gt;
+&lt;h2&gt;Apacheをリスタート&lt;/h2&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;service httpd restart&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;phpstormでの設定&quot;&gt;PhpStormでの設定&lt;/h1&gt;
-&lt;h2 id=&quot;リモートホストの設定&quot;&gt;リモートホストの設定&lt;/h2&gt;
-&lt;h3 id=&quot;1remote-hostを表示&quot;&gt;1.Remote Hostを表示&lt;/h3&gt;
+&lt;h1&gt;PhpStormでの設定&lt;/h1&gt;
+&lt;h2&gt;リモートホストの設定&lt;/h2&gt;
+&lt;h3&gt;1.Remote Hostを表示&lt;/h3&gt;
 &lt;p&gt;[ Tools &gt; Deployment &gt; Browse Remote Host ]をクリックする&lt;/p&gt;
-&lt;h3 id=&quot;2-サーバーを登録&quot;&gt;2. サーバーを登録&lt;/h3&gt;
+&lt;h3&gt;2. サーバーを登録&lt;/h3&gt;
 &lt;p&gt;[ Tools &gt; Deployment &gt; Configuration… ]　を開く&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -3346,7 +3346,7 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
   
   &lt;/a&gt;
     &lt;/p&gt;
-&lt;h2 id=&quot;phpリモートデバッグの設定&quot;&gt;PHPリモートデバッグの設定&lt;/h2&gt;
+&lt;h2&gt;PHPリモートデバッグの設定&lt;/h2&gt;
 &lt;p&gt;[ Run &gt; Edit Configurations… ]　を開く&lt;/p&gt;
 &lt;p&gt;
   &lt;a
@@ -3387,19 +3387,19 @@ xdebug.remote_host=xxx.xxx.xxx.xxx
 &lt;li&gt;名前、サーバーIPアドレス、Ide Key(※php.iniで設定したKey)
 などを設定する&lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 インストール 遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h1 id=&quot;sshfs&quot;&gt;SSHFS?&lt;/h1&gt;
+&lt;p&gt;これでPhpStorm + Xdebugでリモートデスクトップ環境構築完了！&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Macでsshfsをインストール / 使い方]]></title><description><![CDATA[SSHFS? SSH Filesystem： SSHFS SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。 インストール 遠隔サーバーのディレクトリをマウント sshs…]]></description><link>https://lighthouse-dev.github.io/sshfs/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/sshfs/</guid><content:encoded>&lt;h1&gt;SSHFS?&lt;/h1&gt;
 &lt;ul&gt;
 &lt;li&gt;SSH Filesystem： SSHFS&lt;/li&gt;
 &lt;li&gt;SSH上で遠隔サーバーのディレクトリ/ファイルをマウントして使うためのファイルシステムクライアント。&lt;/li&gt;
 &lt;/ul&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;インストール&quot;&gt;インストール&lt;/h1&gt;
+&lt;h1&gt;インストール&lt;/h1&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;brew cask install osxfuse
 brew install sshfs&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;遠隔サーバーのディレクトリをマウント&quot;&gt;遠隔サーバーのディレクトリをマウント&lt;/h1&gt;
+&lt;h1&gt;遠隔サーバーのディレクトリをマウント&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;sshs ユーザー名@サーバーアドレス:ディレクトリパス　マウントするパス&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -3408,14 +3408,14 @@ brew install sshfs&lt;/code&gt;&lt;/pre&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;sshfs root@xxx.xxx.xxx.xxx:/home/test/ /home/testMount/&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;マウントを解除&quot;&gt;マウントを解除&lt;/h1&gt;
+&lt;h1&gt;マウントを解除&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;umount -f 解除するディレクトリパス&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;【例】 /home/testMount/ をマウント解除する。&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-command&quot;&gt;&lt;code class=&quot;language-command&quot;&gt;umount -f /home/testMount/&lt;/code&gt;&lt;/pre&gt;
-      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1 id=&quot;概要&quot;&gt;概要&lt;/h1&gt;
+      &lt;/div&gt;</content:encoded></item><item><title><![CDATA[AJAXを同期(Sync)で通信する]]></title><description><![CDATA[概要 Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。 ※ そもそもAjaxとはAsynchronous Javascript And XML…]]></description><link>https://lighthouse-dev.github.io/ajax-sync/</link><guid isPermaLink="false">https://lighthouse-dev.github.io/ajax-sync/</guid><content:encoded>&lt;h1&gt;概要&lt;/h1&gt;
 &lt;p&gt;Ajaxは、皆さんも知っている通り、基本的に非同期で通信します。&lt;/p&gt;
 &lt;p&gt;※ そもそもAjaxとはAsynchronous Javascript And XMLの略です。&lt;/p&gt;
 &lt;p&gt;なので、データ通信や処理をしている間に、同時に他の動作や処理をすることができるため、&lt;/p&gt;
@@ -3424,7 +3424,7 @@ brew install sshfs&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;でも場合によっては、Ajaxを同期で通信しなければならない場合もあるので、&lt;/p&gt;
 &lt;p&gt;今回は、「AJAXの同期通信」について説明します！&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;非同期&quot;&gt;非同期&lt;/h1&gt;
+&lt;h1&gt;非同期&lt;/h1&gt;
 &lt;p&gt;まずは非同期通信のサンプルです。&lt;/p&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
@@ -3443,7 +3443,7 @@ brew install sshfs&lt;/code&gt;&lt;/pre&gt;
       &lt;/div&gt;
 &lt;p&gt;※ここでdoAnything()は、上のAjaxの結果と関係なく、必ず実行されます。&lt;/p&gt;
 &lt;br&gt;
-&lt;h1 id=&quot;同期&quot;&gt;同期&lt;/h1&gt;
+&lt;h1&gt;同期&lt;/h1&gt;
 &lt;div class=&quot;gatsby-code-title gatsby-remark-code-title&quot;&gt;sample.js&lt;/div&gt;
 &lt;div class=&quot;gatsby-highlight&quot;&gt;
       &lt;pre class=&quot;language-javascript&quot;&gt;&lt;code class=&quot;language-javascript&quot;&gt;$&lt;span class=&quot;token punctuation&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;token function&quot;&gt;ajax&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
